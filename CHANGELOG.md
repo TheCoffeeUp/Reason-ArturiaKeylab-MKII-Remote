@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+* (WC) Add extended Jog/Dial function. Press command dial multiple times to cycle between (scroll cursor, move left loop locators, move right loop locator, move both loop locators)
+* (WC) Add master chorus hardware knob
+* (WC) Add MKII Track control buttons
+* (WC) Remap left/right arrow buttons to change mixer remote base channel
+* (WC) Remap Next/Previous buttons to change Next/Prev active document track
+
 * Minor fixes: mainly correction of spelling mistakes
 * Add mapping for A-List Accoustic Guitarist - Fingerpicking Nylon from Propellerhead Software
 * Add mapping for A-List Electric Guitarist - Pop Chords from Propellerhead Software

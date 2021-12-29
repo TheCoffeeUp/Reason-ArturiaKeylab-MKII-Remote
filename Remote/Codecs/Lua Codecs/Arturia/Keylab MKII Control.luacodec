@@ -1,0 +1,16 @@
+version={1,0,0}
+
+function remote_supported_control_surfaces()
+	local surfaces = {
+		{
+			manufacturer="Arturia", model="Keylab MKII Control",
+			source="Keylab61 Essential Control.lua", picture="KEYLAB MKII.png",
+			in_ports={{description="In Port"}},
+			out_ports={{description="Out Port", optional=true}},
+			has_keyboard=false,
+			setup_info_text="DAW Control surface for the Keylab MKII from Arturia (v1.2)",
+			setup_user_action_text="Reason Remote for Arturia KeyLab MKII DAW Mode"
+		},
+	}
+	return surfaces
+end

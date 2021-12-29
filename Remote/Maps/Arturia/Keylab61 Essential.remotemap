@@ -1,12 +1,12 @@
 Propellerhead Remote Mapping File
 File Format Version	1.0.0
 Control Surface Manufacturer	Arturia
-Control Surface Model	Keylab61 Essential
+Control Surface Model	Keylab MKII
 Map Version	1.2.0
 
 //This is a remote map template for the Arturia KEYLAB61 Essential Keyboard and Reason 10
 
-Scope	Propellerheads	Master Keyboard			
+Scope	Propellerheads	Master Keyboard
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 Map	keyboard		Keyboard
 Map	pitch bend		Pitch Bend
@@ -16,12 +16,12 @@ Map	Expression		Expression
 Map	Mod Wheel		Mod Wheel
 Map	Damper Pedal		Damper Pedal
 
-Scope	Propellerheads	Combinator			
+Scope	Propellerheads	Combinator
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
-Map	pan-1		Rotary 1		
-Map	pan-2		Rotary 2		
-Map	pan-3		Rotary 3		
-Map	pan-4		Rotary 4		
+Map	pan-1		Rotary 1
+Map	pan-2		Rotary 2
+Map	pan-3		Rotary 3
+Map	pan-4		Rotary 4
 Map	preset-jog-wheel		Select Patch Delta
 Map	preset-prev		Select Previous Patch
 Map	preset-next		Select Next Patch
@@ -73,7 +73,7 @@ Map	lcd-1		"Mixer 14:2"
 Map	lcd-2		"Ch1-8"			Ch1-8
 Map	lcd-2		"Ch9-14"			Ch9-14
 
-Scope	Propellerheads	Line Mixer 6:2			
+Scope	Propellerheads	Line Mixer 6:2
 Define Group	Keyboard Shortcut Variations	Level-Pan	Aux
 //Define Group	Target	Level-Pan	Aux
 
@@ -109,7 +109,7 @@ Map	lcd-1		"Line Mixer 6:2"
 Map	lcd-2		"Level&Pan"			Level-Pan
 Map	lcd-2		"Aux"			Aux
 
-Scope	Propellerheads	ID8 Instrument Device			
+Scope	Propellerheads	ID8 Instrument Device
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 Map	master-volume		Volume
 
@@ -126,7 +126,7 @@ Map	right-arrow		Select Next Preset
 Map	lcd-1		"ID8"
 Map	lcd-2		Sound Name
 
-Scope	Propellerheads	SubTractor Analog Synthesizer		
+Scope	Propellerheads	SubTractor Analog Synthesizer
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 Map	master-volume		Master Level
 
@@ -155,7 +155,7 @@ Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"SubTractor"
 Map	lcd-2		Patch Name
 
-Scope	Propellerheads	Thor Polysonic Synthesizer			
+Scope	Propellerheads	Thor Polysonic Synthesizer
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 Map	master-volume		Master Level
 
@@ -215,7 +215,7 @@ Map	lcd-1		"Malstrom (Osc-A)"			OscA
 Map	lcd-1		"Malstrom (Osc-B)"			OscB
 Map	lcd-2		Patch Name
 
-Scope	Propellerheads	NN19 Digital Sampler	
+Scope	Propellerheads	NN19 Digital Sampler
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 Map	master-volume		Master Level
 
@@ -264,7 +264,7 @@ Scope	Propellerheads	Dr.REX Loop Player
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 Map	master-volume		Master Level
 Map	master-pan		Transpose
-	
+
 Map	pan-1		Filter Freq
 Map	pan-2		Filter Res
 Map	pan-3		Filter Env Amount
@@ -351,7 +351,7 @@ Map	fader-5		Drum 13 Level			Channel 9 to 16
 Map	fader-6		Drum 14 Level			Channel 9 to 16
 Map	fader-7		Drum 15 Level			Channel 9 to 16
 Map	fader-8		Drum 16 Level			Channel 9 to 16
- 
+
 Map	pan-1		Drum 1 Pan			Channel 1 to 8
 Map	pan-2		Drum 2 Pan			Channel 1 to 8
 Map	pan-3		Drum 3 Pan			Channel 1 to 8
@@ -698,22 +698,22 @@ Scope	Propellerheads	The Echo
 Map	master-pan		Dry/Wet Balance
 Map	master-volume		Ducking
 
-Map	pan-1		Delay Time	
-Map	pan-2		Right Ch Time Offset		
-Map	pan-3		Feedback		
-Map	pan-4		Right Ch Feedback Offset		
+Map	pan-1		Delay Time
+Map	pan-2		Right Ch Time Offset
+Map	pan-3		Feedback
+Map	pan-4		Right Ch Feedback Offset
 Map	pan-5		Drive Amount
 Map	pan-6		Drive Type
-Map	pan-7		Envelope		
+Map	pan-7		Envelope
 Map	pan-8		Wobble
 
-Map	fader-1		Ping-Pong Mode		
-Map	fader-2		Ping-Pong Pan		
-Map	fader-3		Diffuse Spread		
-Map	fader-4		Diffuse Amount		
-Map	fader-5		Filter Frequency	
+Map	fader-1		Ping-Pong Mode
+Map	fader-2		Ping-Pong Pan
+Map	fader-3		Diffuse Spread
+Map	fader-4		Diffuse Amount
+Map	fader-5		Filter Frequency
 Map	fader-6		Filter Resonance
-Map	fader-7		LFO Rate		
+Map	fader-7		LFO Rate
 Map	fader-8		LFO Amount
 
 Map	preset-jog-wheel		Select Patch Delta
@@ -815,7 +815,7 @@ Map	lcd-1		"Audiomatic"
 //Map	lcd-2		Patch Name
 Map	lcd-2		"Tape"
 
-Scope	Propellerheads	Scream 4 Distortion			
+Scope	Propellerheads	Scream 4 Distortion
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 Map	master-volume		Master Level
 
@@ -904,7 +904,7 @@ Map	lcd-2		"Band Lv 9-16"			Band Lv 9-16
 Map	lcd-2		"Band Lv 7-24"			Band Lv 17-24
 Map	lcd-2		"Band Lv 25-32"			Band Lv 25-32
 
-Scope	Propellerheads	Neptune Pitch Adjuster		
+Scope	Propellerheads	Neptune Pitch Adjuster
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 
 Map	pan-1		Pitch Bend Range
@@ -922,13 +922,13 @@ Map	fader-4		Voice Synth Level
 Map	lcd-1		"Neptune"
 Map	lcd-2		Target Note Name
 
-Scope	Propellerheads	RV7000 Advanced Reverb			
+Scope	Propellerheads	RV7000 Advanced Reverb
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 Map	master-pan		Dry/Wet
 Map	pan-1		Decay
 Map	pan-2		HF Damp
 Map	pan-3		Hi EQ
-	
+
 Map	fader-1		Soft Knob 1
 Map	fader-2		Soft Knob 2
 Map	fader-3		Soft Knob 3
@@ -955,7 +955,7 @@ Map	fader-3		Parametric 1 Q
 Map	pan-5		Parametric 2 Frequency
 Map	pan-6		Parametric 2 Gain
 Map	fader-5		Parametric 2 Q
-			
+
 Map	pan-7		Hi Shelf Frequency
 Map	pan-8		Hi Shelf Gain
 Map	fader-7		Hi Shelf Q
@@ -970,7 +970,7 @@ Map	pan-2		Threshold
 Map	pan-3		Ratio
 Map	pan-4		Attack
 Map	pan-5		Release
-Map	master-pan		Output Gain	
+Map	master-pan		Output Gain
 
 Map	lcd-1		"MClass"
 Map	lcd-2		"Compressor"
@@ -1025,7 +1025,7 @@ Map	pan-2		Foldback
 Map	lcd-1		"D-11 (dist.)"
 Map	lcd-2		""
 
-Scope	Propellerheads	ECF-42 Envelope Controlled Filter		
+Scope	Propellerheads	ECF-42 Envelope Controlled Filter
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 Map	pan-1		Frequency
 Map	pan-2		Resonance
@@ -1041,7 +1041,7 @@ Map	pan-8		Release
 Map	lcd-1		"ECF-42 (filter)"
 Map	lcd-2		""
 
-Scope	Propellerheads	CF-101 Chorus/Flanger			
+Scope	Propellerheads	CF-101 Chorus/Flanger
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 Map	pan-1		Delay
 Map	pan-2		Feedback
@@ -1149,7 +1149,7 @@ Map	pan-7		Attack
 Map	master-volume		Volume
 
 Map	preset-jog-wheel		Select Patch Delta
-Map	lcd-1		"Acoustic Guitar"
+Map	lcd-1		"Accoustic Guitar"
 Map	lcd-2		Patch Name
 
 Scope	Propellerhead Software	se.propellerheads.Parsec
@@ -1537,4 +1537,29 @@ Map	master-volume		Master Level
 
 Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"Friktion"
+Map	lcd-2		Patch Name
+
+Scope	Arturia	vst.Alav.Analog Lab V
+//	Control Surface Item	Key	Remotable Item	Scale	Mode
+Map	pan-1		P1 Brightness
+Map	pan-2		P1 Timbre
+Map	pan-3		P1 Time
+Map	pan-4		P1 Movement
+Map	pan-5		FXA Dry/Wet
+Map	pan-6		FXB Dry/Wet
+Map	pan-7		Delay Volume
+Map	pan-8		Reverb Volume
+Map	master-pan		Master
+
+Map	fader-1		P1 Volume
+Map	fader-2		P1 Send Delay
+Map	fader-3		P1 Send Reverb
+Map	fader-4		P2 Volume
+Map	fader-5		P2 Send Delay
+Map	fader-6		P2 Send Reverb
+Map	fader-7		Master Bass
+Map	fader-8		Master Mid
+Map	Master-Volume		Master Treble
+
+Map	lcd-1		Device Name
 Map	lcd-2		Patch Name
