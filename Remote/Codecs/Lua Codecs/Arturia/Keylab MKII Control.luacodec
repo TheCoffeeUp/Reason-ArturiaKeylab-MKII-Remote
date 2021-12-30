@@ -4,7 +4,7 @@ function remote_supported_control_surfaces()
 	local surfaces = {
 		{
 			manufacturer="Arturia", model="Keylab MKII Control",
-			source="Keylab61 Essential Control.lua", picture="KEYLABMKII-DAW.png",
+			source="Keylab MKII Control.lua", picture="Keylab MKII Control.png",
 			in_ports={{description="In Port"}},
 			out_ports={{description="Out Port", optional=true}},
 			has_keyboard=false,

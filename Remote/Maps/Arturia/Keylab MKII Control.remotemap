@@ -8,23 +8,30 @@ Map Version	1.0.0
 
 Scope	Propellerheads	Reason Document
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
+
+Map	rew		Rewind
+Map	ffwd		Fast Forward
 Map	stop		Stop
 Map	play		Play
 Map	record		Record
-Map	rew		Rewind
-Map	fwd		Fast Forward
 Map	loop		Loop On/Off
-Map	punch		Precount On/Off
+Map	save		Target Track Enable Monitoring
+Map	in		Auto-quantize
+Map	out		Precount On/Off
 Map	metro		Click On/Off
 Map	undo		Undo
-Map	save		Redo
+Map	read		Reset Automation Override
+Map	write		Target Track Enable Automation Recording
+
 map	next		Target Previous Track
 Map	prev		Target Next Track
 
-//jog wheel
+//command dial
 Map	left-loop		Left Loop
 Map	right-loop		Right Loop
 Map	position		Song Position
+Map	move-loop-left		Move Loop One bar Left
+Map	move-loop-right		Move Loop One bar Right
 
 Scope	Propellerheads	Reason Master Section
 //Define Group	Keyboard Shortcut Variations	Channels	FX Lv-Pan
@@ -40,6 +47,8 @@ Map	part1		Next 8 Remote Base Channel
 Map	part2		Previous 8 Remote Base Channel
 
 Map	master-fader		Master Level
+Map	chorus-encoder		Ctrl Room Level
+Map	multi		All Mutes Off
 
 Map	fader-1		Channel 1 Level			Channels
 Map	fader-2		Channel 2 Level			Channels
@@ -59,23 +68,41 @@ Map	encoder-6		Channel 6 Pan			Channels
 Map	encoder-7		Channel 7 Pan			Channels
 Map	encoder-8		Channel 8 Pan			Channels
 
-Map	fader-1		FX1 Return Level			FX Lv-Pan
-Map	fader-2		FX2 Return Level			FX Lv-Pan
-Map	fader-3		FX3 Return Level			FX Lv-Pan
-Map	fader-4		FX4 Return Level			FX Lv-Pan
-Map	fader-5		FX5 Return Level			FX Lv-Pan
-Map	fader-6		FX6 Return Level			FX Lv-Pan
-Map	fader-7		FX7 Return Level			FX Lv-Pan
-Map	fader-8		FX8 Return Level			FX Lv-Pan
+map	track1_solo		Channel 1 solo			Channels
+map	track2_solo		Channel 2 solo			Channels
+map	track3_solo		Channel 3 solo			Channels
+map	track4_solo		Channel 4 solo			Channels
+map	track5_solo		Channel 5 solo			Channels
+map	track6_solo		Channel 6 solo			Channels
+map	track7_solo		Channel 7 solo			Channels
+map	track8_solo		Channel 8 solo			Channels
 
-Map	encoder-1		FX1 Pan			FX Lv-Pan
-Map	encoder-2		FX2 Pan			FX Lv-Pan
-Map	encoder-3		FX3 Pan			FX Lv-Pan
-Map	encoder-4		FX4 Pan			FX Lv-Pan
-Map	encoder-5		FX5 Pan			FX Lv-Pan
-Map	encoder-6		FX6 Pan			FX Lv-Pan
-Map	encoder-7		FX7 Pan			FX Lv-Pan
-Map	encoder-8		FX8 Pan			FX Lv-Pan
+map	track1_mute		Channel 1 mute			Channels
+map	track2_mute		Channel 2 mute			Channels
+map	track3_mute		Channel 3 mute			Channels
+map	track4_mute		Channel 4 mute			Channels
+map	track5_mute		Channel 5 mute			Channels
+map	track6_mute		Channel 6 mute			Channels
+map	track7_mute		Channel 7 mute			Channels
+map	track8_mute		Channel 8 mute			Channels
+
+//Map	fader-1		FX1 Return Level			FX Lv-Pan
+//Map	fader-2		FX2 Return Level			FX Lv-Pan
+//Map	fader-3		FX3 Return Level			FX Lv-Pan
+//Map	fader-4		FX4 Return Level			FX Lv-Pan
+//Map	fader-5		FX5 Return Level			FX Lv-Pan
+//Map	fader-6		FX6 Return Level			FX Lv-Pan
+//Map	fader-7		FX7 Return Level			FX Lv-Pan
+//Map	fader-8		FX8 Return Level			FX Lv-Pan
+//
+//Map	encoder-1		FX1 Pan			FX Lv-Pan
+//Map	encoder-2		FX2 Pan			FX Lv-Pan
+//Map	encoder-3		FX3 Pan			FX Lv-Pan
+//Map	encoder-4		FX4 Pan			FX Lv-Pan
+//Map	encoder-5		FX5 Pan			FX Lv-Pan
+//Map	encoder-6		FX6 Pan			FX Lv-Pan
+//Map	encoder-7		FX7 Pan			FX Lv-Pan
+//Map	encoder-8		FX8 Pan			FX Lv-Pan
 
 Map	lcd-1		"Master (base ch)"
 Map	lcd-2		""

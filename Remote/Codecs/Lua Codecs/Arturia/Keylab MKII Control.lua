@@ -6,86 +6,56 @@
 
 ]]
 
--- init globals variables
+-- init global variables
 g_pause_play_button_state = "stop"
 g_active_jog_state = "position"
-g_pause_play_button_index = 3
-g_stop_button_index = 2
-g_left_loop_index = 12
-g_right_loop_index = 13
-g_position_index = 14
-
-g_last_input_time=-2000
-g_last_input_item=nil
-
-g_lcd_line1_index = 35
-g_lcd_line2_index = 36
 g_lcd_line1_new_text = ""
 g_lcd_line1_old_text = ""
 g_lcd_line2_new_text = ""
 g_lcd_line2_old_text = ""
+g_last_input_time=-2000
+g_last_input_item=nil
 
-g_part1_index = 15
-g_part2_index = 16
+-- set line ref locate in remote_init index
+g_stop_button_index = 3
+g_pause_play_button_index = 4
+g_left_loop_index = 14
+g_right_loop_index = 15
+g_move_loop_left_index = 16
+g_move_loop_right_index = 17
+g_position_index = 18
+g_part1_index = 21
+g_part2_index = 22
+g_lcd_line1_index = 44
+g_lcd_line2_index = 45
+
 
 function remote_init(manufacturer, model)
 	local items = {
-		{name="record", input="button", output="value"},
+		{name="rew", input="button", output="value"},
+		{name="ffwd", input="button", output="value"},
 		{name="stop", input="button", output="value"},
 		{name="play", input="button", output="value",  modes={"Play", "Pause"}},
+		{name="record", input="button", output="value"},
 		{name="loop", input="button", output="value"},
-		{name="rew", input="button", output="value"},
-		{name="fwd", input="button", output="value"},
 		{name="save", input="button", output="value"},
-		{name="punch", input="button", output="value"},
-		{name="undo", input="button", output="value"},
+		{name="in", input="button", output="value"},
+		{name="out", input="button", output="value"},
 		{name="metro", input="button", output="value"},
-		{name="master-fader", input="value", min = 0, max = 127},
+		{name="undo", input="button", output="value"},
+		{name="read", input="button", output="value"},
+		{name="write", input="button", output="value"},
 		{name="left-loop", input="delta"},
 		{name="right-loop", input="delta"},
+		{name="move-loop-left", input="delta"},
+		{name="move-loop-right", input="delta"},
 		{name="position", input="delta"},
 		{name="left_arrow", input="button", output="value"},
 		{name="right_arrow", input="button", output="value"},
-
-		------added mkII chorus encoder
-		{name="encoder-chorus", input="delta"},
-		------
-
-		------added mkII track controls
-		{name="track1_solo", input="button", output="value"},
-		{name="track1_mute", input="button", output="value"},
-		{name="track1_record_arm", input="button", output="value"},
-		{name="track2_solo", input="button", output="value"},
-		{name="track2_mute", input="button", output="value"},
-		{name="track2_record_arm", input="button", output="value"},
-		{name="track3_solo", input="button", output="value"},
-		{name="track3_mute", input="button", output="value"},
-		{name="track3_record_arm", input="button", output="value"},
-		{name="track4_solo", input="button", output="value"},
-		{name="track4_mute", input="button", output="value"},
-		{name="track4_record_arm", input="button", output="value"},
-		{name="track5_solo", input="button", output="value"},
-		{name="track5_mute", input="button", output="value"},
-		{name="track5_record_arm", input="button", output="value"},
-		{name="track6_solo", input="button", output="value"},
-		{name="track6_mute", input="button", output="value"},
-		{name="track6_record_arm", input="button", output="value"},
-		{name="track7_solo", input="button", output="value"},
-		{name="track7_mute", input="button", output="value"},
-		{name="track7_record_arm", input="button", output="value"},
-		{name="track8_solo", input="button", output="value"},
-		{name="track8_mute", input="button", output="value"},
-		{name="track8_record_arm", input="button", output="value"},
-
-		{name="read", input="button", output="value"},
-		{name="write", input="button", output="value"},
-		------
-
 		{name="part1", input="button", output="value"},
 		{name="part2", input="button", output="value"},
 		{name="next", input="button", output="value"},
 		{name="prev", input="button", output="value"},
-
 		{name="fader-1", input="value", min=0, max=127},
 		{name="fader-2", input="value", min=0, max=127},
 		{name="fader-3", input="value", min=0, max=127},
@@ -94,7 +64,6 @@ function remote_init(manufacturer, model)
 		{name="fader-6", input="value", min=0, max=127},
 		{name="fader-7", input="value", min=0, max=127},
 		{name="fader-8", input="value", min=0, max=127},
-
 		{name="encoder-1", input="delta"},
 		{name="encoder-2", input="delta"},
 		{name="encoder-3", input="delta"},
@@ -103,45 +72,66 @@ function remote_init(manufacturer, model)
 		{name="encoder-6", input="delta"},
 		{name="encoder-7", input="delta"},
 		{name="encoder-8", input="delta"},
-
+		{name="chorus-encoder", input="delta"},
+		{name="master-fader", input="value", output="value", min=0, max=127},
+		{name="multi", input="button", output="value"},
 		{name="lcd-1", output="text"},
 		{name="lcd-2", output="text"},
+		{name="track1_record_arm", input="button", output="value"},
+		{name="track2_record_arm", input="button", output="value"},
+		{name="track3_record_arm", input="button", output="value"},
+		{name="track4_record_arm", input="button", output="value"},
+		{name="track5_record_arm", input="button", output="value"},
+		{name="track6_record_arm", input="button", output="value"},
+		{name="track7_record_arm", input="button", output="value"},
+		{name="track8_record_arm", input="button", output="value"},
+		{name="track1_solo", input="button", output="value"},
+		{name="track2_solo", input="button", output="value"},
+		{name="track3_solo", input="button", output="value"},
+		{name="track4_solo", input="button", output="value"},
+		{name="track5_solo", input="button", output="value"},
+		{name="track6_solo", input="button", output="value"},
+		{name="track7_solo", input="button", output="value"},
+		{name="track8_solo", input="button", output="value"},
+		{name="track1_mute", input="button", output="value"},
+		{name="track2_mute", input="button", output="value"},
+		{name="track3_mute", input="button", output="value"},
+		{name="track4_mute", input="button", output="value"},
+		{name="track5_mute", input="button", output="value"},
+		{name="track6_mute", input="button", output="value"},
+		{name="track7_mute", input="button", output="value"},
+		{name="track8_mute", input="button", output="value"},
+		{name="track1_select", input="button", output="value"},
+		{name="track2_select", input="button", output="value"},
+		{name="track3_select", input="button", output="value"},
+		{name="track4_select", input="button", output="value"},
+		{name="track5_select", input="button", output="value"},
+		{name="track6_select", input="button", output="value"},
+		{name="track7_select", input="button", output="value"},
+		{name="track8_select", input="button", output="value"},
 	}
 	remote.define_items(items)
 
 	local inputs = {
-		{pattern="9? 5F xx", name="record", value="x"},
+		{pattern="9? 5B xx", name="rew", value="x"},
+		{pattern="9? 5C xx", name="ffwd", value="x"},
 		{pattern="9? 5D xx", name="stop", value="x"},
 		{pattern="9? 5E xx", name="play", value="x"},
-		{pattern="9? 5B xx", name="rew", value="x"},
-		{pattern="9? 5C xx", name="fwd", value="x"},
+		{pattern="9? 5F xx", name="record", value="x"},
 		{pattern="9? 56 xx", name="loop", value="x"},
 		{pattern="9? 50 xx", name="save", value="x"},
-		{pattern="9? 58 xx", name="punch", value="x"},
-		{pattern="9? 51 xx", name="undo", value="x"},
+		{pattern="9? 57 xx", name="in", value="x"},
+		{pattern="9? 58 xx", name="out", value="x"},
 		{pattern="9? 59 xx", name="metro", value="x"},
-		{pattern="E8 ?? xx", name="master-fader", value="x"},
-		{pattern="9? 62 xx", name="left_arrow", value="x"},
-		{pattern="9? 63 xx", name="right_arrow", value="x"},
-
-		------added mkII chorus encoder
-		{pattern="b? 18 <?x??>?", name="encoder-chorus", value="1-2*x"},
-
-		------added mkII track controls
-		{pattern="9? 08 xx", name="track1_solo", value="x"},
-		{pattern="9? 10 xx", name="track1_mute", value="x"},
-		{pattern="9? 00 xx", name="track1_record_arm", value="x"},
-
+		{pattern="9? 51 xx", name="undo", value="x"},
 		{pattern="9? 4a xx", name="read", value="x"},
 		{pattern="9? 4b xx", name="write", value="x"},
-		------
-
+		{pattern="9? 62 xx", name="left_arrow", value="x"},
+		{pattern="9? 63 xx", name="right_arrow", value="x"},
 		{pattern="9? 31 xx", name="part1", value="x"},
 		{pattern="9? 30 xx", name="part2", value="x"},
-
 		{pattern="9? 2f xx", name="next", value="x"},
 		{pattern="9? 2e xx", name="prev", value="x"},
-
 		{pattern="E0 ?? xx", name="fader-1", value="x"},
 		{pattern="E1 ?? xx", name="fader-2", value="x"},
 		{pattern="E2 ?? xx", name="fader-3", value="x"},
@@ -150,7 +140,6 @@ function remote_init(manufacturer, model)
 		{pattern="E5 ?? xx", name="fader-6", value="x"},
 		{pattern="E6 ?? xx", name="fader-7", value="x"},
 		{pattern="E7 ?? xx", name="fader-8", value="x"},
-
 		{pattern="b? 10 <?x??>?", name="encoder-1", value="1-2*x"},
 		{pattern="b? 11 <?x??>?", name="encoder-2", value="1-2*x"},
 		{pattern="b? 12 <?x??>?", name="encoder-3", value="1-2*x"},
@@ -159,57 +148,91 @@ function remote_init(manufacturer, model)
 		{pattern="b? 15 <?x??>?", name="encoder-6", value="1-2*x"},
 		{pattern="b? 16 <?x??>?", name="encoder-7", value="1-2*x"},
 		{pattern="b? 17 <?x??>?", name="encoder-8", value="1-2*x"},
+		{pattern="b? 18 <?x??>?", name="chorus-encoder", value="1-2*x"},
+		{pattern="E8 ?? xx", name="master-fader", value="x"},
+		{pattern="9? 6a xx", name="multi", value="x"},
+		{pattern="9? 00 xx", name="track1_record_arm", value="x"},
+		{pattern="9? 01 xx", name="track2_record_arm", value="x"},
+		{pattern="9? 02 xx", name="track3_record_arm", value="x"},
+		{pattern="9? 03 xx", name="track4_record_arm", value="x"},
+		{pattern="9? 04 xx", name="track5_record_arm", value="x"},
+		{pattern="9? 05 xx", name="track6_record_arm", value="x"},
+		{pattern="9? 06 xx", name="track7_record_arm", value="x"},
+		{pattern="9? 07 xx", name="track8_record_arm", value="x"},
+		{pattern="9? 08 xx", name="track1_solo", value="x"},
+		{pattern="9? 09 xx", name="track2_solo", value="x"},
+		{pattern="9? 0a xx", name="track3_solo", value="x"},
+		{pattern="9? 0b xx", name="track4_solo", value="x"},
+		{pattern="9? 0c xx", name="track5_solo", value="x"},
+		{pattern="9? 0d xx", name="track6_solo", value="x"},
+		{pattern="9? 0e xx", name="track7_solo", value="x"},
+		{pattern="9? 0f xx", name="track8_solo", value="x"},
+		{pattern="9? 10 xx", name="track1_mute", value="x"},
+		{pattern="9? 11 xx", name="track2_mute", value="x"},
+		{pattern="9? 12 xx", name="track3_mute", value="x"},
+		{pattern="9? 13 xx", name="track4_mute", value="x"},
+		{pattern="9? 14 xx", name="track5_mute", value="x"},
+		{pattern="9? 15 xx", name="track6_mute", value="x"},
+		{pattern="9? 16 xx", name="track7_mute", value="x"},
+		{pattern="9? 17 xx", name="track8_mute", value="x"},
+		{pattern="9? 18 xx", name="track1_select", value="x"},
+		{pattern="9? 19 xx", name="track2_select", value="x"},
+		{pattern="9? 1a xx", name="track3_select", value="x"},
+		{pattern="9? 1b xx", name="track4_select", value="x"},
+		{pattern="9? 1c xx", name="track5_select", value="x"},
+		{pattern="9? 1d xx", name="track6_select", value="x"},
+		{pattern="9? 1e xx", name="track7_select", value="x"},
+		{pattern="9? 1f xx", name="track8_select", value="x"},
 	}
 	remote.define_auto_inputs(inputs)
 
-	--Auto outputs
 	local outputs = {
-		{name="record", pattern="90 5F 0x"},
-		{name="play", pattern="90 5E xx"},
-		{name="stop", pattern="90 5D xx"},
 		{name="rew", pattern="90 5B xx"},
-		{name="fwd", pattern="90 5C xx"},
-		{name="save", pattern="90 50 xx"},
-		{name="punch", pattern="90 58 xx"},
-		{name="undo", pattern="90 51 xx"},
-		{name="metro", pattern="90 59 xx"},
+		{name="ffwd", pattern="90 5C xx"},
+		{name="stop", pattern="90 5D xx"},
+		{name="play", pattern="90 5E xx"},
+		{name="record", pattern="90 5F 0x"},
 		{name="loop", pattern="90 56 xx"},
-
-		------added mkII track controls
-		{name="track1_solo", pattern="9? 08 xx"},
-		{name="track1_mute", pattern="9? 10 xx"},
-		{name="track1_record_arm", pattern="9? 00 xx"},
+		{name="save", pattern="90 50 xx"},
+		{name="in", pattern="90 57 xx"},
+		{name="out", pattern="90 58 xx"},
+		{name="metro", pattern="90 59 xx"},
+		{name="undo", pattern="90 51 xx"},
 		{name="read", pattern="9? 4a xx"},
 		{name="write", pattern="9? 4b xx"},
-		------
-	}
+		{name="left_arrow", pattern="9? 62 xx"},
+		{name="right_arrow", pattern="9? 63 xx"},
+		{name="master-fader", pattern="E8 ?? xx"},
+		{name="multi", pattern="9? 6a xx"},
+		{name="track1_record_arm", pattern="9? 00 xx"},
+		{name="track2_record_arm", pattern="9? 01 xx"},
+		{name="track3_record_arm", pattern="9? 02 xx"},
+		{name="track4_record_arm", pattern="9? 03 xx"},
+		{name="track5_record_arm", pattern="9? 04 xx"},
+		{name="track6_record_arm", pattern="9? 05 xx"},
+		{name="track7_record_arm", pattern="9? 06 xx"},
+		{name="track8_record_arm", pattern="9? 07 xx"},
+		{name="track1_solo", pattern="9? 08 xx"},
+		{name="track2_solo", pattern="9? 09 xx"},
+		{name="track3_solo", pattern="9? 0a xx"},
+		{name="track4_solo", pattern="9? 0b xx"},
+		{name="track5_solo", pattern="9? 0c xx"},
+		{name="track6_solo", pattern="9? 0d xx"},
+		{name="track7_solo", pattern="9? 0e xx"},
+		{name="track8_solo", pattern="9? 0f xx"},
+		{name="track1_mute", pattern="9? 10 xx"},
+		{name="track2_mute", pattern="9? 11 xx"},
+		{name="track3_mute", pattern="9? 12 xx"},
+		{name="track4_mute", pattern="9? 13 xx"},
+		{name="track5_mute", pattern="9? 14 xx"},
+		{name="track6_mute", pattern="9? 15 xx"},
+		{name="track7_mute", pattern="9? 16 xx"},
+		{name="track8_mute", pattern="9? 17 xx"},
+			}
 	remote.define_auto_outputs(outputs)
 end
 
--- Sysex to color transport leds: F0 00 20 6B 7F 42 02 00 10 xx yy F7
--- where:
---   xx is the button
--- 		56 is save button
---		57 is undo button
---		58 i punch button
---		59 is Metro button
---		5a is loop button
---		5b is rwd button
---		5c is fwd button
---		5d is stop button
---		5e is pause/play button
---		5f is record button
--- 	 yy is intensity of the led from 00 to 7F , 00 the led is off
---
--- ref: https://forum.renoise.com/t/tool-development-arturia-keylab-mkii-49-61-mcu-midi-messages/57343/9
---
--- to set button off
--- send 90 xx 00
---
 function remote_probe(manufacturer,model,prober)
-	-- Arturia Manufacturer SysEx ID Numbers is: 00 20 6b
-
-	-- Need to be rework, for hardware with multiple ports must be done programaticaly (see Remote SDK documentation page 26 & 27)
 	assert(model == "Keylab61 Essential Control")
 	local controlRequest="f0 7e 7f 06 01 f7"  -- sysex de demande d'identification
 	local controlResponse="F0 7E 7F 06 02 00 20 6B 02 00 05 54 3D 02 01 01 F7"
@@ -280,11 +303,11 @@ function remote_process_midi(event)  -- handle incoming midi event
 	if ret~=nil then
 		g_active_jog_state = cycle_jog_state()
 	-- remote_on_auto_input(event)
-	return true
-end
+		return true
+	end
 
 	--test if jog-wheel is turned
-	ret = remote.match_midi("b0 3c <?y??> x",event)
+	ret = remote.match_midi("b0 3c <?y??><???x>",event)
 	if ret~=nil then
 		if g_active_jog_state == "left" then
 			local msg={ time_stamp=event.time_stamp, item=g_left_loop_index, value=ret.x*(1-2*ret.y)*15360 }
@@ -292,15 +315,16 @@ end
 		elseif g_active_jog_state == "right" then
 			local msg={ time_stamp=event.time_stamp, item=g_right_loop_index, value=ret.x*(1-2*ret.y)*15360 }
 			remote.handle_input(msg)
-		elseif g_active_jog_state == "both" then
-			local msg={ time_stamp=event.time_stamp, item=g_right_loop_index, value=ret.x*(1-2*ret.y)*15360 }
-			remote.handle_input(msg)
+					elseif g_active_jog_state == "both" then
 			local msg={ time_stamp=event.time_stamp, item=g_left_loop_index, value=ret.x*(1-2*ret.y)*15360 }
+			remote.handle_input(msg)
+			local msg={ time_stamp=event.time_stamp, item=g_right_loop_index, value=ret.x*(1-2*ret.y)*15360 }
 			remote.handle_input(msg)
 		else
 			local msg={ time_stamp=event.time_stamp, item=g_position_index, value=ret.x*(1-2*ret.y)*15360 }
 			remote.handle_input(msg)
 		end
+
 		return true
 	end
 

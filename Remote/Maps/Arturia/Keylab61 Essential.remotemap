@@ -4,7 +4,7 @@ Control Surface Manufacturer	Arturia
 Control Surface Model	Keylab MKII
 Map Version	1.2.0
 
-//This is a remote map template for the Arturia KEYLAB61 Essential Keyboard and Reason 10
+//This is a remote map template for the Arturia KEYLAB MKII Keyboard and Reason 12
 
 Scope	Propellerheads	Master Keyboard
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
@@ -16,16 +16,22 @@ Map	Expression		Expression
 Map	Mod Wheel		Mod Wheel
 Map	Damper Pedal		Damper Pedal
 
+//Combinator 2
 Scope	Propellerheads	Combinator
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 Map	pan-1		Rotary 1
 Map	pan-2		Rotary 2
 Map	pan-3		Rotary 3
 Map	pan-4		Rotary 4
+Map	pan-5		Rotary 4
+Map	pan-5		Rotary 5
+Map	pan-6		Rotary 6
+Map	pan-7		Rotary 7
+Map	pan-8		Rotary 8
 Map	preset-jog-wheel		Select Patch Delta
 Map	preset-prev		Select Previous Patch
 Map	preset-next		Select Next Patch
-Map	lcd-1		"Combinator"
+Map	lcd-1		Device Name
 Map	lcd-2		Patch Name
 
 Scope	Propellerheads	Mixer 14:2
@@ -1539,6 +1545,21 @@ Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"Friktion"
 Map	lcd-2		Patch Name
 
+Scope	Propellerhead Sofware	se.propellerheads.externalmidiinstrument
+//	Control Surface Item	Key	Remotable Item	Scale	Mode
+
+Map pan1		CV Scale 1
+Map pan2		CV Scale 2
+Map pan3		CV Scale 3
+Map pan4		CV Scale 4
+Map pan5		CV Scale 5
+Map pan6		CV Scale 6
+Map pan7		CV Scale 7
+Map pan8		CV Scale 8
+
+Map	lcd-1		Device Name
+Map	lcd-2		Patch Name
+
 Scope	Arturia	vst.Alav.Analog Lab V
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 Map	pan-1		P1 Brightness
@@ -1561,5 +1582,5 @@ Map	fader-7		Master Bass
 Map	fader-8		Master Mid
 Map	Master-Volume		Master Treble
 
-Map	lcd-1		Device Name
+Map	lcd-1		"Analog Lab IV"
 Map	lcd-2		Patch Name
