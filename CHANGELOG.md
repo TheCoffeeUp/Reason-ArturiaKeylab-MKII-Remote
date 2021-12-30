@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+* (WC) Added 4-state command dial in DAW mode(playhead position, L loop, R loop, both locators)
+* (WC) added track solo and mute select mode for MKII DAW mode
+* (WC) remapped global controls. (monitor, auto quant, precount, click, reset automation override, write automation enable
+* (WC) mapped chorus dial DAW mode to "CTRL room level"
+* (WC) mapped MULTI button DAW mode to "All mutes off"
+ 
 * (WC) Add extended Jog/Dial function. Press command dial multiple times to cycle between (scroll cursor, move left loop locators, move right loop locator, move both loop locators)
 * (WC) Add master chorus hardware knob
 * (WC) Add MKII Track control buttons
