@@ -1,8 +1,8 @@
 --[[
-	Surface:	Keyboard Arturia Keylab 61 Essential
-	Developer:	Thierry Fraudet
+	Surface:	Keyboard Arturia Keylab MKII
+	Developer:	Thierry Fraudet / Modified for MKII by Wade Carson
 	Version:	1.3
-	Date:		19/10/2021
+	Date:		21/12/2019
 
 ]]
 
@@ -30,23 +30,23 @@ function remote_init(manufacturer, model)
 		{name="Breath", input="value", min=0, max=127},
 		{name="Damper Pedal", input="value", min=0, max=127},
 
-		{name="pad-1", input="button"},
-		{name="pad-2", input="button"},
-		{name="pad-3", input="button"},
-		{name="pad-4", input="button"},
-		{name="pad-5", input="button"},
-		{name="pad-6", input="button"},
-		{name="pad-7", input="button"},
-		{name="pad-8", input="button"},
+		{name="pad-1", input="button", output="value"},
+		{name="pad-2", input="button", output="value"},
+		{name="pad-3", input="button", output="value"},
+		{name="pad-4", input="button", output="value"},
+		{name="pad-5", input="button", output="value"},
+		{name="pad-6", input="button", output="value"},
+		{name="pad-7", input="button", output="value"},
+		{name="pad-8", input="button", output="value"},
 
-		{name="fader-1", input="value", output="value", min=0, max=127},
-		{name="fader-2", input="value", output="value", min=0, max=127},
-		{name="fader-3", input="value", output="value", min=0, max=127},
-		{name="fader-4", input="value", output="value", min=0, max=127},
-		{name="fader-5", input="value", output="value", min=0, max=127},
-		{name="fader-6", input="value", output="value", min=0, max=127},
-		{name="fader-7", input="value", output="value", min=0, max=127},
-		{name="fader-8", input="value", output="value", min=0, max=127},
+		{name="fader-1", input="value", min=0, max=127},
+		{name="fader-2", input="value", min=0, max=127},
+		{name="fader-3", input="value", min=0, max=127},
+		{name="fader-4", input="value", min=0, max=127},
+		{name="fader-5", input="value", min=0, max=127},
+		{name="fader-6", input="value", min=0, max=127},
+		{name="fader-7", input="value", min=0, max=127},
+		{name="fader-8", input="value", min=0, max=127},
 
 		{name="pan-1", input="value", output="value", min=0, max=127},
 		{name="pan-2", input="value", output="value", min=0, max=127},
@@ -66,17 +66,17 @@ function remote_init(manufacturer, model)
 		{name="preset-prev", input="button"},
 		{name="preset-next", input="button"},
 
-		{name="part1-next", input="button"},
-		{name="part2-prev", input="button"},
-		{name="live-bank", input="button"},
+		{name="part1-next", input="button", output="value"},
+		{name="part2-prev", input="button", output="value"},
+		{name="live-bank", input="button", output="value"},
 
 		{name="cat-jog-wheel", input="delta", output="value", min=0, max=127},
 		{name="cat-jog-wheel-button", input="button"},
-		{name="cat-prev", input="button"},
-		{name="cat-next", input="button"},
+		{name="cat-prev", input="button", output="value"},
+		{name="cat-next", input="button", output="value"},
 
-		{name="left-arrow", input="button"},
-		{name="right-arrow", input="button"},
+		{name="left-arrow", input="button", output="value"},
+		{name="right-arrow", input="button", output="value"},
 
 		-- index is 49
 		{name="pan-1-var-a", input="value", output="value", min=0, max=127},
@@ -99,7 +99,7 @@ function remote_init(manufacturer, model)
 		{name="pan-7-var-b", input="value", output="value", min=0, max=127},
 		{name="pan-8-var-b", input="value", output="value", min=0, max=127},
 		{name="master-pan-var-b", input="value", output="value", min=0, max=127},
-		
+
 		-- index is 67
 		{name="pan-1-var-c", input="value", output="value", min=0, max=127},
 		{name="pan-2-var-c", input="value", output="value", min=0, max=127},
@@ -121,10 +121,9 @@ function remote_init(manufacturer, model)
 		{name="pan-7-var-d", input="value", output="value", min=0, max=127},
 		{name="pan-8-var-d", input="value", output="value", min=0, max=127},
 		{name="master-pan-var-d", input="value", output="value", min=0, max=127},
-
 	}
 	remote.define_items(items)
-
+----------------------------------------------------------------------------
 	local inputs = {
 		{pattern="e? xx yy", name="Pitch Bend", value="y*128 + x"},
 		{pattern="b0 01 xx", name="Mod Wheel"},
@@ -134,6 +133,7 @@ function remote_init(manufacturer, model)
 		{pattern="b0 40 xx", name="Damper Pedal"},
 		{pattern="<100x>0 yy zz", name="Keyboard"},
 
+		--[[
 		{pattern="<100y>0 24 xx", name="pad-1"},
 		{pattern="<100y>0 25 xx", name="pad-2"},
 		{pattern="<100y>0 26 xx", name="pad-3"},
@@ -142,6 +142,7 @@ function remote_init(manufacturer, model)
 		{pattern="<100y>0 29 xx", name="pad-6"},
 		{pattern="<100y>0 2a xx", name="pad-7"},
 		{pattern="<100y>0 2b xx", name="pad-8"},
+		]]
 
 		{pattern="b? 49 xx", name="fader-1", value="x"},
 		{pattern="b? 4b xx", name="fader-2", value="x"},
@@ -171,12 +172,11 @@ function remote_init(manufacturer, model)
 
 		{pattern="b? 70 <?y??><???x>", name="cat-jog-wheel", value="x*(2*y-1)"},  -- when "Cat" is selected, 41 <0100><0001>   ou  3f <0011><1111>
 		{pattern="b? 71 xx", name="cat-jog-wheel-button", value="x"},	-- when "Cat" is selected
-		{pattern="b? 70 3f", name="cat-prev", value="1"},
-		{pattern="b? 70 41", name="cat-next", value="1"},
+		-- {pattern="b? 70 3f", name="cat-prev", value="1"},
+		-- {pattern="b? 70 41", name="cat-next", value="1"},
 
 		{pattern="b? 16 xx", name="part1-next", value="x"},
 		{pattern="b? 17 xx", name="part2-prev", value="x"},
-
 		{pattern="b? 18 xx", name="live-bank", value="x"},
 
 		{pattern="b? 1c xx", name="left-arrow", value="x"},
@@ -194,17 +194,9 @@ function remote_init(manufacturer, model)
 		{name="pan-6", pattern="b? 12 xx"},
 		{name="pan-7", pattern="b? 13 xx"},
 		{name="pan-8", pattern="b? 10 xx"},
-
-		{name="fader-1", pattern="b? 49 xx"},
-		{name="fader-2", pattern="b? 4b xx"},
-		{name="fader-3", pattern="b? 4f xx"},
-		{name="fader-4", pattern="b? 48 xx"},
-		{name="fader-5", pattern="b? 50 xx"},
-		{name="fader-6", pattern="b? 51 xx"},
-		{name="fader-7", pattern="b? 52 xx"},
-		{name="fader-8", pattern="b? 53 xx"},
 	}
 	remote.define_auto_outputs(outputs)
+
 end
 
 encoder_patterns = {
@@ -255,10 +247,10 @@ function remote_process_midi(event)  -- handle incoming midi event
 	local tab_index = {Chorus = 49, BDD = 58, FFT = 67, Grain = 76}
 
 	if string.starts(g_lcd_line1_new_text,"Quartet") then
-		local encoder_number = incomingMidiMessageFromEncoder(event) -- which encoder number send midi ?	
-		local item_to_activate 
+		local encoder_number = incomingMidiMessageFromEncoder(event) -- which encoder number send midi ?
+		local item_to_activate
 
-		-- tell reason to process the translated incoming midi message 
+		-- tell reason to process the translated incoming midi message
 		if encoder_number > 0 then
 
 			-- handle midi msg depending on selected effect on Quartet
@@ -285,7 +277,7 @@ function remote_process_midi(event)  -- handle incoming midi event
 end
 
 
-g_rv7_algorithms = { "Hall", "Large Hall", "Hall 2", "Large Room", "Medium Room", "Small Room", "Gated", "Low Density" ,"Stereo Echoes" , "Pan Room"}
+g_rv7_algorithms = { "Hall", "Large Hall", "Hall 2", "Large Room", "Medium Room", "Small Room", "Gated", "Low Density","Stereo Echoes","Pan Room"}
 g_matrix_bank = { "A", "B", "C", "D"}
 
 function remote_set_state(changed_items) --handle incoming changes sent by Reason
@@ -340,13 +332,13 @@ end
 function remote_deliver_midi(max_bytes, port)
 	local ret_events={}
 
-	-- if there is a new message to display 
+	-- if there is a new message to display
 	if (g_lcd_line1_new_text ~= g_lcd_line1_old_text) then
 		g_lcd_line1_old_text = g_lcd_line1_new_text
 		table.insert(ret_events,make_lcd_midi_message(g_lcd_line1_new_text, g_lcd_line2_old_text))
 	end
 
-	-- if there is a new message to display 
+	-- if there is a new message to display
 	if (g_lcd_line2_new_text ~= g_lcd_line2_old_text) then
 		g_lcd_line2_old_text = g_lcd_line2_new_text
 		table.insert(ret_events,make_lcd_midi_message(g_lcd_line1_old_text, g_lcd_line2_new_text))
@@ -358,7 +350,7 @@ end
 function remote_probe(manufacturer,model,prober)
 	-- Arturia Manufacturer SysEx ID Numbers is: 00 20 6b
 
-	-- Need to be rework, for hardware with multiple ports must be done programaticaly (see Remote SDK documentation page 26 & 27) 
+	-- Need to be rework, for hardware with multiple ports must be done programaticaly (see Remote SDK documentation page 26 & 27)
 	assert(model == "Keylab61 Essential")
 	local controlRequest="f0 7e 7f 06 01 f7"  -- sysex de demande d'identification
 	local controlResponse="F0 7E 7F 06 02 00 20 6B 02 00 05 54 3D 02 01 01 F7"
@@ -387,10 +379,10 @@ end
 function stringToHex(text)
 	local hexStringToReturn = ""
 	for i=1, string.len(text) do
-		if string.len(hexStringToReturn) > 0 then 
+		if string.len(hexStringToReturn) > 0 then
 			hexStringToReturn = hexStringToReturn .. " "
 		end
-		hexStringToReturn = hexStringToReturn .. string.format("%X", string.byte(text,i))   
+		hexStringToReturn = hexStringToReturn .. string.format("%X", string.byte(text,i))
 	end
 	return hexStringToReturn
 end
@@ -404,4 +396,3 @@ end
 function string.starts(String,Start)
 	return string.sub(String,1,string.len(Start)) == Start
 end
-

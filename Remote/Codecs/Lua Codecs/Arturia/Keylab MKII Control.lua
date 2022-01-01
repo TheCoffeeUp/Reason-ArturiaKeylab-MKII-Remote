@@ -2,7 +2,7 @@
 	Surface:	DAW Command Center of Arturia Keylab MKII
 	Developer:	Thierry Fraudet / modified for MKII by Wade Carson
 	Version:	1.3
-	Date:		2021/12/28
+	Date:		2021/12/30
 
 ]]
 
