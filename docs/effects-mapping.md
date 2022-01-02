@@ -1,5 +1,5 @@
 ---
-description: Mapping between Reason Studio effects and Arturia Keylab Essential
+description: Mapping between Reason Studio effects and Arturia Keylab MKII
 ---
 # Effects mapping
 
@@ -34,6 +34,16 @@ description: Mapping between Reason Studio effects and Arturia Keylab Essential
 * [Master Bus Compressor](#mapping-with-the-master-bus-compressor)
 * [Channel Dynamics Compressor & Gate](#mapping-with-the-channel-dynamics-compressor-and-gate)
 * [Channel EQ Equalizer](#mapping-with-the-channel-eq-equalizer)
+
+## Mapping with the Reason Document
+
+| Arturia Keyboard surface | Reason Command | Comment |
+| -------------------------- | -------------- | ----------------------- |
+| command dial | Select Previous/Next Preset | when "Category" button is selected. Useful for unmapped devices. (some mapped devices will override this function) |
+| Left Arrow | Select previous Keyboard Variation | used to access different modes within some scopes |
+| Right Arrow | Select next Keyboard Variation | used to access different modes within some scopes |
+| Part 1/Next | Target previous sequencer track |
+| Part 2/prev | Target next sequencer track |
 
 ## Mapping with the Alligator
 
@@ -77,8 +87,8 @@ The first line of the Arturia Keyboad LCD should display "Alligator" and the sec
 | Encoder 7 | Low Pass Delay Amount | When "Low Pass filter" variation is active |
 | Encoder 8 | Low Pass Pan | When "Low Pass filter" variation is active |
 | Master Pan | Low Pass Volume | When "Low Pass filter" variation is active |
-| Part1 / Next| Keyboard Shortcut Variations | To switch between "main", "High Pass Filter", "Band Pass Filter" & "Low Pass Filter" variations |
-| Part2 / Prev| Keyboard Shortcut Variations | To switch between "main", "High Pass Filter", "Band Pass Filter" & "Low Pass Filter" variations |
+| Right Arrow| Keyboard Shortcut Variations | To switch between "main", "High Pass Filter", "Band Pass Filter" & "Low Pass Filter" variations |
+| Left Arrow | Keyboard Shortcut Variations | To switch between "main", "High Pass Filter", "Band Pass Filter" & "Low Pass Filter" variations |
 | Jog Wheel | Select Previous/Next Preset | when "Preset" is selected |
 
 ## Mapping with The Echo
@@ -253,12 +263,12 @@ The first line of the Arturia Keyboad LCD should display "BV512 Vocoder" and the
 | Encoder 4 | Decay |  |
 | Encoder 5 | Shift |  |
 | Encoder 6 | HF Emphasis |  |
-| Fader <1-8> | Bande Level <1-8> | When "Band Lv 1-8" variation is active |
-| Fader <1-8> | Bande Level <9-16> | When "Band Lv 9-16" variation is active |
-| Fader <1-8> | Bande Level <17-24> | When "Band Lv 17-24" variation is active |
-| Fader <1-8> | Bande Level <25-32> | When "Band Lv 25-32" variation is active |
-| Part1 / Next| Keyboard Shortcut Variations | To switch between "Band Lv 1-8", "Band Lv 9-16", "Band Lv 17-24" & "Band Lv 25-32" variations |
-| Part2 / Prev| Keyboard Shortcut Variations | To switch between "Band Lv 1-8", "Band Lv 9-16", "Band Lv 17-24" & "Band Lv 25-32" variations |
+| Fader <1-8> | Band Level <1-8> | When "Band Lv 1-8" variation is active |
+| Fader <1-8> | Band Level <9-16> | When "Band Lv 9-16" variation is active |
+| Fader <1-8> | Band Level <17-24> | When "Band Lv 17-24" variation is active |
+| Fader <1-8> | Band Level <25-32> | When "Band Lv 25-32" variation is active |
+| Left Arrow| Keyboard Shortcut Variations | To switch between "Band Lv 1-8", "Band Lv 9-16", "Band Lv 17-24" & "Band Lv 25-32" variations |
+| Right Arrow| Keyboard Shortcut Variations | To switch between "Band Lv 1-8", "Band Lv 9-16", "Band Lv 17-24" & "Band Lv 25-32" variations |
 
 ## Mapping with the Neptune Pitch Adjuster and Voice Synth
 

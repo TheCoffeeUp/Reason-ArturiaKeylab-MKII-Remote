@@ -31,6 +31,16 @@ description: Mapping between Reason Studio instruments and Arturia Keylab Essent
 * [A-List Electric Guitarist - Power Chords](#mapping-with-the-a-list-electric-guitarist---power-chords)
 * [Friktion Modeled Strings](#mapping-with-the-friktion-modeled-strings)
 
+## Mapping with the Reason Document
+
+| Arturia Keyboard surface | Reason Command | Comment |
+| -------------------------- | -------------- | ----------------------- |
+| command dial | Select Previous/Next Preset | when "Category" button is selected. Useful for unmapped devices. (some mapped devices will override this function) |
+| Left Arrow | Select previous Keyboard Variation | used to access different modes within some scopes |
+| Right Arrow | Select next Keyboard Variation | used to access different modes within some scopes |
+| Part 1/Next | Target previous sequencer track |
+| Part 2/prev | Target next sequencer track |
+
 ## Mapping with the ID8 instrument device
 
 ![ID8 Logo](./images/ID8.png)
@@ -42,10 +52,8 @@ The first line of the Arturia Keyboard LCD should display "ID8" and the second o
 | Master fader | Volume |  |
 | Fader 1 | Parameter 1 |  |
 | Fader 2 | Parameter 2 |  |
-| Jog-wheel | Select Previous/Next Category | when "Cat/Char" is selected |
+| Jog-wheel | Select Previous/Next Category | when "Category" is selected |
 | Jog-wheel | Select Previous/Next Sound | when "Preset" is selected |
-| Left arrow | Select Previous Preset |  |
-| Right arrow | Select Next Preset |  |
 
 ## Mapping with the SubTractor instrument device
 
@@ -130,8 +138,8 @@ The first line of the Arturia Keyboard LCD should display "Malstrom" and "(Osc-A
 | Encoder 6 | Modulator B Rate |  |
 | Encoder 7 | Oscillator A Motion |  |
 | Encoder 8 | Oscillator B Motion |  |
-| Part1 / Next| Keyboard Shortcut Variations | To select Osc-B variation |
-| Part2 / Prev| Keyboard Shortcut Variations | To select Osc-A variation |
+| Left Arrow | Keyboard Shortcut Variations | To select Osc-B variation |
+| Right Arrow | Keyboard Shortcut Variations | To select Osc-A variation |
 | Jog-wheel | Select Previous/Next Preset | when "Preset" is selected |
 
 ## Mapping with the NN19 Digital Sampler
@@ -220,8 +228,8 @@ The first line of the Arturia Keyboard LCD should display "Redrum" and "Ch1-8" o
 | Encoder <1-8> | Drum <1-8> Pan | When "Ch1-8" variation is active |
 | Fader <1-2> | Drum <9-10> Level | When "Ch9-10" vartiona is active |
 | Encoder <1-2> | Drum <9-10> Pan | When "Ch9-10" variation is active |
-| Part1 / Next| Keyboard Shortcut Variations | To select Channels 9 to 10 variation |
-| Part2 / Prev| Keyboard Shortcut Variations | To select Channels 1 to 8 variation |
+| Left Arrow | Keyboard Shortcut Variations | To select Channels 9 to 10 variation |
+| Right Arrow | Keyboard Shortcut Variations | To select Channels 1 to 8 variation |
 | Jog-wheel | Select Previous/Next Preset | when "Preset" is selected |
 
 ## Mapping with the Kong Drum Designer
@@ -237,8 +245,8 @@ The first line of the Arturia Keyboard LCD should display "Kong" and "Ch1-8" or 
 | Encoder <1-8> | Drum <1-8> Pan | When "Ch1-8" variation is active |
 | Fader <1-8> | Drum <9-16> Level | When "Ch9-16" variation is active |
 | Encoder <1-8> | Drum <9-16> Pan | When "Ch9-16" variation is active |
-| Part1 / Next| Keyboard Shortcut Variations | To select Channels 9 to 16 variation |
-| Part2 / Prev| Keyboard Shortcut Variations | To select Channels 1 to 8 variation |
+| Left Arrow | Keyboard Shortcut Variations | To select Channels 9 to 16 variation |
+| Right Arrow | Keyboard Shortcut Variations | To select Channels 1 to 8 variation |
 | Jog-wheel | Select Previous/Next Preset | when "Preset" is selected |
 
 ## Mapping with the Europa Shapeshifting Synthesizer
@@ -571,8 +579,8 @@ The first line of the Arturia Keyboard LCD should display "Antidote" and "(Osc1)
 | Fader 3 | Sub 1 Volume |  |
 | Fader 4 | Sub 2 Volume |  |
 | Fader 5 | Drift |  |
-| Part1 / Next | Keyboard Shortcut Variations | To select Osc 2 variation |
-| Part2 / Prev | Keyboard Shortcut Variations | To select Osc 1 variation |
+| Left Arrow | Keyboard Shortcut Variations | To select Osc 2 variation |
+| Right Arrow | Keyboard Shortcut Variations | To select Osc 1 variation |
 | Jog-wheel | Select Previous/Next Preset | when "Preset" is selected |
 
 ## Mapping with the A-List Electric Guitarist - Pop Chords
@@ -654,3 +662,276 @@ The first line of the Arturia Keyboard LCD should display "Friktion". The second
 | Fader 7 | Vibrato Amount |  |
 | Fader 8 | Vibrato Delay |  |
 | Jog-wheel | Select Previous/Next Preset | when "Preset" is selected |
+
+## Mapping with the MIDI out device
+
+![MIDI out device](./images/midiout.png)
+
+The first line of the Arturia Keyboard LCD should display "External MIDI" and the second one the track/device name.
+
+| Arturia Keyboard surface | Reason Command | Comment |
+| -------------------------- | -------------- | ----------------------- |
+| Master fader | MIDI CC7 (Volume) |  |
+| Encoder 1 | CV Scale 1 |
+| pan-2	| CV Scale 2 |
+| pan-3 | CV Scale 3|
+| pan-4 | CV Scale 4|
+| pan-5 | CV Scale 5|
+| pan-6 | CV Scale 6|
+| pan-7 | CV Scale 7|
+| pan-8 | CV Scale 8|
+| Jog-wheel | MIDI program change | when "Preset" is selected |
+
+## Mapping with Umpf Club drums
+
+![Umpf](./images/umpf.png)
+
+The first line of the Arturia Keyboard LCD should display "Umpf Club" and the second one the patch name.
+
+| Arturia Keyboard surface | Reason Command | Comment |
+| -------------------------- | -------------- | ----------------------- |
+| Master fader | Main Volume |  |
+|encoder 1|	Chop Output Level|
+|encoder 2|	Delay Output Level|
+|encoder 3|	Reverb Output Level|
+|encoder 4|	Clean Output Level|
+|encoder 5|	Compressor Output Level|
+|encoder 6|	Compressor Ratio|
+|encoder 7|	Compressor Threshold|
+|encoder 8|	Beat Chop Gate Length|
+|fader 1|	Drum 1 Volume|
+|fader 2|	Drum 2 Volume|
+|fader 3|	Drum 3 Volume|
+|fader 4|	Drum 4 Volume|
+|fader 5|	Drum 5 Volume|
+|fader 6|	Drum 6 Volume|
+|fader 7|	Drum 7 Volume|
+|fader 8|	Drum 8 Volume|
+| Jog-wheel | MIDI program change | when "Preset" is selected |
+
+## Mapping with Umpf Retro Beats
+
+![Umpf Retro](./images/umpfretro.png)
+
+The first line of the Arturia Keyboard LCD should display "Umpf Retro" and the second one the patch name.
+
+| Arturia Keyboard surface | Reason Command | Comment |
+| -------------------------- | -------------- | ----------------------- |
+| Master fader | Main Volume |  |
+|encoder 1|	Echo Output Level|
+|encoder 2|	Gated Reverb Output Level|
+|encoder 3|	Reverb Output Level|
+|encoder 4|	Tape Master Mix|
+|encoder 5|	Tape Master Drive|
+|encoder 6|	Tape Master Compress|
+|encoder 7|	Gated Reverb Hold|
+|encoder 8|	Gated Reverb Decay|
+|fader 1|	Drum 1 Volume|
+|fader 2|	Drum 3 Volume|
+|fader 4|	Drum 4 Volume|
+|fader 5|	Drum 5 Volume|
+|fader 6|	Drum 6 Volume|
+|fader 7|	Drum 7 Volume|
+|fader 8|	Drum 8 Volume|
+| Jog-wheel | Select Previous/Next Preset | when "Preset" is selected |
+
+## Mapping with Scenic Hybrid Instrument
+
+![Scenic](./images/scenic.png)
+
+The first line of the Arturia Keyboard LCD should display "Scenic Hybrid" and the second one the patch name.
+Basic mapping only, variations to come later....
+
+| Arturia Keyboard surface | Reason Command | Comment |
+| -------------------------- | -------------- | ----------------------- |
+| Master fader | Main Volume |  |
+|encoder 1|	Macro 1 | Blue dial |
+|encoder 2|	Macro 2 | Green dial |
+|encoder 3|	Macro 3 | Red dial |
+|encoder 4|	Engine Balance | A - B Slider |
+| Jog-wheel | Select Previous/Next Preset | when "Preset" is selected |
+
+## Mapping with Reason Electric Bass
+
+![Reason electric bass](./images/electricbass.png)
+
+The first line of the Arturia Keyboard LCD should display "Electric Bass" and the second one the patch name.
+
+| Arturia Keyboard surface | Reason Command | Comment |
+| -------------------------- | -------------- | ----------------------- |
+| Master fader | Main Volume |  |
+|Encoder 1|	Source Mix|
+|Encoder 2|	Randomness|
+|Encoder 3|	Pickup Mix| used on Fender Jazz bass and Rickenbacker models |
+|Encoder 4|	Amp & Mic| select from 8 different amp/mic combos |
+|Encoder 5|	Bass| select from 8 bass models |
+| Jog-wheel | Select Previous/Next Preset | when "Preset" is selected |
+
+## Mapping with Reason Drum Kits
+
+![Reason Drum Kits](./images/rdk.png)
+
+The first line of the Arturia Keyboard LCD should display "Reason Drum Kits" and the second one the patch name.
+
+| Arturia Keyboard surface | Reason Command | Comment |
+| -------------------------- | -------------- | ----------------------- |
+| Master fader | Main Volume ||
+|encoder 1|kick rev send|
+|encoder 2|Snare rev send|
+|encoder 3|tom rev send|
+|encoder 4|hihat rev send|
+|encoder 5|master compressor drive|
+|encoder 6|master compressor threshold|
+|encoder 7|master compressor ratio|
+|encoder 8|master compressor makeup|
+|fader 1|	kick mix volume|
+|fader 2|snare mix volume|
+|fader 3|tom mix volume|
+|fader 4|hihat mix volume|
+|fader 5|overhead mix volume|
+|fader 6|room mix volume|
+|fader 7|master compressor dry/wet|
+|fader 8|reverb return|
+| Jog wheel | Select Previous/Next Preset | when "Preset" is selected |
+
+## Mapping with Radical Keys
+
+![Radical Keys](./images/radicalkeys.png)
+
+The first line of the Arturia Keyboard LCD should display "Radical Keys" and the second one the patch name.
+
+| Arturia Keyboard surface | Reason Command | Comment |
+| -------------------------- | -------------- | ----------------------- |
+| Master fader | Main Volume ||
+|encoder 1|Character|
+|encoder 2|Left piano select|
+|encoder 3|Instrument Blend|
+|encoder 4|Right piano select|
+|encoder 5|Tune Drift|
+|encoder 6|Sympathetic resonance level|
+|encoder 7|Sympathetic resonance release|
+|fader 1|Envelope Attack|
+|fader 2|Envelope Decay Curve|
+|fader 3|Envelope Release|
+| Jog wheel | Select Previous/Next Preset | when "Preset" is selected |
+
+## Mapping with Processed Pianos
+
+![Processed Pianos](./images/processedpianos.png)
+
+The first line of the Arturia Keyboard LCD should display "Proc. Piano" plus "Mix", "MicA", "MicB", "MicC" depending on the chosen variation.
+The second line of the LCD should show the patch name.
+
+| Arturia Keyboard surface | Reason Command | Comment |
+| -------------------------- | -------------- | ----------------------- |
+| Master fader | Main Volume ||
+| Jog wheel | Select Previous/Next Preset | when "Preset" is selected |
+| Left Arrow | Keyboard Shortcut Variations | To select Mix, MicA, MicB, MicC variations |
+| Right Arrow | Keyboard Shortcut Variations | To select Mix, MicA, MicB, MicC variation |
+|encoder 1|Treble
+|encoder 2|Bass
+|encoder 3|Insert Echo Level
+|encoder 4|Insert Reverb Level
+|encoder 5|Clean Level
+|encoder 6|InsertFX Level
+|fader 1|Mic A Dry Level|Mix variation
+|fader 2|Mic A FX Level|Mix variation
+|fader 3|Mic B Dry Level|Mix variation
+|fader 4|Mic B FXLevel|Mix variation
+|fader 5|Mic C DryLevel|Mix variation
+|fader 6|Mic C FXLevel|Mix variation
+|fader 7|Echo Level|Mix variation
+|fader 8|Reverb Level|Mix variation
+|
+|fader 1|Mic A Attack|MicA variation
+|fader 2|Mic A LowCut|MicA variation
+|fader 3|Mic A HiCut|MicA variation
+|fader 4|Mic A Pan	|MicA variation
+|fader 5|Mic A Hammer Noise|MicA variation
+|fader 6|Mic A Release Resonance|MicA variation
+|fader 7|Mic A Echo Amount|MicA variation
+|fader 8|Mic A Reverb Amount|MicA variation
+|
+|fader 1|Mic B Attack|MicB variation
+|fader 2|Mic B LowCut|MicB variation
+|fader 3|Mic B HiCut|MicB variation
+|fader 4|Mic B Pan|MicB variation
+|fader 5|Mic B Hammer Noise|MicB variation
+|fader 6|Mic B Release Resonance|MicB variation
+|fader 7|Mic B Echo Amount|MicB variation
+|fader 8|Mic B Reverb Amount|MicB variation
+|
+|fader 1|Mic C Attack|MicC variation
+|fader 2|Mic C LowCut|MicC variation
+|fader 3|Mic C HiCut|MicC variation
+|fader 4|Mic C Pan	|MicC variation
+|fader 5|Mic C Hammer Noise|MicC variation
+|fader 6|Mic C Release Resonance|MicC variation
+|fader 7|Mic C Echo Amount|MicC variation
+|fader 8|Mic C Reverb Amount|MicC variation
+| Jog wheel | Select Previous/Next Preset | when "Preset" is selected |
+| Left Arrow | Keyboard Shortcut Variations | To select Mix, MicA, MicB, MicC variations |
+| Right Arrow | Keyboard Shortcut Variations | To select Mix, MicA, MicB, MicC variation |
+
+## Mapping with Algoritm
+
+![Algoritm](./images/algoritm.png)
+
+The first line of the Arturia Keyboard LCD should display "Algoritm" and the second line the patch name.
+
+*WIP. Patch display and selection only.
+
+| Arturia Keyboard surface | Reason Command | Comment |
+| -------------------------- | -------------- | ----------------------- |
+| Master fader | Main Volume ||
+| Jog wheel | Select Previous/Next Preset | when "Preset" is selected |
+
+## Mapping with Complex-1
+
+![Complex-1](./images/complex-1.png)
+
+The first line of the Arturia Keyboard LCD should display "complex-1" and the second line the patch name.
+
+*WIP incomplete map. Basic controls only.
+
+| Arturia Keyboard surface | Reason Command | Comment |
+| -------------------------- | -------------- | ----------------------- |
+| Master fader | Main Volume ||
+| Jog wheel | Select Previous/Next Preset | when "Preset" is selected |
+|encoder-1|Filter Frequency|
+|encoder-2|Filter Reso|
+|encoder-3|LFO Wave|
+|encoder-4|LFO Rate|
+|fader 1|Attack|
+|fader 2|Decay|
+|fader 3|Sustain|
+|fader 4|Release|
+
+## Mapping with Mimic Creative Sampler
+
+![Mimic](./images/mimic.png)
+
+*WIP. need to add variations for the 8 sample slots.
+
+The first line of the Arturia Keyboard LCD should display "Mimic" and the second line the patch name.
+
+| Arturia Keyboard surface | Reason Command | Comment |
+| -------------------------- | -------------- | ----------------------- |
+| Master fader | Main Volume ||
+| Jog wheel | Select Previous/Next Preset | when "Preset" is selected |
+|encoder 1|	Filter Frequency|
+|encoder 2|	Filter Resonance|
+|encoder 3|	LFO Synced Rate|
+|encoder 4|	LFO Rate 1|
+|encoder 5|	Stretch Speed 1|
+|encoder 6|	Filter Drive 1|
+|encoder 7|	Effect Type 1|
+|encoder 8|	Effect Mod 1|
+|fader 1|	Amp Attack 1|
+|fader 2|	Amp Decay 1|
+|fader 3|	Amp Sustain 1|
+|fader 4|	Amp Release 1|
+|fader 5|	Filter Attack 1|
+|fader 6|	Filter Decay 1|
+|fader 7|	Filter Sustain 1|
+|fader 8|	Filter Release 1|

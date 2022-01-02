@@ -1,7 +1,10 @@
 ---
-description: Mapping between Reason Studio and Arturia Keylab Essential DAW command center and DAW map
+description: Mapping between Reason Studio and Arturia Keylab MKII DAW mode controls and DAW map
 ---
 # Mapping between the Arturia DAW Command Center and Reason
+
+
+:warning: the `Arturia KeyLab MKII Control` surface need to be locked to the Reason Master Section to work properly
 
 <img src="./images/DAWCommandCenter.png" width="300">
 
@@ -13,16 +16,23 @@ description: Mapping between Reason Studio and Arturia Keylab Essential DAW comm
 | Loop | Loop On/off | Toggles the Loop function on and off. The loop region is set within Reason. |
 | Rewind | Rewind | Quickly moves the playback cursor backward. |
 | Fast forward | Fast Forward | Quickly moves the playback cursor forward. |
-| Save | Redo |  Redo your last undo action. If there is no action to redo, the button's led is off |
-| Undo | Undo  | Reverses your last action. If there is no action, the button's led is off |
-| Punch | Precount On/Off | Toggles Reason’s metronome precount on and off. |
+| Save | Target track enable Monitor |  Enable monitoring in currently active track. If track monitor is off, the button's led is off |
+| In | Auto Quantize |  Enable Auto quantize. If Auto quantize is off, the button's led is off |
+| Out | Precount On/Off | Toggles Reason’s metronome precount on and off. |
 | Metro | Click On/Off | Toggles Reason’s metronome on and off. |
+| Undo | Undo  | Reverses your last action. If there is no action, the button's led is off |
+| Solo | Solo select mode | When solo button is pressed, the Track select button below the faders can be used to solo multiple tracks |
+| Mute | Mute select mode | When Mute button is pressed, the Track select button below the faders can be used to Mute multiple tracks |
+| Record | Record select mode | Record select mode not used at the moment |
+| Read | Reset Automation Overrides | Reset Automation Overrides |
+| Write | Target Track Automation write enable | enables/disables automation write mode in targeted track. If Auto write is off, the button's led is off|
+
+
+
 
 ## Mapping with Reason when using the Arturia keyboard DAW map
 
-:warning: To activate DAW map on Arturia keyboard, press `Map Select` then press `pad#2`. The pad #2 lights up in green.
-
-:bulb: When the `Map Select` button is pressed on the Arturia keyboard, the active pad will light up to show the Map currently in use.
+Activate DAW map on Arturia MKII keyboard, press `DAW` button.
 
 The first line of the Arturia Keyboad LCD should display "Master (base ch)" and the second the name of the remote base channel selected.
 
@@ -30,13 +40,15 @@ The first line of the Arturia Keyboad LCD should display "Master (base ch)" and 
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
-| Jog wheel | Loop locators | jog wheel is used to change the position of left&right loop locators (press the jog wheel to change the active loop locator) |
-| Left Arrow | Tempo | Left & Right arrows buttons arround the jog wheel are use to change the tempo |
-| Right Arrow | Tempo | Left & Right arrows buttons arround the jog wheel are use to change the tempo |
+| Jog wheel | Loop locators/Song position | jog wheel is used to change the position of left&right loop locators (press the jog wheel to change the active loop locators and song position) |
+| Left Arrow | Prev 8 Remote Base Channel | To select the prev 8 remote channels that will be controlled at a given time |
+| Right Arrow | Next 8 Remote Base Channel | To select the prev 8 remote channels that will be controlled at a given time |
 | Master fader| Master Section level | Change the Master Section level |
 | Encoder <1-8> | Channel <1-8> Pan | The group of 8 channels controlled are function of the base channel selected |
 | Fader <1-8> | Channel <1-8> Level | The group of 8 channels controlled are function of the base channel selected |
-| Part 1 | Next 8 Remote Base Channel | To select the next 8 remote channels that will be controlled at a given time |
-| Part 2 | Previous 8 Remote Base Channel | To select the previous 8 remote channels that will be controlled at a given time |
+| Fader 9 | Master bus level | Controls the volume of the master bus |
+| Encoder 9 (chorus) | CTRL out level | Controls the volume of the CRTL room output. (Handy if CTRL out is patched to sample IN). |
+| Part 1 | Prev Sequencer track | To select the previous sequencer track |
+| Part 2 | Next Sequencer track | To select the next sequencer track |
 
-:warning: the `Arturia KeyLab 61 Essential Control` surface need to be locked to the Reason Master Section to work properly
+:warning: the `Arturia KeyLab MKII Control` surface need to be locked to the Reason Master Section to work properly
