@@ -40,7 +40,7 @@ The first line of the Arturia Keyboad LCD should display "Master (base ch)" and 
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
-| Jog wheel | Loop locators/Song position | jog wheel is used to change the position of left&right loop locators (press the jog wheel to change the active loop locators and song position) |
+| Jog wheel | Loop locators/Song position | jog wheel rotation is used to change the position of locators. Press the jog wheel to switch between individual loop locators, both loop locators at once, or song position pointer (playhead cursor). |
 | Left Arrow | Prev 8 Remote Base Channel | To select the prev 8 remote channels that will be controlled at a given time |
 | Right Arrow | Next 8 Remote Base Channel | To select the prev 8 remote channels that will be controlled at a given time |
 | Master fader| Master Section level | Change the Master Section level |
