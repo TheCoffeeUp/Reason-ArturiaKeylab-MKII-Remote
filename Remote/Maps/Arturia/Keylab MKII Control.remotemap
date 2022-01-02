@@ -43,12 +43,13 @@ Define Group	Target	Channels	FX Lv-Pan
 
 map	left_arrow		Previous Remote Base Channel
 map	right_arrow		Next Remote Base Channel
-Map	part1		Next 8 Remote Base Channel
-Map	part2		Previous 8 Remote Base Channel
+//Map	part1		Next 8 Remote Base Channel
+//Map	part2		Previous 8 Remote Base Channel
 
 Map	master-fader		Master Level
 Map	chorus-encoder		Ctrl Room Level
-Map	multi		All Mutes Off
+//Map	multi		All Mutes Off
+//not available in DAW mode
 
 Map	fader-1		Channel 1 Level			Channels
 Map	fader-2		Channel 2 Level			Channels

@@ -2,7 +2,7 @@
 	Surface:	DAW Command Center of Arturia Keylab MKII
 	Developer:	Thierry Fraudet / modified for MKII by Wade Carson
 	Version:	1.3
-	Date:		2021/12/30
+	Date:		2021/12/28
 
 ]]
 
@@ -56,14 +56,14 @@ function remote_init(manufacturer, model)
 		{name="part2", input="button", output="value"},
 		{name="next", input="button", output="value"},
 		{name="prev", input="button", output="value"},
-		{name="fader-1", input="value", min=0, max=127},
-		{name="fader-2", input="value", min=0, max=127},
-		{name="fader-3", input="value", min=0, max=127},
-		{name="fader-4", input="value", min=0, max=127},
-		{name="fader-5", input="value", min=0, max=127},
-		{name="fader-6", input="value", min=0, max=127},
-		{name="fader-7", input="value", min=0, max=127},
-		{name="fader-8", input="value", min=0, max=127},
+		{name="fader-1", input="value", output="value", min=0, max=127},
+		{name="fader-2", input="value", output="value", min=0, max=127},
+		{name="fader-3", input="value", output="value", min=0, max=127},
+		{name="fader-4", input="value", output="value", min=0, max=127},
+		{name="fader-5", input="value", output="value", min=0, max=127},
+		{name="fader-6", input="value", output="value", min=0, max=127},
+		{name="fader-7", input="value", output="value", min=0, max=127},
+		{name="fader-8", input="value", output="value", min=0, max=127},
 		{name="encoder-1", input="delta"},
 		{name="encoder-2", input="delta"},
 		{name="encoder-3", input="delta"},
@@ -202,6 +202,27 @@ function remote_init(manufacturer, model)
 		{name="write", pattern="9? 4b xx"},
 		{name="left_arrow", pattern="9? 62 xx"},
 		{name="right_arrow", pattern="9? 63 xx"},
+		{name="master-fader", pattern="E8 ?? xx"},
+		{name="multi", pattern="9? 6a xx"},
+		{name="fader-1", pattern="E0 ?? xx"},
+		{name="fader-2", pattern="E1 ?? xx"},
+		{name="fader-3", pattern="E2 ?? xx"},
+		{name="fader-4", pattern="E3 ?? xx"},
+		{name="fader-5", pattern="E4 ?? xx"},
+		{name="fader-6", pattern="E5 ?? xx"},
+		{name="fader-7", pattern="E6 ?? xx"},
+		{name="fader-8", pattern="E7 ?? xx"},
+		--[[
+		{name="encoder-1", pattern="b? 10 <?x??>?"},
+		{name="encoder-2", pattern="b? 11 <?x??>?"},
+		{name="encoder-3", pattern="b? 12 <?x??>?"},
+		{name="encoder-4", pattern="b? 13 <?x??>?"},
+		{name="encoder-5", pattern="b? 14 <?x??>?"},
+		{name="encoder-6", pattern="b? 15 <?x??>?"},
+		{name="encoder-7", pattern="b? 16 <?x??>?"},
+		{name="encoder-8", pattern="b? 17 <?x??>?"},
+		{name="chorus-encoder", pattern="b? 18 <?x??>?"},
+		]]
 		{name="master-fader", pattern="E8 ?? xx"},
 		{name="multi", pattern="9? 6a xx"},
 		{name="track1_record_arm", pattern="9? 00 xx"},

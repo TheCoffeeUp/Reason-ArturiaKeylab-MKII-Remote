@@ -18,8 +18,8 @@ Map	Damper Pedal		Damper Pedal
 
 Scope	Propellerheads	Reason Document
 Map	cat-jog-wheel		Select Patch for Target Device (Delta)
-Map	cat-prev		Select Prev Patch for Target Device
-Map	cat-next		Select Next Patch for Target Device
+//Map	cat-prev		Select Prev Patch for Target Device
+//Map	cat-next		Select Next Patch for Target Device
 Map	left-arrow		Select Previous Keyboard Shortcut Variation
 Map	right-arrow		Select Next Keyboard Shortcut Variation
 Map	part1-next		Target Previous Track
@@ -64,8 +64,8 @@ Map	Fader-7		Rotary 31			var2
 Map	Fader-8		Rotary 32			var2
 
 Map	preset-jog-wheel		Select Patch Delta
-Map	preset-prev		Select Previous Patch
-Map	preset-next		Select Next Patch
+//Map	preset-prev		Select Previous Patch
+//Map	preset-next		Select Next Patch
 Map	lcd-1		"Combinator var1"			var1
 Map	lcd-1		"Combinator var2"			var2
 Map	lcd-2		Patch Name
@@ -1593,18 +1593,15 @@ Map	pan-6		FXB Dry/Wet
 Map	pan-7		Delay Volume
 Map	pan-8		Reverb Volume
 Map	master-pan		Master
-
-Map	fader-1		P1 Volume
-Map	fader-2		P1 Send Delay
-Map	fader-3		P1 Send Reverb
-Map	fader-4		P2 Volume
-Map	fader-5		P2 Send Delay
-Map	fader-6		P2 Send Reverb
-Map	fader-7		Master Bass
-Map	fader-8		Master Mid
-Map	Master-Volume		Master Treble
-
-
+Map	fader-1		P1 Operator 1 Level
+Map	fader-2		P1 Operator 2 Level
+Map	fader-3		P1 Operator 3 Level
+Map	fader-4		P1 Operator 4 Level
+Map	fader-5		P1 Operator 5 Level
+Map	fader-6		P1 Operator 6 Level
+Map	fader-7		P1 Algorithm
+Map	fader-8		P1 Pitch Env Amt
+Map	Master-Volume		P1 Param19
 Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"Analog Lab V"
 Map	lcd-2		Device Name
@@ -1622,28 +1619,57 @@ Map	pan-7		CV Scale 7
 Map	pan-8		CV Scale 8
 Map	Master-Volume		CC 7
 Map	preset-jog-wheel		Program Change
-map	preset-prev		previous midi program
-map	preset-next		next midi program
 //	CC7 = volume CC10=pan cc65=porta on,off cc71=resonance cc74=filter cutoff
 Map	lcd-1		"External MIDI"
 Map	lcd-2		Device Name
 
 Scope	Propellerhead Software	se.propellerheads.UmpfRetroBeats
-
 Map	Master-Volume		Master_Volume
 Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"Umpf Retro"
 Map	lcd-2		Patch Name
+Map	pan-1		Echo Output Level
+Map	pan-2		Gated Reverb Output Level
+Map	pan-3		Reverb Output Level
+Map	pan-4		Tape Master Mix
+Map	pan-5		Tape Master Drive
+Map	pan-6		Tape Master Compress
+Map	pan-7		Gated Reverb Hold
+Map	pan-8		Gated Reverb Decay
+Map	fader-1		Drum 1 Volume
+Map	fader-2		Drum 2 Volume
+Map	fader-3		Drum 3 Volume
+Map	fader-4		Drum 4 Volume
+Map	fader-5		Drum 5 Volume
+Map	fader-6		Drum 6 Volume
+Map	fader-7		Drum 7 Volume
+Map	fader-8		Drum 8 Volume
+
 
 Scope	Propellerhead Software	se.propellerheads.Umpf
-
 Map	Master-Volume		Master_Volume
 Map	preset-jog-wheel		Select Patch Delta
-Map	lcd-1		"Umpf Retro"
+Map	lcd-1		"Umpf Club"
 Map	lcd-2		Patch Name
+Map	pan-1		Chop_Output_Level
+Map	pan-2		Delay_Output_Level
+Map	pan-3		Reverb_Output_Level
+Map	pan-4		Clean_Output_Level
+Map	pan-5		Compressor_Output_Level
+Map	pan-6		Compressor_Ratio
+Map	pan-7		Compressor_Threshold
+Map	pan-8		Beat_Chop_Gate_Length
+Map	fader-1		Drum_1_Volume
+Map	fader-2		Drum_2_Volume
+Map	fader-3		Drum_3_Volume
+Map	fader-4		Drum_4_Volume
+Map	fader-5		Drum_5_Volume
+Map	fader-6		Drum_6_Volume
+Map	fader-7		Drum_7_Volume
+Map	fader-8		Drum_8_Volume
+
 
 Scope	Propellerhead Software	se.propellerheads.ScenicHybrid
-
 map	pan-1		macro1
 map	pan-2		macro2
 map	pan-3		macro3
@@ -1654,7 +1680,6 @@ Map	lcd-1		"Scenic Hybrid"
 Map	lcd-2		Patch Name
 
 Scope	Propellerhead Software	se.propellerheads.ElectricBass
-
 map	pan-1		Source Mix
 map	pan-2		Randomness
 map	pan-3		Pickup Mix
@@ -1744,14 +1769,14 @@ Map	fader-6		Mic_B_ReleaseResonance			MicB
 Map	fader-7		Mic_B_EchoAmount			MicB
 Map	fader-8		Mic_B_ReverbAmount			MicB
 
-//Map	fader-1		Mic_C_Attack			MicC
-//Map	fader-2		Mic_C_LowCut			MicC
-//Map	fader-3		Mic_C_HiCut			MicC
-//Map	fader-4		Mic_C_Pan			MicC
-//Map	fader-5		Mic_C_HammerNoise			MicC
-//Map	fader-6		Mic_C_ReleaseResonance			MicC
-//Map	fader-7		Mic_C_EchoAmount			MicC
-//Map	fader-8		Mic_C_ReverbAmount			MicC
+Map	fader-1		Mic_C_Attack			MicC
+Map	fader-2		Mic_C_LowCut			MicC
+Map	fader-3		Mic_C_HiCut			MicC
+Map	fader-4		Mic_C_Pan			MicC
+Map	fader-5		Mic_C_HammerNoise			MicC
+Map	fader-6		Mic_C_ReleaseResonance			MicC
+Map	fader-7		Mic_C_EchoAmount			MicC
+Map	fader-8		Mic_C_ReverbAmount			MicC
 
 Map	master-volume		Volume
 Map	preset-jog-wheel		Select Patch Delta
@@ -1774,7 +1799,7 @@ Scope	Propellerhead Software	se.propellerheads.Mimic
 
 Map	pan-1		Filter Freq 1
 Map	pan-2		Filter Reso 1
-Map	pan-3		LFO Synced Rate
+Map	pan-3		LFO Synced Rate 1
 Map	pan-4		LFO Rate 1
 Map	pan-5		Stretch Speed 1
 Map	pan-6		Filter Drive 1
