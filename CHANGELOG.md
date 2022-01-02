@@ -25,6 +25,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 * (WC) mapped cat-jog-wheel to Document scope. scroll patches in targeted device (good for unmapped devices)
 
 * ----- MKII DAW mode:
+* (WC) added MIDI output scope for DAW mode faders (Pickup mode).
 * (WC) added track solo and mute select mode for MKII DAW mode (Keylab DAW mode should be set to Multitrack mode)
 * (WC) remapped DAW mode global controls. (monitor, auto quant, precount, click, reset automation override, write automation enable
 + (WC) re-ordered DAW mode MIDI indexing to match physical layout of hardware
