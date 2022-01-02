@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 * ----- MKII performance mode:
+* (WC) documentation update to include more devices.
 * (WC) updated Combinator scope to Combinator2:
 	-included all 32 Rotaries in 2 variation groups
 * (WC) Added basic map scope for more Reason devices:
