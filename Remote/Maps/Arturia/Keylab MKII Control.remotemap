@@ -106,4 +106,4 @@ map	track8_mute		Channel 8 mute			Channels
 //Map	encoder-8		FX8 Pan			FX Lv-Pan
 
 Map	lcd-1		"Master (base ch)"
-Map	lcd-2		""
+Map	lcd-2		"Remote Base Channel"
