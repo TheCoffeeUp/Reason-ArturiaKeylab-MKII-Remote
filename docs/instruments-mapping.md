@@ -2,7 +2,7 @@
 description: Mapping between Reason Studio instruments and Arturia Keylab MKII
 ---
 # Instruments mapping
-###_Keyboard in "Analog Lab" mode._
+### _Keyboard in "Analog Lab" mode._
 
 * [ID8 instrument device](#mapping-with-the-id8-instrument-device)
 * [SubTractor instrument device](#mapping-with-the-subtractor-instrument-device)
