@@ -50,7 +50,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 
 ---------------------------------------------------------------------------
-####entries below reflect previous releases of the original Keylab Essential project
+#### entries below reflect previous releases of the original Keylab Essential project
 
 * Minor fixes: mainly correction of spelling mistakes
 * Add mapping for A-List Accoustic Guitarist - Fingerpicking Nylon from Propellerhead Software
