@@ -1,13 +1,16 @@
 ---
-description: Mapping between Reason Studio players and Arturia Keylab Essential
+description: Mapping between Reason Studio players and Arturia Keylab MKII
 ---
 # Players mapping
+
+###_Keyboard in "Analog Lab" mode._
 
 * [Scales & Chords](#mapping-with-scales--chords)
 * [Note Echo](#mapping-with-note-echo)
 * [Dual Arpeggio](#mapping-with-dual-arpeggio)
 * [Drum Sequencer](#mapping-with-drum-sequencer)
 * [Beat Map](#mapping-with-beat-map)
+* [Bassline Generator](#mapping-with-bassline-generator)
 
 ## Mapping with Scales & Chords
 

@@ -1,7 +1,9 @@
 ---
-description: Mapping between Reason Studio utilities and Arturia Keylab Essential
+description: Mapping between Reason Studio utilities and Arturia Keylab MKII
 ---
 # Utilities mapping
+
+###_Keyboard in "Analog Lab" mode._
 
 * [Combinator](#mapping-with-the-combinator)
 * [Mixer 14:2](#mapping-with-the-mixer-142)
@@ -20,10 +22,10 @@ The 1 line of the Arturia Keyboard LCD should display "Combinator" and the secon
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
-| Encoder 1 | Rotary 1 |  |
-| Encoder 2 | Rotary 2 |  |
-| Encoder 3 | Rotary 3 |  |
-| Encoder 4 | Rotary 4 |  |
+|Encoder <1-8>|Rotary <1-8>|When variation 1 active|
+|Encoder <1-8>|Rotary <17-24>|When variation 2 active|
+|Fader <1-8>|Rotary <9-16>|When variation 1 active|
+|Fader <1-8>|Rotary <25-32>|When variation 2 active|
 | Jog Wheel | Patch Selection | when "Preset" is selected |
 
 ## Mapping with the Mixer 14:2

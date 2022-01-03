@@ -1,7 +1,8 @@
 ---
-description: Mapping between Reason Studio instruments and Arturia Keylab Essential
+description: Mapping between Reason Studio instruments and Arturia Keylab MKII
 ---
 # Instruments mapping
+###_Keyboard in "Analog Lab" mode._
 
 * [ID8 instrument device](#mapping-with-the-id8-instrument-device)
 * [SubTractor instrument device](#mapping-with-the-subtractor-instrument-device)
@@ -30,6 +31,16 @@ description: Mapping between Reason Studio instruments and Arturia Keylab Essent
 * [A-List Acoustic Guitarist - Fingerpicking Nylon](#mapping-with-the-a-list-acoustic-guitarist---fingerpicking-nylon)
 * [A-List Electric Guitarist - Power Chords](#mapping-with-the-a-list-electric-guitarist---power-chords)
 * [Friktion Modeled Strings](#mapping-with-the-friktion-modeled-strings)
+* [External MIDI device](#Mapping-with-the-MIDI-out-device)
+* [Umpf Club Drums](#Mapping-with-Umpf-Club-drums)
+* [Umpf Retro Beats](#Mapping-with-Umpf-Retro-beats)
+* [Scenic Hybrid Instrument](#Mapping-with-the-scenic-hybrid-instrument)
+* [Reason Electric Bass](#mapping-with-Reason-Electric-Bass)
+* [Radical Keys](#Mapping-with-Radical-Keys)
+* [Algoritm](#Mapping-with-Algoritm)
+* [Processed Pianos](#Mapping-with-Processed-Pianos)
+* [Complex-1](#Mapping-with-Complex-1)
+* [Mimic Creative Sampler](#Mapping-with-Mimic-Creative-Sampler)
 
 ## Mapping with the Reason Document
 

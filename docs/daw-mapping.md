@@ -4,7 +4,9 @@ description: Mapping between Reason Studio and Arturia Keylab MKII DAW mode cont
 # Mapping between the Arturia DAW Command Center and Reason
 
 
-:warning: the `Arturia KeyLab MKII Control` surface need to be locked to the Reason Master Section to work properly
+:warning: the `Arturia KeyLab MKII Control` surface must be locked to the Reason Master Section to work properly.
+
+_Some relabelling of magnetic overlays (as shown in images) is highly recommended._
 
 <img src="./images/DAWCommandCenter.png" width="300">
 
