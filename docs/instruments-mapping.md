@@ -1,5 +1,5 @@
 ---
-description: Mapping between Reason Studio instruments and Arturia Keylab Essential
+description: Mapping between Reason Studio instruments and Arturia Keylab MKII
 ---
 # Instruments mapping
 
