@@ -3,7 +3,7 @@ description: Mapping between Reason Studio utilities and Arturia Keylab MKII
 ---
 # Utilities mapping
 
-###_Keyboard in "Analog Lab" mode._
+### _Keyboard in "Analog Lab" mode._
 
 * [Combinator](#mapping-with-the-combinator)
 * [Mixer 14:2](#mapping-with-the-mixer-142)
