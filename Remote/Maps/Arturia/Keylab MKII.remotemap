@@ -2,7 +2,7 @@ Propellerhead Remote Mapping File
 File Format Version	1.0.0
 Control Surface Manufacturer	Arturia
 Control Surface Model	Keylab MKII
-Map Version	1.2.0
+Map Version	1.3.0
 
 //This is a remote map template for the Arturia KEYLAB MKII Keyboard and Reason 12
 
@@ -27,9 +27,7 @@ Map	part2-prev		Target Next Track
 
 Scope	Propellerheads	Combinator
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
-
 Define Group	Keyboard Shortcut Variations	var1	var2
-
 Map	pan-1		Rotary 1			var1
 Map	pan-2		Rotary 2			var1
 Map	pan-3		Rotary 3			var1
@@ -62,7 +60,6 @@ Map	Fader-5		Rotary 29			var2
 Map	Fader-6		Rotary 30			var2
 Map	Fader-7		Rotary 31			var2
 Map	Fader-8		Rotary 32			var2
-
 Map	preset-jog-wheel		Select Patch Delta
 //Map	preset-prev		Select Previous Patch
 //Map	preset-next		Select Next Patch
@@ -73,14 +70,11 @@ Map	lcd-2		Patch Name
 Scope	Propellerheads	Mixer 14:2
 Define Group	Keyboard Shortcut Variations	Ch1-8	Ch9-14
 //Define Group	Channels	Ch1-8	Ch9-14
-
 //	Control Surface Item	Key	Remotable Item	Scale	Mode	Group
 //Map	part1-next		Channels=Ch1-8
 //Map	part2-prev		Channels=Ch9-14
-
 Map	master-volume		Master Level
 Map	master-pan		Aux 1 Return Level
-
 Map	fader-1		Channel 1 Level			Ch1-8
 Map	fader-2		Channel 2 Level			Ch1-8
 Map	fader-3		Channel 3 Level			Ch1-8
@@ -95,7 +89,6 @@ Map	fader-3		Channel 11 Level			Ch9-14
 Map	fader-4		Channel 12 Level			Ch9-14
 Map	fader-5		Channel 13 Level			Ch9-14
 Map	fader-6		Channel 14 Level			Ch9-14
-
 Map	pan-1		Channel 1 Pan			Ch1-8
 Map	pan-2		Channel 2 Pan			Ch1-8
 Map	pan-3		Channel 3 Pan			Ch1-8
@@ -110,7 +103,6 @@ Map	pan-3		Channel 11 Pan			Ch9-14
 Map	pan-4		Channel 12 Pan			Ch9-14
 Map	pan-5		Channel 13 Pan			Ch9-14
 Map	pan-6		Channel 14 Pan			Ch9-14
-
 Map	lcd-1		"Mixer 14:2"
 Map	lcd-2		"Ch1-8"			Ch1-8
 Map	lcd-2		"Ch9-14"			Ch9-14
@@ -118,35 +110,29 @@ Map	lcd-2		"Ch9-14"			Ch9-14
 Scope	Propellerheads	Line Mixer 6:2
 Define Group	Keyboard Shortcut Variations	Level-Pan	Aux
 //Define Group	Target	Level-Pan	Aux
-
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 //Map	live-bank		Target=Aux			Level-Pan
 //Map	live-bank		Target=Level-Pan			Aux
-
 Map	master-volume		Master Level
 Map	master-pan		Aux Return Level
-
 Map	fader-1		Channel 1 Level			Level-Pan
 Map	fader-2		Channel 2 Level			Level-Pan
 Map	fader-3		Channel 3 Level			Level-Pan
 Map	fader-4		Channel 4 Level			Level-Pan
 Map	fader-5		Channel 5 Level			Level-Pan
 Map	fader-6		Channel 6 Level			Level-Pan
-
 Map	pan-1		Channel 1 Pan			Level-Pan
 Map	pan-2		Channel 2 Pan			Level-Pan
 Map	pan-3		Channel 3 Pan			Level-Pan
 Map	pan-4		Channel 4 Pan			Level-Pan
 Map	pan-5		Channel 5 Pan			Level-Pan
 Map	pan-6		Channel 6 Pan			Level-Pan
-
 Map	pan-1		Channel 1 Aux Send			Aux
 Map	pan-2		Channel 2 Aux Send			Aux
 Map	pan-3		Channel 3 Aux Send			Aux
 Map	pan-4		Channel 4 Aux Send			Aux
 Map	pan-5		Channel 5 Aux Send			Aux
 Map	pan-6		Channel 6 Aux Send			Aux
-
 Map	lcd-1		"Line Mixer 6:2"
 Map	lcd-2		"Level&Pan"			Level-Pan
 Map	lcd-2		"Aux"			Aux
@@ -154,25 +140,18 @@ Map	lcd-2		"Aux"			Aux
 Scope	Propellerheads	ID8 Instrument Device
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 Map	master-volume		Volume
-
 Map	fader-1		Parameter 1
 Map	fader-2		Parameter 2
-
 Map	cat-prev		Select Previous Category
 Map	cat-next		Select Next Category
 Map	preset-prev		Select Previous Sound
 Map	preset-next		Select Next Sound
-//Map	left-arrow		Select Previous Preset
-//Map	right-arrow		Select Next Preset
-//L&R arrows remapped to Document scope (Keyboard variation selection)
-
 Map	lcd-1		"ID8"
 Map	lcd-2		Sound Name
 
 Scope	Propellerheads	SubTractor Analog Synthesizer
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 Map	master-volume		Master Level
-
 Map	fader-1		Filter Env Attack
 Map	fader-2		Filter Env Decay
 Map	fader-3		Filter Env Sustain
@@ -181,19 +160,14 @@ Map	fader-5		Amp Env Attack
 Map	fader-6		Amp Env Decay
 Map	fader-7		Amp Env Sustain
 Map	fader-8		Amp Env Release
-
 Map	pan-1		Osc1 Phase Diff
 Map	pan-2		Osc2 Phase Diff
 Map	pan-3		Osc1 Wave
 Map	pan-4		Osc2 Wave
-//Map	pan-3		LFO1 Rate
-//Map	pan-4		LFO1 Amount
-
 Map	pan-5		Filter Freq
 Map	pan-6		Filter Res
 Map	pan-7		Filter2 Freq
 Map	pan-8		Filter2 Res
-
 Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"SubTractor"
 Map	lcd-2		Patch Name
@@ -201,7 +175,6 @@ Map	lcd-2		Patch Name
 Scope	Propellerheads	Thor Polysonic Synthesizer
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 Map	master-volume		Master Level
-
 Map	pan-1		Filter 1 Freq
 Map	pan-2		Filter 1 Res
 Map	pan-3		Filter 2 Freq
@@ -210,7 +183,6 @@ Map	pan-5		Filter 3 Freq
 Map	pan-6		Filter 3 Res
 Map	pan-7		Rotary 1
 Map	pan-8		Rotary 2
-
 Map	fader-1		Filter Env Attack
 Map	fader-2		Filter Env Decay
 Map	fader-3		Filter Env Sustain
@@ -219,17 +191,14 @@ Map	fader-5		Amp Env Attack
 Map	fader-6		Amp Env Decay
 Map	fader-7		Amp Env Sustain
 Map	fader-8		Amp Env Release
-
 Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"Thor"
 Map	lcd-2		Patch Name
 
 Scope	Propellerheads	Malstrom Graintable Synthesizer
 Define Group	Keyboard Shortcut Variations	OscA	OscB
-
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 Map	master-volume		Master Level
-
 Map	pan-1		Filter A Freq
 Map	pan-2		Filter A Resonance
 Map	pan-3		Filter B Freq
@@ -238,7 +207,6 @@ Map	pan-5		Modulator A Rate
 Map	pan-6		Modulator B Rate
 Map	pan-7		Oscillator A Motion
 Map	pan-8		Oscillator B Motion
-
 Map	fader-1		Filter Env Attack
 Map	fader-2		Filter Env Decay
 Map	fader-3		Filter Env Sustain
@@ -247,12 +215,10 @@ Map	fader-5		Oscillator A Attack			OscA
 Map	fader-6		Oscillator A Decay			OscA
 Map	fader-7		Oscillator A Sustain			OscA
 Map	fader-8		Oscillator A Release			OscA
-
 Map	fader-5		Oscillator B Attack			OscB
 Map	fader-6		Oscillator B Decay			OscB
 Map	fader-7		Oscillator B Sustain			OscB
 Map	fader-8		Oscillator B Release			OscB
-
 Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"Malstrom (Osc-A)"			OscA
 Map	lcd-1		"Malstrom (Osc-B)"			OscB
@@ -261,7 +227,6 @@ Map	lcd-2		Patch Name
 Scope	Propellerheads	NN19 Digital Sampler
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 Map	master-volume		Master Level
-
 Map	pan-1		Filter Freq
 Map	pan-2		Filter Res
 Map	pan-3		LFO Rate
@@ -270,7 +235,6 @@ Map	pan-5		Filter Kbd Track
 Map	pan-6		Filter Env Amount
 Map	pan-7		Osc Octave
 Map	pan-8		Osc Semitone
-
 Map	fader-1		Filter Env Attack
 Map	fader-2		Filter Env Decay
 Map	fader-3		Filter Env Sustain
@@ -279,10 +243,6 @@ Map	fader-5		Amp Env Attack
 Map	fader-6		Amp Env Decay
 Map	fader-7		Amp Env Sustain
 Map	fader-8		Amp Env Release
-
-//Map	chorus		Stereo Spread
-//Map	delay		Portamento
-
 Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"NN19"
 Map	lcd-2		Patch Name
@@ -291,14 +251,12 @@ Scope	Propellerheads	NN-XT Advanced Sampler
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 Map	master-volume		Master Volume
 Map	master-pan		External Controller
-
 Map	pan-1		Filter Freq
 Map	pan-2		Filter Res
 Map	pan-3		Amp Env Attack
 Map	pan-4		Amp Env Decay
 Map	pan-5		Amp Env Release
 Map	pan-6		Mod env Decay
-
 Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"NN-XT"
 Map	lcd-2		Patch Name
@@ -307,7 +265,6 @@ Scope	Propellerheads	Dr.REX Loop Player
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 Map	master-volume		Master Level
 Map	master-pan		Transpose
-
 Map	pan-1		Filter Freq
 Map	pan-2		Filter Res
 Map	pan-3		Filter Env Amount
@@ -316,7 +273,6 @@ Map	pan-5		LFO1 Amount
 Map	pan-6		Filter Mode
 Map	pan-7		LFO1 Wave
 Map	pan-8		LFO1 Dest
-
 Map	fader-1		Filter Env Attack
 Map	fader-2		Filter Env Decay
 Map	fader-3		Filter Env Sustain
@@ -325,7 +281,6 @@ Map	fader-5		Amp Env Attack
 Map	fader-6		Amp Env Decay
 Map	fader-7		Amp Env Sustain
 Map	fader-8		Amp Env Release
-
 Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"Dr. Octo REX"
 Map	lcd-2		Patch Name
@@ -333,13 +288,10 @@ Map	lcd-2		Patch Name
 Scope	Propellerheads	Redrum Drum Computer
 Define Group	Keyboard Shortcut Variations	Channel 1 to 8	Channel 9 to 10
 //Define Group	Channels	Channel 1 to 8	Channel 9 to 10
-
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 //Map	part1-next		Channels=Channel 9 to 10
 //Map	part2-prev		Channels=Channel 1 to 8
-
 Map	master-volume		Master Level
-
 Map	fader-1		Drum 1 Level			Channel 1 to 8
 Map	fader-2		Drum 2 Level			Channel 1 to 8
 Map	fader-3		Drum 3 Level			Channel 1 to 8
@@ -350,7 +302,6 @@ Map	fader-7		Drum 7 Level			Channel 1 to 8
 Map	fader-8		Drum 8 Level			Channel 1 to 8
 Map	fader-1		Drum 9 Level			Channel 9 to 10
 Map	fader-2		Drum 10 Level			Channel 9 to 10
-
 Map	pan-1		Drum 1 Pan			Channel 1 to 8
 Map	pan-2		Drum 2 Pan			Channel 1 to 8
 Map	pan-3		Drum 3 Pan			Channel 1 to 8
@@ -361,7 +312,6 @@ Map	pan-7		Drum 7 Pan			Channel 1 to 8
 Map	pan-8		Drum 8 Pan			Channel 1 to 8
 Map	pan-1		Drum 9 Pan			Channel 9 to 10
 Map	pan-2		Drum 10 Pan			Channel 9 to 10
-
 Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"Redrum - Ch1-8"			Channel 1 to 8
 Map	lcd-1		"Redrum - Ch9-10"			Channel 9 to 10
@@ -370,13 +320,10 @@ Map	lcd-2		Patch Name
 Scope	Propellerheads	Kong Drum Designer
 Define Group	Keyboard Shortcut Variations	Channel 1 to 8	Channel 9 to 16
 //Define Group	Channels	Channel 1 to 8	Channel 9 to 16
-
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 //Map	part1-next		Channels=Channel 9 to 16
 //Map	part2-prev		Channels=Channel 1 to 8
-
 Map	master-volume		Master Level
-
 Map	fader-1		Drum 1 Level			Channel 1 to 8
 Map	fader-2		Drum 2 Level			Channel 1 to 8
 Map	fader-3		Drum 3 Level			Channel 1 to 8
@@ -385,7 +332,6 @@ Map	fader-5		Drum 5 Level			Channel 1 to 8
 Map	fader-6		Drum 6 Level			Channel 1 to 8
 Map	fader-7		Drum 7 Level			Channel 1 to 8
 Map	fader-8		Drum 8 Level			Channel 1 to 8
-
 Map	fader-1		Drum 9 Level			Channel 9 to 16
 Map	fader-2		Drum 10 Level			Channel 9 to 16
 Map	fader-3		Drum 11 Level			Channel 9 to 16
@@ -394,7 +340,6 @@ Map	fader-5		Drum 13 Level			Channel 9 to 16
 Map	fader-6		Drum 14 Level			Channel 9 to 16
 Map	fader-7		Drum 15 Level			Channel 9 to 16
 Map	fader-8		Drum 16 Level			Channel 9 to 16
-
 Map	pan-1		Drum 1 Pan			Channel 1 to 8
 Map	pan-2		Drum 2 Pan			Channel 1 to 8
 Map	pan-3		Drum 3 Pan			Channel 1 to 8
@@ -403,7 +348,6 @@ Map	pan-5		Drum 5 Pan			Channel 1 to 8
 Map	pan-6		Drum 6 Pan			Channel 1 to 8
 Map	pan-7		Drum 7 Pan			Channel 1 to 8
 Map	pan-8		Drum 8 Pan			Channel 1 to 8
-
 Map	pan-1		Drum 9 Pan			Channel 9 to 16
 Map	pan-2		Drum 10 Pan			Channel 9 to 16
 Map	pan-3		Drum 11 Pan			Channel 9 to 16
@@ -412,7 +356,6 @@ Map	pan-5		Drum 13 Pan			Channel 9 to 16
 Map	pan-6		Drum 14 Pan			Channel 9 to 16
 Map	pan-7		Drum 15 Pan			Channel 9 to 16
 Map	pan-8		Drum 16 Pan			Channel 9 to 16
-
 Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"Kong - Ch1-8"			Channel 1 to 8
 Map	lcd-1		"Kong - Ch9-16"			Channel 9 to 16
@@ -421,31 +364,25 @@ Map	lcd-2		Patch Name
 Scope	Propellerhead Software	se.propellerheads.Europa
 Define Group	Keyboard Shortcut Variations	Osc1	Osc2	Osc3
 //Define Group	Channels	Osc1	Osc2	Osc3
-
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 //Map	part1-next		Channels=Osc2			Osc1
 //Map	part1-next		Channels=Osc3			Osc2
 //Map	part2-prev		Channels=Osc1			Osc2
 //Map	part2-prev		Channels=Osc2			Osc3
-
 Map	master-volume		Master Volume
-
 Map	pan-1		Filter Drive
 Map	pan-2		Filter Reso
 Map	pan-3		Filter Freq
-
 Map	pan-7		Osc1 Filter Freq			Osc1
 Map	pan-8		Osc1 Filter Reso			Osc1
 Map	pan-7		Osc2 Filter Freq			Osc2
 Map	pan-8		Osc2 Filter Reso			Osc2
 Map	pan-7		Osc3 Filter Freq			Osc3
 Map	pan-8		Osc3 Filter Reso			Osc3
-
 Map	fader-1		Amp Attack
 Map	fader-2		Amp Decay
 Map	fader-3		Amp Sustain
 Map	fader-4		Amp Release
-
 Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"Europa - Osc1"			Osc1
 Map	lcd-1		"Europa - Osc2"			Osc2
@@ -453,28 +390,60 @@ Map	lcd-1		"Europa - Osc3"			Osc3
 Map	lcd-2		Patch Name
 
 Scope	Propellerhead Software	se.propellerheads.Grain
-//	Control Surface Item	Key	Remotable Item	Scale	Mode
-Map	master-volume		Master Volume
-Map	master-pan		Voices
-
+Define Group	Keyboard Shortcut Variations	Performance	Filt+LFO	spectral	grain-osc	long-grain	Tape
+//	Control Surface Item	Key	Remotable Item	Scale	Mode	Group
+Map	pan-1		Position			Performance
+Map	pan-2		End Pos			Performance
+Map	pan-3		Scroll			Performance
+Map	pan-4		Zoom			Performance
+Map	pan-5		Motion			Performance
+Map	pan-6		Speed			Performance
+Map	pan-7		Jitter			Performance
+Map	pan-1		LFO 1 Rate			Filt+LFO
+Map	pan-2		LFO 2 Rate			Filt+LFO
+Map	pan-3		LFO 3 Rate			Filt+LFO
+Map	pan-4		Filter Reso			Filt+LFO
+Map	pan-5		Filter Env2			Filt+LFO
+Map	pan-6		Filter Vel			Filt+LFO
+Map	pan-7		Filter Kbd			Filt+LFO
+Map	pan-1		Harm Snap			spectral
+Map	pan-2		Harm Filter			spectral
+Map	pan-3		Curve Amt			spectral
+Map	pan-4		FFT Size			spectral
+Map	pan-5		Formant			spectral
+Map	pan-6		Formant Tune			spectral
+Map	pan-7		Formant Kbd			spectral
+Map	pan-1		Pan Spread			grain-osc
+Map	pan-2		Pitch Jitter			grain-osc
+Map	pan-3		Grain Length			grain-osc
+Map	pan-4		Rate-Spacing			grain-osc
+Map	pan-5		Formant			grain-osc
+Map	pan-6		Formant Tune			grain-osc
+Map	pan-7		Formant Kbd			grain-osc
+Map	pan-1		Pan Spread			long-grain
+Map	pan-2		Pitch Jitter			long-grain
+Map	pan-3		Grain Length			long-grain
+Map	pan-4		Rate-Spacing			long-grain
+Map	pan-5		XFade			long-grain
+Map	Pan-5		Xfade			Tape
+Map	pan-8		Filter Freq
 Map	fader-1		Amp Attack
 Map	fader-2		Amp Decay
 Map	fader-3		Amp Sustain
 Map	fader-4		Amp Release
 Map	fader-5		Amp Gain
 Map	fader-6		Amp Velocity
-Map	fader-7		Pan
-
-Map	pan-1		Sample Level
-Map	pan-2		Osc Level
-Map	pan-3		Filter Freq
-Map	pan-4		Filter Reso
-Map	pan-5		Filter Env2
-Map	pan-6		Filter Vel
-Map	pan-7		Filter Kbd
-
+Map	fader-7		Sample Level
+Map	fader-8		Osc Level
+Map	master-volume		Master Volume
+Map	master-pan		Algorithm
 Map	preset-jog-wheel		Select Patch Delta
-Map	lcd-1		"Grain"
+Map	lcd-1		"Grain (Filt+LFO)"			Filt+LFO
+Map	lcd-1		"Grain (Perform)"			Performance
+Map	lcd-1		"Grain (Spectral)"			spectral
+Map	lcd-1		"Grain (GrainOsc)"			grain-osc
+Map	lcd-1		"Grain (LngGrain)"			long-grain
+Map	lcd-1		"Grain (Tape)"			tape
 Map	lcd-2		Patch Name
 
 Scope	Propellerhead Software	se.propellerheads.Monotone
@@ -1750,7 +1719,6 @@ Map	fader-5		Mic_C_DryLevel			Mix
 Map	fader-6		Mic_C_FXLevel			Mix
 Map	fader-7		Echo_Level			Mix
 Map	fader-8		Reverb_Level			Mix
-
 Map	fader-1		Mic_A_Attack			MicA
 Map	fader-2		Mic_A_LowCut			MicA
 Map	fader-3		Mic_A_HiCut			MicA
@@ -1759,7 +1727,6 @@ Map	fader-5		Mic_A_HammerNoise			MicA
 Map	fader-6		Mic_A_ReleaseResonance			MicA
 Map	fader-7		Mic_A_EchoAmount			MicA
 Map	fader-8		Mic_A_ReverbAmount			MicA
-
 Map	fader-1		Mic_B_Attack			MicB
 Map	fader-2		Mic_B_LowCut			MicB
 Map	fader-3		Mic_B_HiCut			MicB
@@ -1768,7 +1735,6 @@ Map	fader-5		Mic_B_HammerNoise			MicB
 Map	fader-6		Mic_B_ReleaseResonance			MicB
 Map	fader-7		Mic_B_EchoAmount			MicB
 Map	fader-8		Mic_B_ReverbAmount			MicB
-
 Map	fader-1		Mic_C_Attack			MicC
 Map	fader-2		Mic_C_LowCut			MicC
 Map	fader-3		Mic_C_HiCut			MicC
@@ -1777,7 +1743,6 @@ Map	fader-5		Mic_C_HammerNoise			MicC
 Map	fader-6		Mic_C_ReleaseResonance			MicC
 Map	fader-7		Mic_C_EchoAmount			MicC
 Map	fader-8		Mic_C_ReverbAmount			MicC
-
 Map	master-volume		Volume
 Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"Proc. Piano -Mix"			Mix
@@ -1788,7 +1753,6 @@ Map	lcd-2		Patch Name
 
 Scope	Propellerhead Software	se.propellerheads.Algoritm
 //	Control Surface Item	Key	Remotable Item	Scale	Mode	Group
-
 Map	master-volume		Master Volume
 Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"Algoritm"
@@ -1796,7 +1760,6 @@ Map	lcd-2		Patch Name
 
 Scope	Propellerhead Software	se.propellerheads.Mimic
 //	Control Surface Item	Key	Remotable Item	Scale	Mode	Group
-
 Map	pan-1		Filter Freq 1
 Map	pan-2		Filter Reso 1
 Map	pan-3		LFO Synced Rate 1
@@ -1821,7 +1784,6 @@ Map	lcd-2		Patch Name
 
 Scope	Propellerhead Software	se.propellerheads.Complex
 //	Control Surface Item	Key	Remotable Item	Scale	Mode	Group
-
 Map	pan-1		Filter Freq
 Map	pan-2		Filter Reso
 Map	pan-3		LFO Wave
@@ -1830,7 +1792,6 @@ Map	fader-1		Attack
 Map	fader-2		Decay
 Map	fader-3		Sustain
 Map	fader-4		Release
-
 Map	master-volume		Master Level
 Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"Complex-1"
@@ -1838,7 +1799,6 @@ Map	lcd-2		Patch Name
 
 Scope	Propellerhead Software	se.propellerheads.layers
 //	Control Surface Item	Key	Remotable Item	Scale	Mode	Group
-
 Map	master-volume		Main_Volume
 Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"Layers"
@@ -1846,7 +1806,6 @@ Map	lcd-2		Patch Name
 
 Scope	Propellerhead Software	se.propellerheads.layers_wave_edition
 //	Control Surface Item	Key	Remotable Item	Scale	Mode	Group
-
 Map	master-volume		Main_Volume
 Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"Layers Wave Ed."
@@ -1854,7 +1813,6 @@ Map	lcd-2		Patch Name
 
 Scope	Propellerheads	Reason Main Mixer Channel
 //	Control Surface Item	Key	Remotable Item	Scale	Mode	Group
-
 Map	master-volume		Level
 Map	lcd-1		Channel Name
 Map	lcd-2		"Audio Track"
@@ -1863,12 +1821,10 @@ Map	master-pan		Pan
 
 Scope	Noise Engineering	us.noiseengineering.RS_BI
 //	Control Surface Item	Key	Remotable Item	Scale	Mode	Group
-
 Map	master-volume		Volume
 Map	lcd-1		"Basimilus"
 Map	lcd-2		patch name
 Map	preset-jog-wheel		Select Patch Delta
-
 Map	pan-1		Morph
 Map	pan-2		fold
 Map	pan-3		harmonics
@@ -1879,12 +1835,10 @@ Map	pan-7		Mode
 
 Scope	Noise Engineering	us.noiseengineering.BI
 //	Control Surface Item	Key	Remotable Item
-
 Map	master-volume		Volume
 Map	lcd-1		"Basimilus Iteritas"
 Map	lcd-2		patch name
 Map	preset-jog-wheel		Select Patch Delta
-
 Map	pan-1		harmonics
 Map	pan-2		Mode
 Map	pan-3		spread
@@ -1895,12 +1849,10 @@ Map	pan-7		fold
 
 Scope	Noise Engineering	us.noiseengineering.LIP
 //	Control Surface Item	Key	Remotable Item
-
 Map	master-volume		Volume
 Map	lcd-1		"Loquelic Iteritas Percido"
 Map	lcd-2		patch name
 Map	preset-jog-wheel		Select Patch Delta
-
 Map	pan-1		time
 Map	pan-2		shape
 Map	pan-3		curve
@@ -1920,12 +1872,10 @@ Map	fader-8		damp
 
 Scope	Noise Engineering	us.noiseengineering.MI
 //	Control Surface Item	Key	Remotable Item
-
 Map	master-volume		Volume
 Map	lcd-1		"Manis Iteritas"
 Map	lcd-2		patch name
 Map	preset-jog-wheel		Select Patch Delta
-
 Map	pan-1		Saw-Mod
 Map	pan-2		mode
 Map	pan-3		at-dc
@@ -1936,13 +1886,11 @@ Map	pan-8		polyphony
 
 Scope	Noise Engineering	us.noiseengineering.RS_SIV
 //	Control Surface Item	Key	Remotable Item
-
 Map	master-volume		Volume
 Map	lcd-1		"Sinc Vereor"
 Map	lcd-2		patch name
 Map	preset-jog-wheel		Select Patch Delta
 //sinc vereor will not accept patch change remote messages
-
 Map	pan-1		tone
 Map	pan-2		legato time
 Map	pan-3		legato curve
@@ -1962,13 +1910,11 @@ Map	fader-8		mode
 
 Scope	Noise Engineering	us.noiseengineering.RS_VIV
 //	Control Surface Item	Key	Remotable Item
-
 Map	master-volume		Volume
 Map	lcd-1		"Virt Vereor"
 Map	lcd-2		patch name
 Map	preset-jog-wheel		Select Patch Delta
 //Virt Vereor will not accept patch change remote messages
-
 Map	pan-1		flavor
 Map	pan-2		tang
 Map	pan-3		noise
@@ -1988,12 +1934,10 @@ Map	fader-8		mode
 
 Scope	Skrock Music	se.skrockmusic.Nautilus2
 //	Control Surface Item	Key	Remotable Item
-
 Map	master-volume		Volume
 Map	lcd-1		"Nautilus 2"
 Map	lcd-2		patch name
 Map	preset-jog-wheel		Select Patch Delta
-
 Map	pan-1		Filter Cutoff
 Map	pan-2		Filter Reso
 Map	pan-3		Filter ADCSR Attack
@@ -2005,15 +1949,12 @@ Map	fader-2		Amp ADCSR Decay
 Map	fader-3		Amp ADCSR Sustain
 Map	fader-4		Amp ADCSR Release
 
-
 Scope	Skrock Music	se.skrockmusic.Iridium
 //	Control Surface Item	Key	Remotable Item
-
 Map	master-volume		Global Volume
 Map	lcd-1		"Iridium Synth"
 Map	lcd-2		patch name
 Map	preset-jog-wheel		Select Patch Delta
-
 Map	pan-1		Filter Cutoff
 Map	pan-2		Filter Resonance
 Map	pan-3		Filter Attack
@@ -2033,12 +1974,10 @@ Map	fader-8		Gen 2 Amp Env Release
 
 Scope	Skrock Music	se.skrockmusic.Orbis
 //	Control Surface Item	Key	Remotable Item
-
 Map	master-volume		Master Volume
 Map	lcd-1		"Orbis Synth"
 Map	lcd-2		patch name
 Map	preset-jog-wheel		Select Patch Delta
-
 Map	pan-1		Filter Cutoff
 Map	pan-2		Filter Resonance
 Map	pan-3		Filter Attack
@@ -2058,12 +1997,10 @@ Map	fader-8		osc four start
 
 Scope	Skrock Music	se.skrockmusic.Radiator
 //	Control Surface Item	Key	Remotable Item
-
 Map	master-volume		Master Volume
 Map	lcd-1		"Thermal Synth"
 Map	lcd-2		patch name
 Map	preset-jog-wheel		Select Patch Delta
-
 Map	pan-1		Cutoff
 Map	pan-2		Resonance
 Map	pan-3		Filter Attack
@@ -2083,12 +2020,10 @@ Map	fader-8		Wave D Amp
 
 Scope	Turn2on Software	ru.turn2on.Meteora
 //	Control Surface Item	Key	Remotable Item
-
 Map	master-volume		Volume
 Map	lcd-1		"Meteora Rompler"
 Map	lcd-2		patch name
 Map	preset-jog-wheel		Select Patch Delta
-
 Map	pan-1		Filter Cutoff
 Map	pan-2		Filter Resonance
 Map	pan-3		Filter Attack
@@ -2103,14 +2038,122 @@ Map	fader-4		Amp Release
 
 Scope	Synthetech Sound	au.com.synthetechsound.Spectra
 //	Control Surface Item	Key	Remotable Item
-
 Map	master-volume		Amp Level
 Map	lcd-1		"Spectra Synth"
 Map	lcd-2		patch name
 Map	preset-jog-wheel		Select Patch Delta
-
 Map	pan-1		FIL1 Frequency
 Map	pan-2		FIL1 Morph Amount
 Map	pan-3		FIL2 Frequency
 Map	pan-4		FIL2 Morph Amount
 Map	pan-5		Noise Level
+
+Scope	Propellerhead Software	se.propellerheads.Bassline
+Define Group	Keyboard Shortcut Variations	p1	p2	p3	p4	p5	p6	p7	p8
+//	Control Surface Item	Key	Remotable Item	Scale	Mode	Group
+Map	preset-jog-wheel		Pattern Select
+Map	pan-1		Pattern 1 OnBeat Source			p1
+Map	pan-2		Pattern 1 OffBeat Source			p1
+Map	pan-3		Pattern 1 OnBeat Velocity			p1
+Map	pan-4		Pattern 1 OffBeat Velocity			p1
+Map	pan-5		Pattern 1 OnBeat Note Length			p1
+Map	pan-6		Pattern 1 OffBeat Note Length			p1
+Map	fader-1		Pattern 1 OnBeat Variator Shape			p1
+Map	fader-2		Pattern 1 OffBeat Variator Shape			p1
+Map	fader-3		Pattern 1 OnBeat Variator Amount			p1
+Map	fader-4		Pattern 1 OffBeat Variator Amount			p1
+Map	fader-5		Pattern 1 Note Range			p1
+Map	fader-6		Pattern 1 Minorness			p1
+Map	pan-1		Pattern 1 OnBeat Source			p2
+Map	pan-2		Pattern 1 OffBeat Source			p2
+Map	pan-3		Pattern 1 OnBeat Velocity			p2
+Map	pan-4		Pattern 1 OffBeat Velocity			p2
+Map	pan-5		Pattern 1 OnBeat Note Length			p2
+Map	pan-6		Pattern 1 OffBeat Note Length			p2
+Map	fader-1		Pattern 1 OnBeat Variator Shape			p2
+Map	fader-2		Pattern 1 OffBeat Variator Shape			p2
+Map	fader-3		Pattern 1 OnBeat Variator Amount			p2
+Map	fader-4		Pattern 1 OffBeat Variator Amount			p2
+Map	fader-5		Pattern 1 Note Range			p2
+Map	fader-6		Pattern 1 Minorness			p2
+Map	pan-1		Pattern 1 OnBeat Source			p3
+Map	pan-2		Pattern 1 OffBeat Source			p3
+Map	pan-3		Pattern 1 OnBeat Velocity			p3
+Map	pan-4		Pattern 1 OffBeat Velocity			p3
+Map	pan-5		Pattern 1 OnBeat Note Length			p3
+Map	pan-6		Pattern 1 OffBeat Note Length			p3
+Map	fader-1		Pattern 1 OnBeat Variator Shape			p3
+Map	fader-2		Pattern 1 OffBeat Variator Shape			p3
+Map	fader-3		Pattern 1 OnBeat Variator Amount			p3
+Map	fader-4		Pattern 1 OffBeat Variator Amount			p3
+Map	fader-5		Pattern 1 Note Range			p3
+Map	fader-6		Pattern 1 Minorness			p3
+Map	pan-1		Pattern 1 OnBeat Source			p4
+Map	pan-2		Pattern 1 OffBeat Source			p4
+Map	pan-3		Pattern 1 OnBeat Velocity			p4
+Map	pan-4		Pattern 1 OffBeat Velocity			p4
+Map	pan-5		Pattern 1 OnBeat Note Length			p4
+Map	pan-6		Pattern 1 OffBeat Note Length			p4
+Map	fader-1		Pattern 1 OnBeat Variator Shape			p4
+Map	fader-2		Pattern 1 OffBeat Variator Shape			p4
+Map	fader-3		Pattern 1 OnBeat Variator Amount			p4
+Map	fader-4		Pattern 1 OffBeat Variator Amount			p4
+Map	fader-5		Pattern 1 Note Range			p4
+Map	fader-6		Pattern 1 Minorness			p4
+Map	pan-1		Pattern 1 OnBeat Source			p5
+Map	pan-2		Pattern 1 OffBeat Source			p5
+Map	pan-3		Pattern 1 OnBeat Velocity			p5
+Map	pan-4		Pattern 1 OffBeat Velocity			p5
+Map	pan-5		Pattern 1 OnBeat Note Length			p5
+Map	pan-6		Pattern 1 OffBeat Note Length			p5
+Map	fader-1		Pattern 1 OnBeat Variator Shape			p5
+Map	fader-2		Pattern 1 OffBeat Variator Shape			p5
+Map	fader-3		Pattern 1 OnBeat Variator Amount			p5
+Map	fader-4		Pattern 1 OffBeat Variator Amount			p5
+Map	fader-5		Pattern 1 Note Range			p5
+Map	fader-6		Pattern 1 Minorness			p5
+Map	pan-1		Pattern 1 OnBeat Source			p6
+Map	pan-2		Pattern 1 OffBeat Source			p6
+Map	pan-3		Pattern 1 OnBeat Velocity			p6
+Map	pan-4		Pattern 1 OffBeat Velocity			p6
+Map	pan-5		Pattern 1 OnBeat Note Length			p6
+Map	pan-6		Pattern 1 OffBeat Note Length			p6
+Map	fader-1		Pattern 1 OnBeat Variator Shape			p6
+Map	fader-2		Pattern 1 OffBeat Variator Shape			p6
+Map	fader-3		Pattern 1 OnBeat Variator Amount			p6
+Map	fader-4		Pattern 1 OffBeat Variator Amount			p6
+Map	fader-5		Pattern 1 Note Range			p6
+Map	fader-6		Pattern 1 Minorness			p6
+Map	pan-1		Pattern 1 OnBeat Source			p7
+Map	pan-2		Pattern 1 OffBeat Source			p7
+Map	pan-3		Pattern 1 OnBeat Velocity			p7
+Map	pan-4		Pattern 1 OffBeat Velocity			p7
+Map	pan-5		Pattern 1 OnBeat Note Length			p7
+Map	pan-6		Pattern 1 OffBeat Note Length			p7
+Map	fader-1		Pattern 1 OnBeat Variator Shape			p7
+Map	fader-2		Pattern 1 OffBeat Variator Shape			p7
+Map	fader-3		Pattern 1 OnBeat Variator Amount			p7
+Map	fader-4		Pattern 1 OffBeat Variator Amount			p7
+Map	fader-5		Pattern 1 Note Range			p7
+Map	fader-6		Pattern 1 Minorness			p7
+Map	pan-1		Pattern 1 OnBeat Source			p8
+Map	pan-2		Pattern 1 OffBeat Source			p8
+Map	pan-3		Pattern 1 OnBeat Velocity			p8
+Map	pan-4		Pattern 1 OffBeat Velocity			p8
+Map	pan-5		Pattern 1 OnBeat Note Length			p8
+Map	pan-6		Pattern 1 OffBeat Note Length			p8
+Map	fader-1		Pattern 1 OnBeat Variator Shape			p8
+Map	fader-2		Pattern 1 OffBeat Variator Shape			p8
+Map	fader-3		Pattern 1 OnBeat Variator Amount			p8
+Map	fader-4		Pattern 1 OffBeat Variator Amount			p8
+Map	fader-5		Pattern 1 Note Range			p8
+Map	fader-6		Pattern 1 Minorness			p8
+Map	lcd-1		"BasslineGeneratr"
+Map	lcd-2		"Pattern 1 var."			p1
+Map	lcd-2		"Pattern 2 var."			p2
+Map	lcd-2		"Pattern 3 var."			p3
+Map	lcd-2		"Pattern 4 var."			p4
+Map	lcd-2		"Pattern 5 var."			p5
+Map	lcd-2		"Pattern 6 var."			p6
+Map	lcd-2		"Pattern 7 var."			p7
+Map	lcd-2		"Pattern 8 var."			p8

@@ -91,3 +91,28 @@ The first line of the Arturia Keyboard LCD should display "BeatMap" and the seco
 | Encoder 7 | Hat Mirror Velocity |  |
 | Encoder 8 | Perc Mirror Velocity |  |
 | Jog Wheel | Select Previous/Next Preset | when "Preset" is selected |
+
+## Mapping with Bassline Generator
+
+![Bassline Generator](./images/basslinegenerator.png)
+
+The first line of the Arturia Keyboard LCD should display "BasslineGeneratr" and the second line, "Pattern # var." the Bassline pattern that the controls will operate. It is possible to modify knobs on an inactive pattern, then switch to it afterwards with the jog dial.
+
+Use left and right arrows to change control variations.
+
+| Arturia Keyboard surface | Reason Command | Comment |
+| -------------------------- | -------------- | ----------------------- |
+|pan-1|OnBeat Source|The green line in the center matrix. Typically, lower numbers will be less dense patterns|
+|pan-2|OffBeat Source|The blue line in the center matrix. Typically, lower numbers will be less dense patterns
+|pan-3|OffBeat Velocity|
+|pan-5|OnBeat Note Length|
+|pan-6|OffBeat Note Length|
+|fader-1|OnBeat Variator Shape|
+|fader-2|OffBeat Variator Shape|
+|fader-3|OnBeat Variator Amount|
+|fader-4|OffBeat Variator Amount|
+|fader-5|Note Range|
+|fader-6|Minorness|
+| Jog Wheel | Select Previous/Next Pattern | when "Preset" button is active. note: does NOT change the active variation which the controls are set to operate.|
+| Left Arrow | Select previous Keyboard Variation | To change which Bassline pattern the controls are set to operate |
+| Right Arrow | Select next Keyboard Variation | To change which Bassline pattern the controls are set to operate |

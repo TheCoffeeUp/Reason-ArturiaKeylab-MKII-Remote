@@ -4,9 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## [Unreleased]
+## [2.0.0]
+####Initial release for MKII keyboards
 
-* ----- MKII performance mode:
+##### MKII performance mode:
+* (WC) Full re-mapping and documentation update for GRAIN sample manipulator. New variation modes added for all granular oscillator types, Filter + LFO, as well as a very fun "performance" mode variation.
+* (WC) Added full map scope and documentation update for Bassline Generator player device.
 * (WC) documentation update to include more devices.
 * (WC) updated Combinator scope to Combinator2:
 	-included all 32 Rotaries in 2 variation groups
@@ -22,10 +25,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 * (WC) Added mapping for Synthetech Sound Spectra Additive Resynthesizer
 * (WC) mapped part1-next and part2-prev buttons to scroll through Reason document tracks.
 * (WC) added MIDI output scope for faders (Pickup mode) and buttons (LEDs)
-* (WC) remapped L&R arrows to scroll through Reason keyboard shortcut variations
+* (WC) remapped L&R arrows to scroll through Reason keyboard variation groups
 * (WC) mapped cat-jog-wheel to Document scope. scroll patches in targeted device (good for unmapped devices)
 
-* ----- MKII DAW mode:
+-----
+##### MKII DAW mode:
 * (WC) added MIDI output scope for DAW mode faders (Pickup mode).
 * (WC) added track solo and mute select mode for MKII DAW mode (Keylab DAW mode should be set to Multitrack mode)
 * (WC) remapped DAW mode global controls. (monitor, auto quant, precount, click, reset automation override, write automation enable
@@ -43,6 +47,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 * (WC) Remap left/right arrow buttons to change mixer remote base channel
 * (WC) Remap Next/Previous buttons to change Next/Prev active document track
 
+
+
+---------------------------------------------------------------------------
+####entries below reflect previous releases of the original Keylab Essential project
+
 * Minor fixes: mainly correction of spelling mistakes
 * Add mapping for A-List Accoustic Guitarist - Fingerpicking Nylon from Propellerhead Software
 * Add mapping for A-List Electric Guitarist - Pop Chords from Propellerhead Software
@@ -50,7 +59,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 * Add mapping for Friktion from Propellerhead Software
 * Reason faders value are now send to the controller when you move between instruments Reason devices.
 
-## [1.2] - 2020, April 19
+
+#### [1.2] - 2020, April 19
 
 ### Added
 

@@ -262,9 +262,9 @@ The first line of the Arturia Keyboard LCD should display "Europa" and "Osc<1-3>
 | Fader 2 | Amp Decay |  |
 | Fader 3 | Amp Sustain |  |
 | Fader 4 | AmpRelease |  |
-| Encoder 1 | Filter Drive |  |
-| Encoder 2 | Filter Reso |  |
-| Encoder 3 | Filter Freq |  |
+| Encoder 1 | Master Filter Drive |  |
+| Encoder 2 | Master Filter Reso |  |
+| Encoder 3 | Master Filter Freq |  |
 | Encoder 7 | Osc1 Filter Freq | When "Osc1" variation is active |
 | Encoder 8 | Osc1 Filter Reso | When "Osc1" variation is active |
 | Encoder 7 | Osc2 Filter Freq | When "Osc2" variation is active |
@@ -277,33 +277,79 @@ The first line of the Arturia Keyboard LCD should display "Europa" and "Osc<1-3>
 
 ![Grain Logo](./images/Grain.png)
 
-The first line of the Arturia Keyboard LCD should display "Grain". The second line display the preset name.
+The first line of the Arturia Keyboard LCD should display "Grain + active variation mode" (see table below).
+
+Use Left and Right arrows to move through the different variations.
+
+Use Encoder 8 to move through the different Grain Algorithms
+
+The second line displays the preset name.
+
+| LCD 1 display | Variation Mode| Comment |
+| -------------- | -------------|--------|
+|"Grain (Flt+LFO)"|Filter + LFO|
+|"Grain (Perf)"|Performance Mode| Very fun mode. Granular performance-oriented controls are mapped|
+|"Grain (Spectral)"|Spectral Grains|
+|"Grain (GrOsc)"|Grain Oscillator|
+|"Grain (LnGrn")|Long Grains|
+|"Grain (Tape)"|Tape|
+
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
-| Master fader | Master Volume |  |
-| Master pan | Voices |  |
-| Fader 1 | Amp Attack |  |
-| Fader 2 | Amp Decay |  |
-| Fader 3 | Amp Sustain |  |
-| Fader 4 | Amp Release |  |
-| Fader 5 | Amp Gain |  |
-| Fader 6 | Amp Velocity |  |
-| Fader 7 | Amp Pan |  |
-| Encoder 1 | Sample Level |  |
-| Encoder 2 | Osc Level |  |
-| Encoder 3 | Filter Freq |  |
-| Encoder 4 | Filter Reso|  |
-| Encoder 5 | Filter Env2 |  |
-| Encoder 6 | Filter Vel | |
-| Encoder 7 | Filter Kbd|  |
-| Jog-wheel | Select Previous/Next Preset | when "Preset" is selected |
+|Encoder 1 (Performance Mode)|Position|when Performance variation is active|
+|Encoder 2 (Performance Mode)|End Pos|when Performance variation is active|
+|Encoder 3 (Performance Mode)|Scroll|when Performance variation is active|
+|Encoder 4 (Performance Mode)|Zoom|when Performance variation is active|
+|Encoder 5 (Performance Mode)|Motion|when Performance variation is active|
+|Encoder 6 (Performance Mode)|Speed|when Performance variation is active|
+|Encoder 7 (Performance Mode)|Jitter|when Performance variation is active|
+|Encoder 1 (Filter + LFO mode)|LFO 1 Rate|when Filter +LFO variation is active|
+|Encoder 2 (Filter + LFO mode)|LFO 2 Rate|when Filter +LFO variation is active|
+|Encoder 3 (Filter + LFO mode)|LFO 3 Rate|when Filter +LFO variation is active|
+|Encoder 4 (Filter + LFO mode)|Filter Reso|when Filter +LFO variation is active|
+|Encoder 5 (Filter + LFO mode)|Filter Env2|when Filter +LFO variation is active|
+|Encoder 6 (Filter + LFO mode)|Filter Vel|when Filter +LFO variation is active|
+|Encoder 7 (Filter + LFO mode)|Filter Kbd|when Filter +LFO variation is active|
+|Encoder 1 (Spectral Grains mode)|Harm Snap|when Spectral Grains variation is active|
+|Encoder 2 (Spectral Grains mode)|Harm Filter|when Spectral Grains variation is active|
+|Encoder 3 (Spectral Grains mode)|Curve Amt|when Spectral Grains variation is active|
+|Encoder 4 (Spectral Grains mode)|FFT Size|when Spectral Grains variation is active|
+|Encoder 5 (Spectral Grains mode)|Formant|when Spectral Grains variation is active|
+|Encoder 6 (Spectral Grains mode)|Formant Tune|when Spectral Grains variation is active|
+|Encoder 7 (Spectral Grains mode)|Formant Kbd|when Spectral Grains variation is active|
+|Encoder 1 (Grain Oscillator mode)|Pan Spread|when Grain Oscillator variation is active|
+|Encoder 2 (Grain Oscillator mode)|Pitch Jitter|when Grain Oscillator variation is active|
+|Encoder 3 (Grain Oscillator mode)|Grain Length|when Grain Oscillator variation is active|
+|Encoder 4 (Grain Oscillator mode)|Rate-Spacing|when Grain Oscillator variation is active|
+|Encoder 5 (Grain Oscillator mode)|Formant|when Grain Oscillator variation is active|
+|Encoder 6 (Grain Oscillator mode)|Formant Tune|when Grain Oscillator variation is active|
+|Encoder 7 (Grain Oscillator mode)|Formant Kbd|when Grain Oscillator variation is active|
+|Encoder 1 (Long Grains mode)|Pan Spread|when Long Grains variation is active|
+|Encoder 2 (Long Grains mode)|Pitch Jitter|when Long Grains variation is active|
+|Encoder 3 (Long Grains mode)|Grain Length|when Long Grains variation is active|
+|Encoder 4 (Long Grains mode)|Rate-Spacing|when Long Grains variation is active|
+|Encoder 5 (Long Grains mode)|XFade|when Long Grains variation is active|
+|Encoder 5 (Tape mode)|Xfade|when Tape variation is active|
+|Encoder 8|Filter Freq|Global controls|
+|master pan|Algorithm|Global control|
+|Fader 1|Amp Attack|Global control|
+|Fader 2|Amp Decay|Global control|
+|Fader 3|Amp Sustain|Global control|
+|Fader 4|Amp Release|Global control|
+|Fader 5|Amp Gain|Global control|
+|Fader 6|Amp Velocity|Global control|
+|Fader 7|Sample Level|Global control|
+|Fader 8|Osc Level|Global control|
+|master volume|Master Volume||
+| Jog-wheel | Select Previous/Next Preset | when "Preset" button is selected |
+
 
 ## Mapping with the Monotone Bass Synthesizer
 
 ![Monotone Logo](./images/Monotone.png)
 
-The first line of the Arturia Keyboard LCD should display "Grain". The second line display the preset name.
+The first line of the Arturia Keyboard LCD should display "Monotone". The second line display the preset name.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
