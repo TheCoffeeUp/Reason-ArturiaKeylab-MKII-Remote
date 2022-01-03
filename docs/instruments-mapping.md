@@ -899,7 +899,6 @@ The second line of the LCD should show the patch name.
 |fader 6|Mic C FXLevel|Mix variation|
 |fader 7|Echo Level|Mix variation|
 |fader 8|Reverb Level|Mix variation|
-|
 |fader 1|Mic A Attack|MicA variation|
 |fader 2|Mic A LowCut|MicA variation|
 |fader 3|Mic A HiCut|MicA variation|
@@ -908,7 +907,6 @@ The second line of the LCD should show the patch name.
 |fader 6|Mic A Release Resonance|MicA variation|
 |fader 7|Mic A Echo Amount|MicA variation|
 |fader 8|Mic A Reverb Amount|MicA variation|
-|
 |fader 1|Mic B Attack|MicB variation|
 |fader 2|Mic B LowCut|MicB variation|
 |fader 3|Mic B HiCut|MicB variation|
@@ -917,7 +915,6 @@ The second line of the LCD should show the patch name.
 |fader 6|Mic B Release Resonance|MicB variation|
 |fader 7|Mic B Echo Amount|MicB variation|
 |fader 8|Mic B Reverb Amount|MicB variation|
-|
 |fader 1|Mic C Attack|MicC variation|
 |fader 2|Mic C LowCut|MicC variation|
 |fader 3|Mic C HiCut|MicC variation|
