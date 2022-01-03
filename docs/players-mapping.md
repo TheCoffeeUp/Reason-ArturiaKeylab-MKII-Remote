@@ -1,5 +1,5 @@
 ---
-description: Mapping between Reason Studio players and Arturia Keylab Essential
+description: Mapping between Reason Studio players and Arturia Keylab MKII
 ---
 # Players mapping
 
