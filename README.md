@@ -1,14 +1,15 @@
 # Reason-ArturiaKeylabEssential-Remote modified for MKII
 
-Remote is the Propellerheadʼs protocol for communication between hardware control surfaces and [Reason Studio](https://www.reasonstudios.com/en/reason) application. This project provides Reason remote scripts for the **DAW Command Center** surface of the Arturia Keylab Essential keyboard and the **keyboard** itself (pads, encoders and faders sections).
+Remote is [Reason Studioʼs](https://www.reasonstudios.com) protocol for communication between hardware control surfaces and the [Reason](https://www.reasonstudios.com/en/reason) DAW application.
 
-Have a look to the [documentation](https://tfraudet.github.io/Reason-ArturiaKeylabEssential-Remote/) for scripts installation & understand the keyboard mapping with the differents devices (instruments, players, effects, utilities)
+This project provides Reason remote scripts for the **DAW COMMANDS** and **TRANSPORTS** sections of the Arturia Keylab MKII keyboard and the **keyboard** itself (pads, encoders and faders sections).
 
-![Arturia Keylab Essential Logo](https://medias.arturia.net/images/products/keylab-essential/keylab-essential-image.png)
+
+![Arturia Keylab MKII Logo](https://medias.arturia.net/images/products/keylab-mkII/keylab-mkII-image.png)
 
 ## Installation
 
-* [Install Reason remote scripts for Arturia Keylab Essential](./docs/index.md)
+* [Install Reason remote scripts for Arturia Keylab MKII](./docs/index.md)
 
 ## Mapping between Arturia control surfaces and Reason
 
@@ -43,4 +44,4 @@ Have a look to the [documentation](https://tfraudet.github.io/Reason-ArturiaKeyl
 * When Preset is selected, jog-wheel didn't change the preset selection (on ID8, Combinator)
   * Workaround on Combinator has been to use `Select Patch Delta` remotable item and jog-wheel as delta control for now.
 * Part1/Part2/Live buttons didn't select group variations on map file
-  * workaround has been to use Keyboard Shortcut Variations for now.
+  * workaround has been to map L/R arrows to Keyboard Shortcut Variations for now.

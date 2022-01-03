@@ -3,11 +3,13 @@ description: Reason Studio remote scripts for Arturia Keylab Essential installat
 ---
 # Reason remote scripts for Arturia Keylab MKII
 
-Remote is the Propellerheadʼs protocol for communication between hardware control surfaces and Reason Studio application. This project provides Reason remote scripts for the **DAW COMMANDS** and **TRANSPORTS** sections of the Arturia Keylab Essential keyboard and the **keyboard** itself (pads, encoders and faders sections).
+Remote is the Propellerheadʼs protocol for communication between hardware control surfaces and Reason Studios' [Reason](https://www.reasonstudios.com/en/reason) application. This project provides Reason remote scripts for the **DAW COMMANDS** and **TRANSPORTS** sections of the Arturia Keylab MKII keyboard and the **keyboard** itself (pads, encoders and faders sections).
+
+
 
 How the knobs, faders, and center command dial will function depends on which hardware mode button **(DAW** or **ANALOG LAB)** is active. We do not make use of use the **USER** hardware mode.
 
-![Arturia Keylab Essential Logo](https://medias.arturia.net/images/products/keylab-mkII/keylab-mkII-image.png)
+![Arturia Keylab MKII Logo](https://medias.arturia.net/images/products/keylab-mkII/keylab-mkII-image.png)
 
 ## Installation
 
