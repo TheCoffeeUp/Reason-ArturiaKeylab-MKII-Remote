@@ -71,11 +71,11 @@ See [Reason doc](http://docs.propellerheads.se/reason10/wwhelp/wwhimpl/js/html/w
 
 ### :five: Surface Locking
 
-<img src="./images/Surfacelocking1.png" width="400">
+<img src="./images/surfacelocking1.png" width="400">
 
 Open the `Options` menu and choose `surface locking`.
 
-<img src="./images/Surfacelocking2.png" width="400">
+<img src="./images/surfacelocking2.png" width="400">
 
 Choose `keylab MKII` from the `surface` dropdown menu.
 
