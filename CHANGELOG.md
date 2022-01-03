@@ -7,7 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [2.0.0]
 #### Initial release for MKII keyboards
 
-##### MKII performance mode:
+##### MKII keyboard mode:
 * (WC) Full re-mapping and documentation update for GRAIN sample manipulator. New variation modes added for all granular oscillator types, Filter + LFO, as well as a very fun "performance" mode variation.
 * (WC) Added full map scope and documentation update for Bassline Generator player device.
 * (WC) documentation update to include more devices.
