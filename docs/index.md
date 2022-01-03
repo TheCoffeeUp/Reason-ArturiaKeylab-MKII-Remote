@@ -39,7 +39,7 @@ C:/ProgramData/Propellerhead Software/Remote
 <img src="./images/OpenControlSurfaceTab.png" width="400">
 
 * To add manually the control surface, click the “Add manually” button. This brings up a new dialog.
-* Select "Arturia Keylab 61 Essential Control" from the Model pop-up menu. Select **`MIDIIN2 (KeyLab MKII)`** for `In Port` attribute and **`MIDIOUT2(Keylab MKII)`** for `Out Port` .
+* Select "Arturia Keylab MKII Control" from the Model pop-up menu. Select **`MIDIIN2 (KeyLab MKII)`** for `In Port` attribute and **`MIDIOUT2(Keylab MKII)`** for `Out Port` .
 
 <img src="./images/ControlSurfaceSelection.png" width="400">
 
@@ -47,8 +47,8 @@ C:/ProgramData/Propellerhead Software/Remote
 
 * Open the Preferences dialog and click the Control Surfaces tab.
 * To add manually the control surface, click the “Add manually” button. This brings up a new dialog.
-* Select "Arturia Keylab 61 Essential" from the Model pop-up menu. Select **`Keylab MKII`** for `In Port` attribute and **`Keylab MKII`** for `Out Port` attribute.
-* optional: select `Arturia KeyLab 61 Essential` as the master keyboard
+* Select "Arturia Keylab MKII" from the Model pop-up menu. Select **`Keylab MKII`** for `In Port` attribute and **`Keylab MKII`** for `Out Port` attribute.
+* optional: select `Arturia KeyLab MKII` as the master keyboard
 
 <img src="./images/KeyboardSurfaceSelection.png" width="400">
 
