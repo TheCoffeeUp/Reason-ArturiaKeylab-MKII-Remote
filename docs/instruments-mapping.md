@@ -885,47 +885,47 @@ The second line of the LCD should show the patch name.
 | Jog wheel | Select Previous/Next Preset | when "Preset" is selected |
 | Left Arrow | Keyboard Shortcut Variations | To select Mix, MicA, MicB, MicC variations |
 | Right Arrow | Keyboard Shortcut Variations | To select Mix, MicA, MicB, MicC variation |
-|encoder 1|Treble
-|encoder 2|Bass
-|encoder 3|Insert Echo Level
-|encoder 4|Insert Reverb Level
-|encoder 5|Clean Level
-|encoder 6|InsertFX Level
-|fader 1|Mic A Dry Level|Mix variation
-|fader 2|Mic A FX Level|Mix variation
-|fader 3|Mic B Dry Level|Mix variation
-|fader 4|Mic B FXLevel|Mix variation
-|fader 5|Mic C DryLevel|Mix variation
-|fader 6|Mic C FXLevel|Mix variation
-|fader 7|Echo Level|Mix variation
-|fader 8|Reverb Level|Mix variation
+|encoder 1|Treble|
+|encoder 2|Bass|
+|encoder 3|Insert Echo Level|
+|encoder 4|Insert Reverb Level|
+|encoder 5|Clean Level|
+|encoder 6|InsertFX Level|
+|fader 1|Mic A Dry Level|Mix variation|
+|fader 2|Mic A FX Level|Mix variation|
+|fader 3|Mic B Dry Level|Mix variation|
+|fader 4|Mic B FXLevel|Mix variation|
+|fader 5|Mic C DryLevel|Mix variation|
+|fader 6|Mic C FXLevel|Mix variation|
+|fader 7|Echo Level|Mix variation|
+|fader 8|Reverb Level|Mix variation|
 |
-|fader 1|Mic A Attack|MicA variation
-|fader 2|Mic A LowCut|MicA variation
-|fader 3|Mic A HiCut|MicA variation
-|fader 4|Mic A Pan	|MicA variation
-|fader 5|Mic A Hammer Noise|MicA variation
-|fader 6|Mic A Release Resonance|MicA variation
-|fader 7|Mic A Echo Amount|MicA variation
-|fader 8|Mic A Reverb Amount|MicA variation
+|fader 1|Mic A Attack|MicA variation|
+|fader 2|Mic A LowCut|MicA variation|
+|fader 3|Mic A HiCut|MicA variation|
+|fader 4|Mic A Pan	|MicA variation|
+|fader 5|Mic A Hammer Noise|MicA variation|
+|fader 6|Mic A Release Resonance|MicA variation|
+|fader 7|Mic A Echo Amount|MicA variation|
+|fader 8|Mic A Reverb Amount|MicA variation|
 |
-|fader 1|Mic B Attack|MicB variation
-|fader 2|Mic B LowCut|MicB variation
-|fader 3|Mic B HiCut|MicB variation
-|fader 4|Mic B Pan|MicB variation
-|fader 5|Mic B Hammer Noise|MicB variation
-|fader 6|Mic B Release Resonance|MicB variation
-|fader 7|Mic B Echo Amount|MicB variation
-|fader 8|Mic B Reverb Amount|MicB variation
+|fader 1|Mic B Attack|MicB variation|
+|fader 2|Mic B LowCut|MicB variation|
+|fader 3|Mic B HiCut|MicB variation|
+|fader 4|Mic B Pan|MicB variation|
+|fader 5|Mic B Hammer Noise|MicB variation|
+|fader 6|Mic B Release Resonance|MicB variation|
+|fader 7|Mic B Echo Amount|MicB variation|
+|fader 8|Mic B Reverb Amount|MicB variation|
 |
-|fader 1|Mic C Attack|MicC variation
-|fader 2|Mic C LowCut|MicC variation
-|fader 3|Mic C HiCut|MicC variation
-|fader 4|Mic C Pan	|MicC variation
-|fader 5|Mic C Hammer Noise|MicC variation
-|fader 6|Mic C Release Resonance|MicC variation
-|fader 7|Mic C Echo Amount|MicC variation
-|fader 8|Mic C Reverb Amount|MicC variation
+|fader 1|Mic C Attack|MicC variation|
+|fader 2|Mic C LowCut|MicC variation|
+|fader 3|Mic C HiCut|MicC variation|
+|fader 4|Mic C Pan	|MicC variation|
+|fader 5|Mic C Hammer Noise|MicC variation|
+|fader 6|Mic C Release Resonance|MicC variation|
+|fader 7|Mic C Echo Amount|MicC variation|
+|fader 8|Mic C Reverb Amount|MicC variation|
 | Jog wheel | Select Previous/Next Preset | when "Preset" is selected |
 | Left Arrow | Keyboard Shortcut Variations | To select Mix, MicA, MicB, MicC variations |
 | Right Arrow | Keyboard Shortcut Variations | To select Mix, MicA, MicB, MicC variation |
