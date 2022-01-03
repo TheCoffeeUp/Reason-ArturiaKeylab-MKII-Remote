@@ -1,5 +1,5 @@
 ---
-description: Mapping between Reason Studio utilities and Arturia Keylab Essential
+description: Mapping between Reason Studio utilities and Arturia Keylab MKII
 ---
 # Utilities mapping
 
