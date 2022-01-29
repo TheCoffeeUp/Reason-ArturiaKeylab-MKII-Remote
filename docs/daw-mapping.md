@@ -10,7 +10,7 @@ _Some relabelling of magnetic overlays (as shown in images) is highly recommende
 
 <img src="./images/DAWCommandCenter.png" width="500">
 
-####These controls are always active, regardless of which hardware mode button (DAW or Analog Lab) you have selected.
+#### These controls are always active, regardless of which hardware mode button (DAW or Analog Lab) you have selected.
 
 | Arturia DAW Command Center | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
