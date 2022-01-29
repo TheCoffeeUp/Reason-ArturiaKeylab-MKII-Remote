@@ -34,6 +34,8 @@ description: Mapping between Reason Studio effects and Arturia Keylab MKII
 * [Master Bus Compressor](#mapping-with-the-master-bus-compressor)
 * [Channel Dynamics Compressor & Gate](#mapping-with-the-channel-dynamics-compressor-and-gate)
 * [Channel EQ Equalizer](#mapping-with-the-channel-eq-equalizer)
+* [Polar Dual Pitch Shifter](#mapping-with-polar-dual-pitch-shifter)
+* [Rotor Rotary Speaker](#mapping-with-rotor-rotary-speaker)
 
 ## Mapping with the Reason Document
 
@@ -49,7 +51,7 @@ description: Mapping between Reason Studio effects and Arturia Keylab MKII
 
 ![Alligator Logo](./images/Alligator.png)
 
-The first line of the Arturia Keyboad LCD should display "Alligator" and the second one, the name of the selected patch or the active filter depending which variation is active.
+The first line of the Arturia keyboard LCD should display "Alligator" and the second one, the name of the selected patch or the active filter depending which variation is active.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -95,7 +97,7 @@ The first line of the Arturia Keyboad LCD should display "Alligator" and the sec
 
 ![The Echo Logo](./images/TheEcho.png)
 
-The first line of the Arturia Keyboad LCD should display "The Echo" and the second one, the name of the selected patch.
+The first line of the Arturia keyboard LCD should display "The Echo" and the second one, the name of the selected patch.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -123,7 +125,7 @@ The first line of the Arturia Keyboad LCD should display "The Echo" and the seco
 
 ![PulveriserLogo](./images/Pulveriser.png)
 
-The first line of the Arturia Keyboad LCD should display "Pulveriser" and the second one, the name of the selected patch.
+The first line of the Arturia keyboard LCD should display "Pulveriser" and the second one, the name of the selected patch.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -151,7 +153,7 @@ The first line of the Arturia Keyboad LCD should display "Pulveriser" and the se
 
 ![Softube BassAmp](./images/SoftubeBassAmp.png)
 
-The first line of the Arturia Keyboad LCD should display "BassAmp" and the second one, the name of the selected patch.
+The first line of the Arturia keyboard LCD should display "BassAmp" and the second one, the name of the selected patch.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -169,7 +171,7 @@ The first line of the Arturia Keyboad LCD should display "BassAmp" and the secon
 
 ![Softube Amp](./images/SoftubeAmp.jpg)
 
-The first line of the Arturia Keyboad LCD should display "Softube Amp" and the second one, the name of the selected patch.
+The first line of the Arturia keyboard LCD should display "Softube Amp" and the second one, the name of the selected patch.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -188,7 +190,7 @@ The first line of the Arturia Keyboad LCD should display "Softube Amp" and the s
 
 ![Synchronous](./images/Synchronous.png)
 
-The first line of the Arturia Keyboad LCD should display "Synchronous" and the second one, the name of the selected patch.
+The first line of the Arturia keyboard LCD should display "Synchronous" and the second one, the name of the selected patch.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -213,7 +215,7 @@ The first line of the Arturia Keyboad LCD should display "Synchronous" and the s
 
 ![Audiomatic](./images/Audiomatic.png)
 
-The first line of the Arturia Keyboad LCD should display "Audiomatic" and the second one, the name of the selected patch.
+The first line of the Arturia keyboard LCD should display "Audiomatic" and the second one, the name of the selected patch.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -227,7 +229,7 @@ The first line of the Arturia Keyboad LCD should display "Audiomatic" and the se
 
 ![Scream](./images/Scream.png)
 
-The first line of the Arturia Keyboad LCD should display "Scream 4" and the second one, the name of the selected patch.
+The first line of the Arturia keyboard LCD should display "Scream 4" and the second one, the name of the selected patch.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -252,7 +254,7 @@ The first line of the Arturia Keyboad LCD should display "Scream 4" and the seco
 
 ![BV512 Vocoder](./images/BV512Vocoder.png)
 
-The first line of the Arturia Keyboad LCD should display "BV512 Vocoder" and the second one, the range of active's bandes depending which variation is active.
+The first line of the Arturia keyboard LCD should display "BV512 Vocoder" and the second one, the range of active's bandes depending which variation is active.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -274,7 +276,7 @@ The first line of the Arturia Keyboad LCD should display "BV512 Vocoder" and the
 
 ![Neptune](./images/Neptune.png)
 
-The first line of the Arturia Keyboad LCD should display "Neptune" and the second one, the target note name.
+The first line of the Arturia keyboard LCD should display "Neptune" and the second one, the target note name.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -293,7 +295,7 @@ The first line of the Arturia Keyboad LCD should display "Neptune" and the secon
 
 ![RV7000](./images/RV7000.png)
 
-The first line of the Arturia Keyboad LCD should display "RV7000" and the second one, the name of the selected patch.
+The first line of the Arturia keyboard LCD should display "RV7000" and the second one, the name of the selected patch.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -308,7 +310,7 @@ The first line of the Arturia Keyboad LCD should display "RV7000" and the second
 
 ![MClass Equalizer](./images/MClassEqualizer.png)
 
-The first line of the Arturia Keyboad LCD should display "MClass" and the second one "Equalizer".
+The first line of the Arturia keyboard LCD should display "MClass" and the second one the name of the device.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -329,7 +331,7 @@ The first line of the Arturia Keyboad LCD should display "MClass" and the second
 
 ![MClass Compressor](./images/MClassCompressor.png)
 
-The first line of the Arturia Keyboad LCD should display "MClass" and the second one "Comrpessor".
+The first line of the Arturia keyboard LCD should display "MClass" and the second one the name of the device.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -344,7 +346,7 @@ The first line of the Arturia Keyboad LCD should display "MClass" and the second
 
 ![MClass Maximizer](./images/MClassMaximizer.png)
 
-The first line of the Arturia Keyboad LCD should display "MClass" and the second one "Maximizer".
+The first line of the Arturia keyboard LCD should display "MClass" and the second one the name of the device.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -358,7 +360,7 @@ The first line of the Arturia Keyboad LCD should display "MClass" and the second
 
 ![MClass Stereo Imager](./images/MClassStereoImager.png)
 
-The first line of the Arturia Keyboad LCD should display "MClass" and the second one "Stereo Imager".
+The first line of the Arturia keyboard LCD should display "MClass" and the second one the name of the device.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -371,7 +373,7 @@ The first line of the Arturia Keyboad LCD should display "MClass" and the second
 
 ![RV-7](./images/RV7.png)
 
-The first line of the Arturia Keyboad LCD should display "RV-7 (reverb)" and the second one the name of the selected algorithm.
+The first line of the Arturia keyboard LCD should display "RV-7 (reverb)" and the second one the algorithm type.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -385,7 +387,7 @@ The first line of the Arturia Keyboad LCD should display "RV-7 (reverb)" and the
 
 ![DDL-1](./images/DDL1.png)
 
-The first line of the Arturia Keyboad LCD should display "DDL-1 (delay)".
+The first line of the Arturia keyboard LCD should display "DDL-1 (delay)" and the second one the name of the device.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -399,7 +401,7 @@ The first line of the Arturia Keyboad LCD should display "DDL-1 (delay)".
 
 ![D-11](./images/D11.png)
 
-The first line of the Arturia Keyboad LCD should display "D-11 (dist.)".
+The first line of the Arturia keyboard LCD should display "D-11 (dist.)" and the second one the name of the device.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -410,7 +412,7 @@ The first line of the Arturia Keyboad LCD should display "D-11 (dist.)".
 
 ![ECF-42](./images/ECF42.png)
 
-The first line of the Arturia Keyboad LCD should display "ECF-42 (filter)".
+The first line of the Arturia keyboard LCD should display "ECF-42 (filter)" and the second one the name of the device.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -428,7 +430,7 @@ The first line of the Arturia Keyboad LCD should display "ECF-42 (filter)".
 
 ![CF-101](./images/CF101.png)
 
-The first line of the Arturia Keyboad LCD should display "CF-101 (Ch/Fl)".
+The first line of the Arturia keyboard LCD should display "CF-101 (Ch/Fl)" and the second one the name of the device.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -441,7 +443,7 @@ The first line of the Arturia Keyboad LCD should display "CF-101 (Ch/Fl)".
 
 ![PH-90](./images/PH90.png)
 
-The first line of the Arturia Keyboad LCD should display "PH-90 (Phaser)".
+The first line of the Arturia keyboard LCD should display "PH-90 (Phaser)" and the second one the name of the device.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -456,7 +458,7 @@ The first line of the Arturia Keyboad LCD should display "PH-90 (Phaser)".
 
 ![UN-16](./images/UN16.png)
 
-The first line of the Arturia Keyboad LCD should display "UN-16 (Unison)".
+The first line of the Arturia keyboard LCD should display "UN-16 (Unison)" and the second one the name of the device.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -468,7 +470,7 @@ The first line of the Arturia Keyboad LCD should display "UN-16 (Unison)".
 
 ![COMP-01](./images/COMP01.png)
 
-The first line of the Arturia Keyboad LCD should display "COMP-01 (Comp.)".
+The first line of the Arturia keyboard LCD should display "COMP-01 (Comp.)" and the second one the name of the device.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -482,7 +484,7 @@ The first line of the Arturia Keyboad LCD should display "COMP-01 (Comp.)".
 
 ![PEQ-2](./images/PEQ2.png)
 
-The first line of the Arturia Keyboad LCD should display "PEQ-2 (filter)".
+The first line of the Arturia keyboard LCD should display "PEQ-2 (filter)" and the second one the name of the device.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -497,7 +499,7 @@ The first line of the Arturia Keyboad LCD should display "PEQ-2 (filter)".
 
 ![MagmaSonic](./images/MagmaSonic.jpg)
 
-The first line of the Arturia Keyboad LCD should display "MagmaSonic".
+The Arturia keyboard LCD should display "MagmaSonic Classic Filter"
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -510,7 +512,7 @@ The first line of the Arturia Keyboad LCD should display "MagmaSonic".
 
 ![SaturationKnob](./images/SaturationKnob.jpg)
 
-The first line of the Arturia Keyboad LCD should display "Saturation Knob" and the second one, the name of the selected patch.
+The first line of the Arturia keyboard LCD should display "Saturation Knob" and the second one, the name of the selected patch.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -522,7 +524,7 @@ The first line of the Arturia Keyboad LCD should display "Saturation Knob" and t
 
 ![Quartet](./images/Quartet.png)
 
-The first line of the Arturia Keyboad LCD should display "Quartet" and the selected effect in brackets. The second line should display the name of the selected patch.
+The first line of the Arturia keyboard LCD should display "Quartet" and the selected effect in brackets. The second line should display the name of the selected patch.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -552,13 +554,13 @@ The first line of the Arturia Keyboad LCD should display "Quartet" and the selec
 | Encoder 6 | Grain Width | When the FFT effect is selected  |
 | Master Pan | Grain DryWet | When the FFT effect is selected  |
 | Jog Wheel | Patch selection | when "Preset" is selected |
-| Jog Wheel | Effect selection | when "Cat/Char" is selected |
+| Jog Wheel | Effect selection | when "Category" is selected |
 
 ## Mapping with the Sweeper Modulation Effect
 
 ![Sweeper](./images/Sweeper.png)
 
-The first line of the Arturia Keyboad LCD should display "Sweeper" and the selected effect in brackets. The second line should display the name of the selected patch.
+The first line of the Arturia keyboard LCD should display "Sweeper" and the selected effect in brackets. The second line should display the name of the selected patch.
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -575,13 +577,13 @@ The first line of the Arturia Keyboad LCD should display "Sweeper" and the selec
 | Master Pan | DryWet |  |
 | Master Volume | Volume |  |
 | Jog Wheel | Patch selection | when "Preset" is selected |
-| Jog Wheel | Effect type selection | when "Cat/Char" is selected |
+| Jog Wheel | Effect type selection | when "Category" is selected |
 
 ## Mapping with the Master Bus Compressor
 
 ![MasterBusCompressor](./images/MasterCompressor.png)
 
-The first line of the Arturia Keyboad LCD should display "Master" and the second one "Bus Compressor".
+The first line of the Arturia keyboard LCD should display "Master" and the second one "Bus Compressor".
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -597,7 +599,7 @@ The first line of the Arturia Keyboad LCD should display "Master" and the second
 
 ![ChannelDyn](./images/ChannelDyn.png)
 
-The first line of the Arturia Keyboad LCD should display "Channel Dynamics" and the second one "Comp. & Gate".
+The first line of the Arturia keyboard LCD should display "Channel Dynamics" and the second one "Comp. & Gate".
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -608,14 +610,14 @@ The first line of the Arturia Keyboad LCD should display "Channel Dynamics" and 
 | Encoder 5 | Gate Range |  |
 | Encoder 6 | Gate Hold |  |
 | Encoder 7 | Gate Threshold |  |
-| Encoder 8 | GGate Release |  |
+| Encoder 8 | Gate Release |  |
 | Master Pan | Mix |  |
 
 ## Mapping with the Channel EQ Equalizer
 
 ![ChannelEQ](./images/ChannelEQ.png)
 
-The first line of the Arturia Keyboad LCD should display "Channel EQ" and the second one "Equalizer".
+The first line of the Arturia keyboard LCD should display "Channel EQ" and the second one "Equalizer".
 
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
@@ -632,3 +634,72 @@ The first line of the Arturia Keyboad LCD should display "Channel EQ" and the se
 | Fader 5 | HMF Frequency |  |
 | Fader 6 | HMF Q |  |
 | Master Pan | Gain |  |
+
+## Mapping with Polar Dual Pitch Shifter
+
+![Polar](./images/polar.png)
+
+The first line of the Arturia keyboard LCD should display "Polar" and **_Perf Mode, Shifter 1, Shifter 2_** depending on the chosen keyboard variation.
+The second line displays the name of the current patch.
+
+| Arturia Keyboard surface | Reason Command | Comment |
+| -------------------------- | -------------- | ----------------------- |
+| encoder 1 | Loop Length | When _Performance_ variation is active |
+| encoder 2 | Shifter 1 Semi | When _Performance_ variation is active |
+| encoder 3 | Shifter 1 Fine | When _Performance_ variation is active |
+| encoder 4 | Shifter 2 Semi | When _Performance_ variation is active |
+| encoder 5 | Shifter 2 Fine | When _Performance_ variation is active |
+| encoder 6 | LFO rate Free | When _Performance_ variation is active |
+| encoder 7 | LFO waveform | When _Performance_ variation is active |
+| encoder 8 | LFO phase | When _Performance_ variation is active |
+| encoder 1 | Shifter 1 Semi | When _Shifter 1_ variation is active |
+| encoder 2 | Shifter 1 Fine | When _Shifter 1_ variation is active |
+| encoder 3 | Shifter 1 Feedback | When _Shifter 1_ variation is active |
+| encoder 4 | Shifter 1 LFO Amount | When _Shifter 1_ variation is active |
+| encoder 5 | Shifter 1 Env Amount | When _Shifter 1_ variation is active |
+| encoder 6 | Shifter 1 Pan | When _Shifter 1_ variation is active |
+| encoder 7 | Shifter 1 Auto Pan | When _Shifter 1_ variation is active |
+| encoder 1 | Shifter 2 Semi | When _Shifter 2_ variation is active |
+| encoder 2 | Shifter 2 Fine | When _Shifter 2_ variation is active |
+| encoder 3 | Shifter 2 Feedback | When _Shifter 2_ variation is active |
+| encoder 4 | Shifter 2 LFO Amount | When _Shifter 2_ variation is active |
+| encoder 5 | Shifter 2 Env Amount | When _Shifter 2_ variation is active |
+| encoder 6 | Shifter 2 Pan | When _Shifter 2_ variation is active |
+| encoder 7 | Shifter 2 Auto Pan | When _Shifter 2_ variation is active |
+| Fader 1 | Dry Level |
+| Fader 2 | Shifter 1 Level |
+| Fader 3 | Shifter 2 Level |
+| Fader 4 | Auto Pan Rate |
+| Fader 5 | Envelope Attack |
+| Fader 6 | Envelope Decay |
+| Fader 7 | Envelope Sustain |
+| Fader 8 | Envelope Release |
+| Master Pan | Filter Resonance |
+| Master Fader | Filter Env Amount |
+| Mod Wheel | Filter Frequency |
+| Left Arrow| Keyboard Shortcut Variations | To switch between _Performance_, _Shifter 1_, and _Shifter 2_ variations |
+| Right Arrow| Keyboard Shortcut Variations | To switch between _Performance_, _Shifter 1_, and _Shifter 2_ variations |
+| Jog Wheel | Algorithm Type | when "Category" button is selected |
+| Jog Wheel | Select Previous/Next Preset | when "Preset" button is selected |
+
+## Mapping with Rotor Rotary Speaker
+
+![Rotor](./images/rotor.png)
+
+The first line of the Arturia keyboard LCD should display "Rotor" the second line displays the name of the current patch.
+
+| Arturia Keyboard surface | Reason Command | Comment |
+| -------------------------- | -------------- | ----------------------- |
+| encoder 1 | Drive |  |
+| encoder 2 | X-Over Frequency |  |
+| encoder 3 | Acceleration |  |
+| encoder 4 | Slow Speed |  |
+| encoder 5 | Fast Speed |  |
+| encoder 6 | Doppler |  |
+| encoder 7 | Blend |  |
+| encoder 8 | Distance |  |
+| Fader 1 | Drive Type |  |
+| Fader 2 | Slow Fast |  |
+| Master Fader | Volume |  |
+| Master Pan | Dry Wet |  |
+| Jog Wheel | Select Previous/Next Preset | when "Preset" button is selected |

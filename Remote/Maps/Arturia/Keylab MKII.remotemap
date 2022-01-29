@@ -2,7 +2,7 @@ Propellerhead Remote Mapping File
 File Format Version	1.0.0
 Control Surface Manufacturer	Arturia
 Control Surface Model	Keylab MKII
-Map Version	1.3.0
+Map Version	1.3.5
 
 //This is a remote map template for the Arturia KEYLAB MKII Keyboard and Reason 12
 
@@ -17,13 +17,14 @@ Map	Mod Wheel		Mod Wheel
 Map	Damper Pedal		Damper Pedal
 
 Scope	Propellerheads	Reason Document
-Map	cat-jog-wheel		Select Patch for Target Device (Delta)
-//Map	cat-prev		Select Prev Patch for Target Device
-//Map	cat-next		Select Next Patch for Target Device
+Map	preset-jog-wheel		Select Patch for Target Device (Delta)
 Map	left-arrow		Select Previous Keyboard Shortcut Variation
 Map	right-arrow		Select Next Keyboard Shortcut Variation
 Map	part1-next		Target Previous Track
 Map	part2-prev		Target Next Track
+Map	lcd-1		device name
+Map	lcd-2		patch name
+
 
 Scope	Propellerheads	Combinator
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
@@ -61,8 +62,6 @@ Map	Fader-6		Rotary 30			var2
 Map	Fader-7		Rotary 31			var2
 Map	Fader-8		Rotary 32			var2
 Map	preset-jog-wheel		Select Patch Delta
-//Map	preset-prev		Select Previous Patch
-//Map	preset-next		Select Next Patch
 Map	lcd-1		"Combinator var1"			var1
 Map	lcd-1		"Combinator var2"			var2
 Map	lcd-2		Patch Name
@@ -1003,9 +1002,8 @@ Map	pan-1		Low Width
 Map	pan-2		X-Over Frequency
 Map	pan-3		High Width
 Map	pan-4		Solo Mode
-
 Map	lcd-1		"MClass"
-Map	lcd-2		"Stereo Imager"
+Map	lcd-2		device name
 
 Scope	Propellerheads	RV-7 Digital Reverb
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
@@ -1013,10 +1011,9 @@ Map	pan-1		Size
 Map	pan-2		Decay
 Map	pan-3		Damping
 Map	pan-4		Dry/Wet
-
 Map	preset-jog-wheel		Algorithm
 Map	lcd-1		"RV-7 (reverb)"
-//Map	lcd-2		"algorithm?"
+//Map	lcd-2		algorithm
 
 Scope	Propellerheads	DDL-1 Digital Delay Line
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
@@ -1025,9 +1022,8 @@ Map	pan-2		DelayTime (ms)
 Map	pan-3		Feedback
 Map	pan-4		Pan
 Map	pan-5		Dry/Wet Balance
-
 Map	lcd-1		"DDL-1 (delay)"
-Map	lcd-2		""
+Map	lcd-2		device name
 
 Scope	Propellerheads	D-11 Foldback Distortion
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
@@ -1035,7 +1031,7 @@ Map	pan-1		Amount
 Map	pan-2		Foldback
 
 Map	lcd-1		"D-11 (dist.)"
-Map	lcd-2		""
+Map	lcd-2		device name
 
 Scope	Propellerheads	ECF-42 Envelope Controlled Filter
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
@@ -1051,7 +1047,7 @@ Map	pan-7		Sustain
 Map	pan-8		Release
 
 Map	lcd-1		"ECF-42 (filter)"
-Map	lcd-2		""
+Map	lcd-2		device name
 
 Scope	Propellerheads	CF-101 Chorus/Flanger
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
@@ -1061,7 +1057,7 @@ Map	pan-3		Rate
 Map	pan-4		Modulation Amount
 
 Map	lcd-1		"CF-101 (Ch/Fl)"
-Map	lcd-2		""
+Map	lcd-2		device name
 
 Scope	Propellerheads	PH-90 Phaser
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
@@ -1073,7 +1069,7 @@ Map	pan-5		Frequency Modulation
 Map	pan-6		Feedback
 
 Map	lcd-1		"PH-90 (Phaser)"
-Map	lcd-2		""
+Map	lcd-2		device name
 
 Scope	Propellerheads	UN-16 Unison
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
@@ -1082,7 +1078,7 @@ Map	pan-2		Detune
 Map	pan-3		Dry/Wet
 
 Map	lcd-1		"UN-16 (Unison)"
-Map	lcd-2		""
+Map	lcd-2		device name
 
 Scope	Propellerheads	COMP-01 Compressor/Limiter
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
@@ -1093,7 +1089,7 @@ Map	pan-4		Release
 Map	pan-5		Gain
 
 Map	lcd-1		"COMP-01 (Comp.)"
-Map	lcd-2		""
+Map	lcd-2		device name
 
 Scope	Propellerheads	PEQ-2 Two Band Parametric EQ
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
@@ -1105,7 +1101,7 @@ Map	pan-5		Filter B Q
 Map	pan-6		Filter B Gain
 
 Map	lcd-1		"PEQ-2 (filter)"
-Map	lcd-2		""
+Map	lcd-2		device name
 
 Scope	MagmaSonic	drno.magmasonic.ClassicFilter
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
@@ -1292,20 +1288,41 @@ Map	pan-1		Key
 Map	pan-2		Scale
 Map	pan-3		Notes
 Map	pan-4		Inversion
-
+Map	live-bank		Alter
 Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"Scales & Chords"
 Map	lcd-2		Patch Name
 
 Scope	Propellerhead Software	se.propellerheads.NoteEcho
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
-Map	pan-1		Step Length Synced
-Map	pan-2		Repeats
-Map	pan-3		Velocity
-Map	pan-4		Pitch
-
+Define Group	Keyboard Shortcut Variations	step0-9	step10-17
+Map	live-bank		tempo sync
+Map	pan-1		Step Length Free
+Map	pan-2		step length synced
+Map	pan-3		Repeats
+Map	pan-4		Velocity
+Map	pan-5		Pitch
+map	Fader-1		Original note toggle			step0-9
+map	Fader-2		Step 1 Enable			step0-9
+map	Fader-3		Step 2 Enable			step0-9
+map	Fader-4		Step 3 Enable			step0-9
+map	Fader-5		Step 4 Enable			step0-9
+map	Fader-6		Step 5 Enable			step0-9
+map	Fader-7		Step 6 Enable			step0-9
+map	Fader-8		Step 7 Enable			step0-9
+map	master-volume		Step 8 Enable			step0-9
+map	Fader-1		Step 9 Enable			Step10-17
+map	Fader-2		Step 10 Enable			Step10-17
+map	Fader-3		Step 11 Enable			Step10-17
+map	Fader-4		Step 12 Enable			Step10-17
+map	Fader-5		Step 13 Enable			Step10-17
+map	Fader-6		Step 14 Enable			Step10-17
+map	Fader-7		Step 15 Enable			Step10-17
+map	Fader-8		Step 16 Enable			Step10-17
+map	master-volume		Step 17 Enable			Step10-17
 Map	preset-jog-wheel		Select Patch Delta
-Map	lcd-1		"Note Echo"
+Map	lcd-1		"Note Echo (0-9)"			step0-9
+Map	lcd-1		"Note Echo (10-17)"			step10-17
 Map	lcd-2		Patch Name
 
 Scope	Propellerhead Software	se.propellerheads.Arpeggio
@@ -1318,7 +1335,6 @@ Map	pan-5		Direction 1
 Map	pan-6		Shift Step 1
 Map	pan-7		Transpose 1
 Map	pan-8		Gate Length 1
-
 Map	fader-1		Low Key 2
 Map	fader-2		High Key 2
 Map	fader-3		Rate 2
@@ -1327,7 +1343,6 @@ Map	fader-5		Direction 2
 Map	fader-6		Shift Step 2
 Map	fader-7		Transpose 2
 Map	fader-8		Gate Length 2
-
 Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"Dual Arpeggio"
 Map	lcd-2		Patch Name
@@ -1335,9 +1350,31 @@ Map	lcd-2		Patch Name
 Scope	Propellerhead Software	se.propellerheads.DrumSeq
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
 Map	master-pan		Pattern Select
-
 Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"Drum Sequencer"
+Map	lcd-2		Patch Name
+
+Scope	Propellerhead Software	se.propellerheads.PolyStepSequencer
+//	Control Surface Item	Key	Remotable Item	Scale	Mode
+Map	master-pan		Pattern Select
+Map	preset-jog-wheel		Select Patch Delta
+Map	lcd-1		"PolyStep"
+Map	lcd-2		Patch Name
+
+Scope	Propellerhead Software	se.propellerheads.Mutator
+//	Control Surface Item	Key	Remotable Item	Scale	Mode
+Map	master-pan		Pattern Select
+Map	preset-jog-wheel		Select Patch Delta
+Map	lcd-1		"Pattern Mutator"
+Map	lcd-2		Patch Name
+
+Scope	Propellerhead Software	se.propellerheads.QuadNoteGenerator
+//	Control Surface Item	Key	Remotable Item	Scale	Mode
+Map	pan-1		Master Vary
+Map	pan-2		Freeze Start
+Map	pan-3		Freeze Length
+Map	preset-jog-wheel		Select Patch Delta
+Map	lcd-1		"Quad Note"
 Map	lcd-2		Patch Name
 
 Scope	Propellerhead Software	se.propellerheads.Quartet
@@ -2051,7 +2088,8 @@ Map	pan-5		Noise Level
 Scope	Propellerhead Software	se.propellerheads.Bassline
 Define Group	Keyboard Shortcut Variations	p1	p2	p3	p4	p5	p6	p7	p8
 //	Control Surface Item	Key	Remotable Item	Scale	Mode	Group
-Map	preset-jog-wheel		Pattern Select
+Map	master-pan		Pattern Select
+Map	preset-jog-wheel		Select Patch Delta
 Map	pan-1		Pattern 1 OnBeat Source			p1
 Map	pan-2		Pattern 1 OffBeat Source			p1
 Map	pan-3		Pattern 1 OnBeat Velocity			p1
@@ -2148,12 +2186,78 @@ Map	fader-3		Pattern 1 OnBeat Variator Amount			p8
 Map	fader-4		Pattern 1 OffBeat Variator Amount			p8
 Map	fader-5		Pattern 1 Note Range			p8
 Map	fader-6		Pattern 1 Minorness			p8
-Map	lcd-1		"BasslineGeneratr"
-Map	lcd-2		"Pattern 1 var."			p1
-Map	lcd-2		"Pattern 2 var."			p2
-Map	lcd-2		"Pattern 3 var."			p3
-Map	lcd-2		"Pattern 4 var."			p4
-Map	lcd-2		"Pattern 5 var."			p5
-Map	lcd-2		"Pattern 6 var."			p6
-Map	lcd-2		"Pattern 7 var."			p7
-Map	lcd-2		"Pattern 8 var."			p8
+
+Map	lcd-1		"Bassline P1"			p1
+Map	lcd-1		"Bassline P2"			p2
+Map	lcd-1		"Bassline P3"			p3
+Map	lcd-1		"Bassline P4"			p4
+Map	lcd-1		"Bassline P5"			p5
+Map	lcd-1		"Bassline P6"			p6
+Map	lcd-1		"Bassline P7"			p7
+Map	lcd-1		"Bassline P8"			p8
+Map	lcd-2		patch name
+
+Scope	Propellerhead Software	se.propellerheads.Polar
+Define Group	Keyboard Shortcut Variations	Perform	Shift1	Shift2
+//	Control Surface Item	Key	Remotable Item	Scale	Mode
+
+Map	pan-1		Loop Length			Perform
+Map	pan-2		Shifter 1 Semi			Perform
+Map	pan-3		Shifter 1 Fine			Perform
+Map	pan-4		Shifter 2 Semi			Perform
+Map	pan-5		Shifter 2 Fine			Perform
+Map	pan-6		LFO rate Free			Perform
+Map	pan-7		LFO waveform			Perform
+Map	pan-8		LFO phase			Perform
+
+Map	pan-1		Shifter 1 Semi			Shift1
+Map	pan-2		Shifter 1 Fine			Shift1
+Map	pan-3		Shifter 1 Feedback			Shift1
+Map	pan-4		Shifter 1 LFO Amount			Shift1
+Map	pan-5		Shifter 1 Env Amount			Shift1
+Map	pan-6		Shifter 1 Pan			Shift1
+Map	pan-7		Shifter 1 Auto Pan			Shift1
+
+Map	pan-1		Shifter 2 Semi			Shift2
+Map	pan-2		Shifter 2 Fine			Shift2
+Map	pan-3		Shifter 2 Feedback			Shift2
+Map	pan-4		Shifter 2 LFO Amount			Shift2
+Map	pan-5		Shifter 2 Env Amount			Shift2
+Map	pan-6		Shifter 2 Pan			Shift2
+Map	pan-7		Shifter 2 Auto Pan			Shift2
+
+Map	fader-1		Dry Level
+Map	fader-2		Shifter 1 Level
+Map	fader-3		Shifter 2 Level
+Map	fader-4		Auto Pan Rate
+Map	fader-5		Envelope Attack
+Map	fader-6		Envelope Decay
+Map	fader-7		Envelope Sustain
+Map	fader-8		Envelope Release
+Map	master-pan		Filter Resonance
+Map	master-volume		Filter Env Amount
+Map	Mod Wheel		Filter Frequency
+Map	cat-jog-wheel		Algorithm Type
+Map	preset-jog-wheel		Select Patch Delta
+Map	lcd-1		"POLAR-Perf mode"			Perform
+Map	lcd-1		"POLAR-Shifter 1"			Shift1
+Map	lcd-1		"POLAR-Shifter 2"			Shift2
+Map	lcd-2		patch name
+
+Scope	Propellerhead Software	se.propellerheads.Rotor
+//	Control Surface Item	Key	Remotable Item	Scale	Mode
+Map	pan-1		Drive
+Map	pan-2		X-Over Frequency
+Map	pan-3		Acceleration
+Map	pan-4		Slow Speed
+Map	pan-5		Fast Speed
+Map	pan-6		Doppler
+Map	pan-7		Blend
+Map	pan-8		Distance
+Map	fader-1		Drive Type
+Map	fader-2		Slow Fast
+Map	master-pan		Dry Wet
+Map	master-volume		Volume
+Map	preset-jog-wheel		Select Patch Delta
+Map	lcd-1		"Rotor"
+Map	lcd-2		patch name

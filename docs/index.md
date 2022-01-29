@@ -17,8 +17,8 @@ How the knobs, faders, and center command dial will function depends on which ha
 
 To install the Remote scripts in your environment, the files in the `Remote` directory should be copied to your Propellerhead installation directory:
 
-		*.Remote files go in the 'Maps' folder, Arturia subfolder
-		*.LUA, *.LUAcodec, and *.PNG files go in the 'LUA codecs' folder, Arturia subfolder
+	*.Remote files go in the 'Maps' folder, Arturia subfolder
+	*.LUA, *.LUAcodec, and *.PNG files go in the 'LUA codecs' folder, Arturia subfolder
 
 * On MacOS
 
@@ -29,7 +29,7 @@ Macintosh HD/Library/Application Support/Propellerhead Software/Remote
 * On Window 7 and above
 
 ```bash
-C:/ProgramData/Propellerhead Software/Remote
+C:\Users\<username>\AppData\Roaming\Propellerhead Software\Remote
 ```
 
 ### :two: Setup the Arturia Keylab MKII DAW as a control surface in Reason
@@ -63,7 +63,7 @@ C:/ProgramData/Propellerhead Software/Remote
 
 To change which keyboard shortcut variation is selected in Reason using the Arturia keyboard, use the left and right Arrows while in "Analog Lab" mode.
 
-At his point these 2 controls should already be mapped as shown below.
+At this point these 2 controls should already be mapped as shown below.
 
 <img src="./images/SetKeyboardShortcutVariations.png" width="400">
 

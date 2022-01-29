@@ -2,7 +2,14 @@
 description: Mapping between Reason Studio instruments and Arturia Keylab MKII
 ---
 # Instruments mapping
-### _Keyboard in "Analog Lab" mode._
+
+
+
+### _Keyboard  "Analog Lab" mode button activated._
+
+<img src="./images/keylab61-pads2.jpg" width="200">
+
+____________________________________
 
 * [ID8 instrument device](#mapping-with-the-id8-instrument-device)
 * [SubTractor instrument device](#mapping-with-the-subtractor-instrument-device)
@@ -352,7 +359,7 @@ The second line displays the preset name.
 |Fader 6|Amp Velocity|Global control|
 |Fader 7|Sample Level|Global control|
 |Fader 8|Osc Level|Global control|
-|master volume|Master Volume||
+|master volume|Master Volume| Global Control |
 | Jog-wheel | Select Previous/Next Preset | when "Preset" button is selected |
 
 
@@ -497,8 +504,7 @@ The first line of the Arturia Keyboard LCD should display "Rytmik" follow by "Le
 | Encoder 1 | Master Pitch | when variation "Level" is active |
 | Encoder 2 | Master Reverb | when variation "Level" is active |
 | Encoder 3 | Master Filter | when variation "Level" is active |
-| Part1 / Next| Keyboard Shortcut Variations | To select FX variation |
-| Part2 / Prev| Keyboard Shortcut Variations | To select Level variation |
+| Left/Right Arrow| Keyboard Shortcut Variations | To select FX or Level variation |
 | Jog-wheel | Select Previous/Next Preset | when "Preset" is selected |
 
 ## Mapping with the A-List Acoustic Guitarist
@@ -636,8 +642,7 @@ The first line of the Arturia Keyboard LCD should display "Antidote" and "(Osc1)
 | Fader 3 | Sub 1 Volume |  |
 | Fader 4 | Sub 2 Volume |  |
 | Fader 5 | Drift |  |
-| Left Arrow | Keyboard Shortcut Variations | To select Osc 2 variation |
-| Right Arrow | Keyboard Shortcut Variations | To select Osc 1 variation |
+| Left/Right Arrow | Keyboard Shortcut Variations | To select Osc 1 or 2 variation |
 | Jog-wheel | Select Previous/Next Preset | when "Preset" is selected |
 
 ## Mapping with the A-List Electric Guitarist - Pop Chords
@@ -730,18 +735,18 @@ The first line of the Arturia Keyboard LCD should display "External MIDI" and th
 | -------------------------- | -------------- | ----------------------- |
 | Master fader | MIDI CC7 (Volume) |  |
 | Encoder 1 | CV Scale 1 |
-| pan-2	| CV Scale 2 |
-| pan-3 | CV Scale 3|
-| pan-4 | CV Scale 4|
-| pan-5 | CV Scale 5|
-| pan-6 | CV Scale 6|
-| pan-7 | CV Scale 7|
-| pan-8 | CV Scale 8|
+| Encoder 2	| CV Scale 2 |
+| Encoder 3 | CV Scale 3|
+| Encoder 4 | CV Scale 4|
+| Encoder 5 | CV Scale 5|
+| Encoder 6 | CV Scale 6|
+| Encoder 7 | CV Scale 7|
+| Encoder 8 | CV Scale 8|
 | Jog-wheel | MIDI program change | when "Preset" is selected |
 
 ## Mapping with Umpf Club drums
 
-![Umpf](./images/umpf.png)
+![Umpf](./images/Umpf.png)
 
 The first line of the Arturia Keyboard LCD should display "Umpf Club" and the second one the patch name.
 
@@ -768,7 +773,7 @@ The first line of the Arturia Keyboard LCD should display "Umpf Club" and the se
 
 ## Mapping with Umpf Retro Beats
 
-![Umpf Retro](./images/umpfretro.png)
+![Umpf Retro](./images/Umpfretro.png)
 
 The first line of the Arturia Keyboard LCD should display "Umpf Retro" and the second one the patch name.
 
@@ -952,10 +957,10 @@ The first line of the Arturia Keyboard LCD should display "complex-1" and the se
 | -------------------------- | -------------- | ----------------------- |
 | Master fader | Main Volume ||
 | Jog wheel | Select Previous/Next Preset | when "Preset" is selected |
-|encoder-1|Filter Frequency|
-|encoder-2|Filter Reso|
-|encoder-3|LFO Wave|
-|encoder-4|LFO Rate|
+|encoder 1|Filter Frequency|
+|encoder 2|Filter Reso|
+|encoder 3|LFO Wave|
+|encoder 4|LFO Rate|
 |fader 1|Attack|
 |fader 2|Decay|
 |fader 3|Sustain|

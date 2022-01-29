@@ -22,8 +22,7 @@ Map	metro		Click On/Off
 Map	undo		Undo
 Map	read		Reset Automation Override
 Map	write		Target Track Enable Automation Recording
-
-map	next		Target Previous Track
+Map	next		Target Previous Track
 Map	prev		Target Next Track
 
 //command dial
@@ -106,4 +105,4 @@ map	track8_mute		Channel 8 mute			Channels
 //Map	encoder-8		FX8 Pan			FX Lv-Pan
 
 Map	lcd-1		"Master (base ch)"
-Map	lcd-2		"Remote Base Channel"
+Map	lcd-2		""
