@@ -9,12 +9,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 **Added**
 * (WC) Added mapping and documentation update for Pattern Mutator, Quad Note, Polystep Player devices
 * (WC) Added mapping and documentation update for POLAR Dual Pitch Shifter and Rotor Rotary Speaker
+* (WC) Added 8 pads 9-16 to control surface codec.
+* (WC) Added outputs to more items with absolute values
+* (WC) Experimenting with macro contols for Analog lab. .
 
 **changed**
 
 * (WC) various documentation updates/cleanup.
 * (WC) changed mapping for Note Echo player. Step length for synced and free modes, and tempo sync button. Added variation groups to enable/disable steps.
 * (WC) changed mapping for Bassline. Jog Dial is now used for patch selection instead of pattern selection. Pattern selection is moved to the Master Pan encoder for continuity with other devices already mapped.
+* (WC) fixed scopes for "ElectricGuitaristPopC" and "FingerpickingNylon" (removed errant quotes from LCD output)
 
 **removed**
 

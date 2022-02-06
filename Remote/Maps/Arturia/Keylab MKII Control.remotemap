@@ -4,7 +4,7 @@ Control Surface Manufacturer	Arturia
 Control Surface Model	Keylab MKII Control
 Map Version	1.0.0
 
-//This is a remote map template for the Arturia KEYLAB MKII Keyboard and Reason 10
+//This is a remote map template for the Arturia KEYLAB MKII Keyboard and Reason 12
 
 Scope	Propellerheads	Reason Document
 //	Control Surface Item	Key	Remotable Item	Scale	Mode

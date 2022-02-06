@@ -418,7 +418,7 @@ end
 function remote_prepare_for_use()
 	local retEvents={
 		-- set to Mackie control mode
-		remote.make_midi("f0 00 20 6b 7f 42 02 00  40 51 00 F7"),
+		remote.make_midi("f0 00 20 6b 7f 42 02 00 40 51 00 F7"),
 
 		-- switch off all the button's leds
 		remote.make_midi("f0 00 20 6b 7f 42 02 00 10 xx yy f7", { x=tonumber('56',16), y=0, port=1} ),
@@ -433,7 +433,7 @@ function remote_prepare_for_use()
 		remote.make_midi("f0 00 20 6b 7f 42 02 00 10 xx yy f7", { x=tonumber('5f',16), y=0, port=1} ),
 
 		-- Display message on LCD
-		make_lcd_midi_message("Reason DAW CC", "connected"),
+		make_lcd_midi_message("Reason DAW mode", "connected"),
 	}
 	return retEvents
 end
@@ -441,7 +441,7 @@ end
 function remote_release_from_use()
 	local retEvents={
 		-- Display message on LCD
-		make_lcd_midi_message("Reason DAW CC", "disconnected"),
+		make_lcd_midi_message("Reason DAW mode", "disconnected"),
 	}
 	return retEvents
 end

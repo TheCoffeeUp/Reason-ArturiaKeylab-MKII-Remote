@@ -12,8 +12,8 @@ g_lcd_line1_new_text = ""
 g_lcd_line1_old_text = ""
 g_lcd_line2_new_text = ""
 g_lcd_line2_old_text = ""
-g_preset_jog_wheel_index = 36
-g_cat_jog_wheel_index = 43
+g_preset_jog_wheel_index = 44
+g_cat_jog_wheel_index = 51
 g_quartet_effect_selected = ""
 g_sweeper_effect_selected = ""
 
@@ -38,15 +38,23 @@ function remote_init(manufacturer, model)
 		{name="pad-6", input="button", output="value"},
 		{name="pad-7", input="button", output="value"},
 		{name="pad-8", input="button", output="value"},
+		{name="pad-9", input="button", output="value"},
+		{name="pad-10", input="button", output="value"},
+		{name="pad-11", input="button", output="value"},
+		{name="pad-12", input="button", output="value"},
+		{name="pad-13", input="button", output="value"},
+		{name="pad-14", input="button", output="value"},
+		{name="pad-15", input="button", output="value"},
+		{name="pad-16", input="button", output="value"},
 
-		{name="fader-1", input="value", min=0, max=127},
-		{name="fader-2", input="value", min=0, max=127},
-		{name="fader-3", input="value", min=0, max=127},
-		{name="fader-4", input="value", min=0, max=127},
-		{name="fader-5", input="value", min=0, max=127},
-		{name="fader-6", input="value", min=0, max=127},
-		{name="fader-7", input="value", min=0, max=127},
-		{name="fader-8", input="value", min=0, max=127},
+		{name="fader-1", input="value", output="value", min=0, max=127},
+		{name="fader-2", input="value", output="value", min=0, max=127},
+		{name="fader-3", input="value", output="value", min=0, max=127},
+		{name="fader-4", input="value", output="value", min=0, max=127},
+		{name="fader-5", input="value", output="value", min=0, max=127},
+		{name="fader-6", input="value", output="value", min=0, max=127},
+		{name="fader-7", input="value", output="value", min=0, max=127},
+		{name="fader-8", input="value", output="value", min=0, max=127},
 
 		{name="pan-1", input="value", output="value", min=0, max=127},
 		{name="pan-2", input="value", output="value", min=0, max=127},
@@ -57,14 +65,14 @@ function remote_init(manufacturer, model)
 		{name="pan-7", input="value", output="value", min=0, max=127},
 		{name="pan-8", input="value", output="value", min=0, max=127},
 
-		{name="master-pan", input="value", min=0, max=127},
-		{name="master-volume", input="value", min=0, max=127},
+		{name="master-pan", input="value", output="value", min=0, max=127},
+		{name="master-volume", input="value", output="value", min=0, max=127},
 
-		-- index 36
+		-- index 51
 		{name="preset-jog-wheel", input="delta", output="value", min=0, max=127},
 		{name="preset-jog-wheel-button", input="button"},
-		{name="preset-prev", input="button"},
-		{name="preset-next", input="button"},
+		{name="preset-prev", input="button", output="value"},
+		{name="preset-next", input="button", output="value"},
 
 		{name="part1-next", input="button", output="value"},
 		{name="part2-prev", input="button", output="value"},
@@ -78,7 +86,7 @@ function remote_init(manufacturer, model)
 		{name="left-arrow", input="button", output="value"},
 		{name="right-arrow", input="button", output="value"},
 
-		-- index is 49
+		-- index is 57
 		{name="pan-1-var-a", input="value", output="value", min=0, max=127},
 		{name="pan-2-var-a", input="value", output="value", min=0, max=127},
 		{name="pan-3-var-a", input="value", output="value", min=0, max=127},
@@ -89,7 +97,7 @@ function remote_init(manufacturer, model)
 		{name="pan-8-var-a", input="value", output="value", min=0, max=127},
 		{name="master-pan-var-a", input="value", output="value", min=0, max=127},
 
-		-- index is 58
+		-- index is 66
 		{name="pan-1-var-b", input="value", output="value", min=0, max=127},
 		{name="pan-2-var-b", input="value", output="value", min=0, max=127},
 		{name="pan-3-var-b", input="value", output="value", min=0, max=127},
@@ -100,7 +108,7 @@ function remote_init(manufacturer, model)
 		{name="pan-8-var-b", input="value", output="value", min=0, max=127},
 		{name="master-pan-var-b", input="value", output="value", min=0, max=127},
 
-		-- index is 67
+		-- index is 75
 		{name="pan-1-var-c", input="value", output="value", min=0, max=127},
 		{name="pan-2-var-c", input="value", output="value", min=0, max=127},
 		{name="pan-3-var-c", input="value", output="value", min=0, max=127},
@@ -111,7 +119,7 @@ function remote_init(manufacturer, model)
 		{name="pan-8-var-c", input="value", output="value", min=0, max=127},
 		{name="master-pan-var-c", input="value", output="value", min=0, max=127},
 
-		-- index is 76
+		-- index is 84
 		{name="pan-1-var-d", input="value", output="value", min=0, max=127},
 		{name="pan-2-var-d", input="value", output="value", min=0, max=127},
 		{name="pan-3-var-d", input="value", output="value", min=0, max=127},
@@ -121,6 +129,7 @@ function remote_init(manufacturer, model)
 		{name="pan-7-var-d", input="value", output="value", min=0, max=127},
 		{name="pan-8-var-d", input="value", output="value", min=0, max=127},
 		{name="master-pan-var-d", input="value", output="value", min=0, max=127},
+
 	}
 	remote.define_items(items)
 ----------------------------------------------------------------------------
@@ -142,6 +151,14 @@ function remote_init(manufacturer, model)
 		{pattern="<100y>0 29 xx", name="pad-6"},
 		{pattern="<100y>0 2a xx", name="pad-7"},
 		{pattern="<100y>0 2b xx", name="pad-8"},
+		{pattern="<100y>0 2c xx", name="pad-9"},
+		{pattern="<100y>0 2d xx", name="pad-10"},
+		{pattern="<100y>0 2e xx", name="pad-11"},
+		{pattern="<100y>0 2f xx", name="pad-12"},
+		{pattern="<100y>0 00 xx", name="pad-13"},
+		{pattern="<100y>0 31 xx", name="pad-14"},
+		{pattern="<100y>0 32 xx", name="pad-15"},
+		{pattern="<100y>0 33 xx", name="pad-16"},
 		]]
 
 		{pattern="b? 49 xx", name="fader-1", value="x"},
@@ -194,22 +211,36 @@ function remote_init(manufacturer, model)
 		{name="pan-6", pattern="b? 12 xx"},
 		{name="pan-7", pattern="b? 13 xx"},
 		{name="pan-8", pattern="b? 10 xx"},
+		{name="master-pan", pattern="b? 11 xx"},
+
+		{name="fader-1", pattern="b? 49 xx"},
+		{name="fader-2", pattern="b? 4b xx"},
+		{name="fader-4", pattern="b? 48 xx"},
+		{name="fader-5", pattern="b? 50 xx"},
+		{name="fader-6", pattern="b? 51 xx"},
+		{name="fader-7", pattern="b? 52 xx"},
+		{name="fader-8", pattern="b? 53 xx"},
+		{name="master-volume", pattern="b? 55 xx"},
+
+		{name="part1-next", pattern="b? 16 xx"},
+		{name="part2-prev", pattern="b? 17 xx"},
+		{name="live-bank", pattern="b? 18 xx"},
 	}
 	remote.define_auto_outputs(outputs)
 
 end
+
+
 
 encoder_patterns = {
 	"b? 4a xx", -- pan-1
 	"b? 47 xx", -- pan-2
 	"b? 4c xx", -- pan-3
 	"b? 4d xx", -- pan-4
-
 	"b? 5d xx", -- pan-5
 	"b? 12 xx", -- pan-6
 	"b? 13 xx", -- pan-7
 	"b? 10 xx", -- pan-8
-
 	"b? 11 xx", -- master pan
 }
 
@@ -224,27 +255,27 @@ function incomingMidiMessageFromEncoder(event)
 	return -1
 end
 
+
 function remote_process_midi(event)  -- handle incoming midi event
-	-- -- test if preset jog-wheel turn right
-	-- ret = remote.match_midi("b? 72 41",event)
-	-- if ret~=nil then
-	-- 	remote.trace(" Send preset-next to Reason\n")
-	-- 	local msg={ time_stamp=event.time_stamp, item=39, value=1 }
-	-- 	remote.handle_input(msg)
-	-- 	return true
-	-- end
+	--test if preset jog-wheel turn right
+	--ret = remote.match_midi("b? 72 41",event)
+	--if ret~=nil then
+	--	remote.trace(" Send preset-next to Reason\n")
+	--	local msg={ time_stamp=event.time_stamp, item=47, value=1 }
+	--	remote.handle_input(msg)
+	--	return true
+	--end
 
-	-- -- test if preset jog-wheel turn left
-	-- ret = remote.match_midi("b? 72 3f",event)
-	-- if ret~=nil then
-	-- 	remote.trace(" Send preset-prev to Reason\n")
-	-- 	local msg={ time_stamp=event.time_stamp, item=38, value=1 }
-	-- 	remote.handle_input(msg)
-	-- 	return true
-	-- end
+	--test if preset jog-wheel turn left
+	--ret = remote.match_midi("b? 72 3f",event)
+	--if ret~=nil then
+	--	remote.trace(" Send preset-prev to Reason\n")
+	--	local msg={ time_stamp=event.time_stamp, item=46, value=1 }
+	--	remote.handle_input(msg)
+	--	return true
+	--end
 
-
-	local tab_index = {Chorus = 49, BDD = 58, FFT = 67, Grain = 76}
+	local tab_index = {Chorus = 57, BDD = 66, FFT = 75, Grain = 84}
 
 	if string.starts(g_lcd_line1_new_text,"Quartet") then
 		local encoder_number = incomingMidiMessageFromEncoder(event) -- which encoder number send midi ?

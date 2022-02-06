@@ -22,6 +22,7 @@ Map	left-arrow		Select Previous Keyboard Shortcut Variation
 Map	right-arrow		Select Next Keyboard Shortcut Variation
 Map	part1-next		Target Previous Track
 Map	part2-prev		Target Next Track
+//Map	cat-jog-wheel		Target Track (Delta)
 Map	lcd-1		device name
 Map	lcd-2		patch name
 
@@ -143,8 +144,8 @@ Map	fader-1		Parameter 1
 Map	fader-2		Parameter 2
 Map	cat-prev		Select Previous Category
 Map	cat-next		Select Next Category
-Map	preset-prev		Select Previous Sound
-Map	preset-next		Select Next Sound
+Map	left-arrow		Select Previous Preset
+Map	right-arrow		Select Next Preset
 Map	lcd-1		"ID8"
 Map	lcd-2		Sound Name
 
@@ -1522,7 +1523,7 @@ Map	pan-6		Feel
 Map	master-volume		Volume
 
 Map	preset-jog-wheel		Select Patch Delta
-Map	lcd-1		"Pop Chords""
+Map	lcd-1		"Pop Chords"
 Map	lcd-2		Patch Name
 
 Scope	Propellerhead Software	se.propellerheads.FingerpickingNylon
@@ -1541,7 +1542,7 @@ Map	pan-8		Variance
 Map	master-volume		Volume
 
 Map	preset-jog-wheel		Select Patch Delta
-Map	lcd-1		"Fingerpicking""
+Map	lcd-1		"Fingerpicking"
 Map	lcd-2		Patch Name
 
 Scope	Propellerhead Software	se.propellerheads.ElectricGuitaristPC
@@ -1588,29 +1589,6 @@ Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"Friktion"
 Map	lcd-2		Patch Name
 
-Scope	Arturia	vst.Alav.Analog Lab V
-//	Control Surface Item	Key	Remotable Item	Scale	Mode
-Map	pan-1		P1 Brightness
-Map	pan-2		P1 Timbre
-Map	pan-3		P1 Time
-Map	pan-4		P1 Movement
-Map	pan-5		FXA Dry/Wet
-Map	pan-6		FXB Dry/Wet
-Map	pan-7		Delay Volume
-Map	pan-8		Reverb Volume
-Map	master-pan		Master
-Map	fader-1		P1 Operator 1 Level
-Map	fader-2		P1 Operator 2 Level
-Map	fader-3		P1 Operator 3 Level
-Map	fader-4		P1 Operator 4 Level
-Map	fader-5		P1 Operator 5 Level
-Map	fader-6		P1 Operator 6 Level
-Map	fader-7		P1 Algorithm
-Map	fader-8		P1 Pitch Env Amt
-Map	Master-Volume		P1 Param19
-Map	preset-jog-wheel		Select Patch Delta
-Map	lcd-1		"Analog Lab V"
-Map	lcd-2		Device Name
 
 Scope	Propellerhead Software	se.propellerheads.externalmidiinstrument
 //	Control Surface Item	Key	Remotable Item	Scale	Mode
@@ -2261,3 +2239,64 @@ Map	master-volume		Volume
 Map	preset-jog-wheel		Select Patch Delta
 Map	lcd-1		"Rotor"
 Map	lcd-2		patch name
+
+Scope	Arturia	vst.Ala2
+//	Control Surface Item	Key	Remotable Item	Scale	Mode
+Map	lcd-1		"Analog Lab IV"
+Map	lcd-2		Device Name
+Map	pan-1		P1 Cutoff
+Map	pan-2		P1 Resonance
+Map	pan-3		P1 LFO Amount
+Map	pan-4		P1 LFO Rate
+Map	pan-5		P1 Osc 1 Volume
+Map	pan-6		P1 Osc 2 Volume
+Map	pan-7		P1 Osc 3 Volume
+Map	pan-8		P1 Noise Volume
+Map	master-pan		P1 Chorus Mix
+Map	fader-1		P1 Filter Env Attack
+Map	fader-2		P1 Filter Env Decay
+Map	fader-3		P1 Filter Env Sustain
+Map	fader-4		P1 Filter Env Amount
+Map	fader-5		P1 Attack
+Map	fader-6		P1 Decay
+Map	fader-7		P1 Sustain
+Map	fader-8		P1 Release On/Off
+Map	master-volume		P1 Volume
+
+Scope	Arturia	vst.Alav
+//	Control Surface Item	Key	Remotable Item	Scale	Mode
+Define Group	Keyboard Shortcut Variations	Single	Multi
+Map	lcd-1		"AnalogLabV(sngl)"			Single
+Map	lcd-1		"AnalogLabV(mult)"			Multi
+Map	lcd-2		Device Name
+Map	pan-1		P1 Brightness			Single
+Map	pan-2		P1 Timbre			Single
+Map	pan-3		P1 Time			Single
+Map	pan-4		P1 Movement			Single
+Map	pan-1		Macro 1			Multi
+Map	pan-2		Macro 2			Multi
+Map	pan-3		Macro 3			Multi
+Map	pan-4		Macro 4			Multi
+Map	pan-5		FXA Dry/Wet
+Map	pan-6		FXB Dry/Wet
+Map	pan-7		Delay Volume
+Map	pan-8		Reverb Volume
+Map	master-pan		Master
+Map	fader-1		P1 Operator 1 Level
+Map	fader-2		P1 Operator 2 Level
+Map	fader-3		P1 Operator 3 Level
+Map	fader-4		P1 Operator 4 Level
+Map	fader-5		P1 Operator 5 Level
+Map	fader-6		P1 Operator 6 Level
+Map	fader-7		P1 Algorithm
+Map	fader-8		P1 Pitch Env Amt
+Map	master-volume		P1 Param19
+
+
+scope	Arturia	vst.ARP3
+Map	lcd-1		"ARP 2600 V3"
+Map	lcd-2		Device Name
+Map	pan-5		Brightness
+Map	pan-6		Timbre
+Map	pan-7		Time
+Map	pan-8		Movement

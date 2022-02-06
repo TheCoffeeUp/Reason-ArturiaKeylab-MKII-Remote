@@ -1,8 +1,11 @@
-# Reason-ArturiaKeylabEssential-Remote modified for MKII
+# Reason Remote - Arturia Keylab MKII
 
 Remote is [Reason Studioʼs](https://www.reasonstudios.com) protocol for communication between hardware control surfaces and the [Reason](https://www.reasonstudios.com/en/reason) DAW application.
 
-This project provides Reason remote scripts for the **DAW COMMANDS** and **TRANSPORTS** sections of the Arturia Keylab MKII keyboard and the **keyboard** itself (pads, encoders and faders sections).
+* _*forked from Thierry Gaudet's Keylab Essential remote script project._
+
+
+This project provides Reason Remote scripts for the Arturia Keylab MKII keyboard, under the **DAW COMMANDS** , **TRANSPORTS**, and  **encoders, faders, and select buttons** sections.
 
 
 ![Arturia Keylab MKII Logo](https://medias.arturia.net/images/products/keylab-mkII/keylab-mkII-image.png)
