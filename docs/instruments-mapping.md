@@ -51,9 +51,11 @@ ____________________________________
 
 ## Mapping with the Reason Document
 
+For unmapped devices, the first line of the Arturia Keyboard LCD should display the device name and the second one the patch name (if any).
+
 | Arturia Keyboard surface | Reason Command | Comment |
 | -------------------------- | -------------- | ----------------------- |
-| command dial | Select Previous/Next Preset | when "Category" button is selected. Useful for unmapped devices. (some mapped devices will override this function) |
+| command dial | Patch Selection (most devices) | when "Preset" button is selected. Useful for unmapped devices. (some mapped devices will override this function) |
 | Left Arrow | Select previous Keyboard Variation | used to access different modes within some scopes |
 | Right Arrow | Select next Keyboard Variation | used to access different modes within some scopes |
 | Part 1/Next | Target previous sequencer track |
