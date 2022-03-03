@@ -22,8 +22,8 @@ Map	metro		Click On/Off
 Map	undo		Undo
 Map	read		Reset Automation Override
 Map	write		Target Track Enable Automation Recording
-Map	next		Target Previous Track
-Map	prev		Target Next Track
+Map	part1		Target Previous Track
+Map	part2		Target Next Track
 
 //command dial
 Map	left-loop		Left Loop
@@ -40,15 +40,11 @@ Define Group	Target	Channels	FX Lv-Pan
 //Map	next		Target=FX Lv-Pan			Channels
 //Map	prev		Target=Channels			FX Lv-Pan
 
-map	left_arrow		Previous Remote Base Channel
-map	right_arrow		Next Remote Base Channel
-//Map	part1		Next 8 Remote Base Channel
-//Map	part2		Previous 8 Remote Base Channel
+map	left_arrow		Previous 8 Remote Base Channel
+map	right_arrow		Next 8 Remote Base Channel
 
 Map	master-fader		Master Level
 Map	chorus-encoder		Ctrl Room Level
-//Map	multi		All Mutes Off
-//not available in DAW mode
 
 Map	fader-1		Channel 1 Level			Channels
 Map	fader-2		Channel 2 Level			Channels

@@ -26,8 +26,8 @@ g_move_loop_right_index = 17
 g_position_index = 18
 g_part1_index = 21
 g_part2_index = 22
-g_lcd_line1_index = 44
-g_lcd_line2_index = 45
+g_lcd_line1_index = 43
+g_lcd_line2_index = 44
 
 
 function remote_init(manufacturer, model)
@@ -54,8 +54,8 @@ function remote_init(manufacturer, model)
 		{name="right_arrow", input="button", output="value"},
 		{name="part1", input="button", output="value"},
 		{name="part2", input="button", output="value"},
-		{name="next", input="button", output="value"},
-		{name="prev", input="button", output="value"},
+		--{name="next", input="button", output="value"},
+		--{name="prev", input="button", output="value"},
 		{name="fader-1", input="value", output="value", min=0, max=127},
 		{name="fader-2", input="value", output="value", min=0, max=127},
 		{name="fader-3", input="value", output="value", min=0, max=127},
@@ -74,7 +74,6 @@ function remote_init(manufacturer, model)
 		{name="encoder-8", input="delta"},
 		{name="chorus-encoder", input="delta"},
 		{name="master-fader", input="value", output="value", min=0, max=127},
-		{name="multi", input="button", output="value"},
 		{name="lcd-1", output="text"},
 		{name="lcd-2", output="text"},
 		{name="track1_record_arm", input="button", output="value"},
@@ -130,8 +129,8 @@ function remote_init(manufacturer, model)
 		{pattern="9? 63 xx", name="right_arrow", value="x"},
 		{pattern="9? 31 xx", name="part1", value="x"},
 		{pattern="9? 30 xx", name="part2", value="x"},
-		{pattern="9? 2f xx", name="next", value="x"},
-		{pattern="9? 2e xx", name="prev", value="x"},
+		--{pattern="9? 2f xx", name="next", value="x"},
+		--{pattern="9? 2e xx", name="prev", value="x"},
 		{pattern="E0 ?? xx", name="fader-1", value="x"},
 		{pattern="E1 ?? xx", name="fader-2", value="x"},
 		{pattern="E2 ?? xx", name="fader-3", value="x"},
@@ -150,7 +149,6 @@ function remote_init(manufacturer, model)
 		{pattern="b? 17 <?x??>?", name="encoder-8", value="1-2*x"},
 		{pattern="b? 18 <?x??>?", name="chorus-encoder", value="1-2*x"},
 		{pattern="E8 ?? xx", name="master-fader", value="x"},
-		{pattern="9? 6a xx", name="multi", value="x"},
 		{pattern="9? 00 xx", name="track1_record_arm", value="x"},
 		{pattern="9? 01 xx", name="track2_record_arm", value="x"},
 		{pattern="9? 02 xx", name="track3_record_arm", value="x"},
@@ -203,7 +201,6 @@ function remote_init(manufacturer, model)
 		{name="left_arrow", pattern="9? 62 xx"},
 		{name="right_arrow", pattern="9? 63 xx"},
 		{name="master-fader", pattern="E8 ?? xx"},
-		{name="multi", pattern="9? 6a xx"},
 		{name="fader-1", pattern="E0 ?? xx"},
 		{name="fader-2", pattern="E1 ?? xx"},
 		{name="fader-3", pattern="E2 ?? xx"},
@@ -224,7 +221,6 @@ function remote_init(manufacturer, model)
 		{name="chorus-encoder", pattern="b? 18 <?x??>?"},
 		]]
 		{name="master-fader", pattern="E8 ?? xx"},
-		{name="multi", pattern="9? 6a xx"},
 		{name="track1_record_arm", pattern="9? 00 xx"},
 		{name="track2_record_arm", pattern="9? 01 xx"},
 		{name="track3_record_arm", pattern="9? 02 xx"},
@@ -418,7 +414,7 @@ end
 function remote_prepare_for_use()
 	local retEvents={
 		-- set to Mackie control mode
-		remote.make_midi("f0 00 20 6b 7f 42 02 00 40 51 00 F7"),
+		remote.make_midi("f0 00 20 6b 7f 42 02 00  40 51 00 F7"),
 
 		-- switch off all the button's leds
 		remote.make_midi("f0 00 20 6b 7f 42 02 00 10 xx yy f7", { x=tonumber('56',16), y=0, port=1} ),
@@ -433,7 +429,7 @@ function remote_prepare_for_use()
 		remote.make_midi("f0 00 20 6b 7f 42 02 00 10 xx yy f7", { x=tonumber('5f',16), y=0, port=1} ),
 
 		-- Display message on LCD
-		make_lcd_midi_message("Reason DAW mode", "connected"),
+		make_lcd_midi_message("Reason DAW CC", "connected"),
 	}
 	return retEvents
 end
@@ -441,7 +437,7 @@ end
 function remote_release_from_use()
 	local retEvents={
 		-- Display message on LCD
-		make_lcd_midi_message("Reason DAW mode", "disconnected"),
+		make_lcd_midi_message("Reason DAW CC", "disconnected"),
 	}
 	return retEvents
 end
