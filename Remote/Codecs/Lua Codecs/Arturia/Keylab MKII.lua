@@ -69,7 +69,7 @@ function remote_init(manufacturer, model)
 		{name="master-volume", input="value", output="value", min=0, max=127},
 
 		-- index 51
-		{name="preset-jog-wheel", input="delta", output="value", min=0, max=127},
+		{name="preset-jog-wheel", input="delta"},
 		{name="preset-jog-wheel-button", input="button"},
 		{name="preset-prev", input="button", output="value"},
 		{name="preset-next", input="button", output="value"},
@@ -78,7 +78,7 @@ function remote_init(manufacturer, model)
 		{name="part2-prev", input="button", output="value"},
 		{name="live-bank", input="button", output="value"},
 
-		{name="cat-jog-wheel", input="delta", output="value", min=0, max=127},
+		{name="cat-jog-wheel", input="delta"},
 		{name="cat-jog-wheel-button", input="button"},
 		{name="cat-prev", input="button", output="value"},
 		{name="cat-next", input="button", output="value"},
@@ -130,20 +130,30 @@ function remote_init(manufacturer, model)
 		{name="pan-8-var-d", input="value", output="value", min=0, max=127},
 		{name="master-pan-var-d", input="value", output="value", min=0, max=127},
 
+		{name="Select1", input="button", output="value"},
+		{name="Select2", input="button", output="value"},
+		{name="Select3", input="button", output="value"},
+		{name="Select4", input="button", output="value"},
+		{name="Select5", input="button", output="value"},
+		{name="Select6", input="button", output="value"},
+		{name="Select7", input="button", output="value"},
+		{name="Select8", input="button", output="value"},
+		{name="Multi", input="button", output="value"},
+
 	}
 	remote.define_items(items)
 ----------------------------------------------------------------------------
 	local inputs = {
 		{pattern="e? xx yy", name="Pitch Bend", value="y*128 + x"},
-		{pattern="b0 01 xx", name="Mod Wheel"},
-		{pattern="b0 0b xx", name="Expression"},
-		{pattern="b0 02 xx", name="Breath"},
-		{pattern="d0 xx", name="Channel Pressure"},
-		{pattern="b0 40 xx", name="Damper Pedal"},
-		{pattern="<100x>0 yy zz", name="Keyboard"},
+		{pattern="b? 01 xx", name="Mod Wheel"},
+		{pattern="b? 0b xx", name="Expression"},
+		{pattern="b? 02 xx", name="Breath"},
+		{pattern="d? xx", name="Channel Pressure"},
+		{pattern="b? 40 xx", name="Damper Pedal"},
+		{pattern="<100x>? yy zz", name="Keyboard"},
 
 		--[[
-		{pattern="<100y>0 24 xx", name="pad-1"},
+		{pattern="<100y>? 24 zz", name="pad-1"},
 		{pattern="<100y>0 25 xx", name="pad-2"},
 		{pattern="<100y>0 26 xx", name="pad-3"},
 		{pattern="<100y>0 27 xx", name="pad-4"},
@@ -181,6 +191,16 @@ function remote_init(manufacturer, model)
 
 		{pattern="b? 11 xx", name="master-pan", value="x"},
 		{pattern="b? 55 xx", name="master-volume", value="x"},
+
+		{pattern="b? 1e 0<000x>", name="Select1", value="x"},	-- b0 1e 01
+		{pattern="b? 1e 0<001x>", name="Select2", value="x"},	-- b0 1e 03
+		{pattern="b? 1e 0<010x>", name="Select3", value="x"},	-- b0 1e 05
+		{pattern="b? 1e 0<011x>", name="Select4", value="x"},	-- b0 1e 07
+		{pattern="b? 1e 0<100x>", name="Select5", value="x"},	-- b0 1e 09
+		{pattern="b? 1e 0<101x>", name="Select6", value="x"},	-- b0 1e 0b
+		{pattern="b? 1e 0<110x>", name="Select7", value="x"},	-- b0 1e 0d
+		{pattern="b? 1e 0<111x>", name="Select8", value="x"},	-- b0 1e 0f
+		{pattern="b? 1e 1<000x>", name="Multi", value="x"},	-- b0 1e 11
 
 		{pattern="b? 72 <?y??><???x>", name="preset-jog-wheel", value="x*(2*y-1)"},  -- when "Preset" is selected, 41 <0100><0001>   ou  3f <0011><1111>
 		{pattern="b? 73 xx", name="preset-jog-wheel-button", value="x"},	-- When "Preset" is selected
@@ -225,6 +245,36 @@ function remote_init(manufacturer, model)
 		{name="part1-next", pattern="b? 16 xx"},
 		{name="part2-prev", pattern="b? 17 xx"},
 		{name="live-bank", pattern="b? 18 xx"},
+
+		{name="Select1", pattern="b? 1e 0<000x>"},	-- b0 1e 01
+		{name="Select2", pattern="b? 1e 0<001x>"},	-- b0 1e 03
+		{name="Select3", pattern="b? 1e 0<010x>"},	-- b0 1e 05
+		{name="Select4", pattern="b? 1e 0<011x>"},	-- b0 1e 07
+		{name="Select5", pattern="b? 1e 0<100x>"},	-- b0 1e 09
+		{name="Select6", pattern="b? 1e 0<101x>"},	-- b0 1e 0b
+		{name="Select7", pattern="b? 1e 0<110x>"},	-- b0 1e 0d
+		{name="Select8", pattern="b? 1e 0<111x>"},	-- b0 1e 0f
+		{name="Multi", pattern="b? 1e 1<000x>"},	-- b0 1e 11
+
+		--[[
+		{name="pad-1", pattern="<100y>? 24 zz"},
+		{name="pad-2", pattern="<100y>0 25 xx"},
+		{name="pad-3", pattern="<100y>0 26 xx"},
+		{name="pad-4", pattern="<100y>0 27 xx"},
+		{name="pad-5", pattern="<100y>0 28 xx"},
+		{name="pad-6", pattern="<100y>0 29 xx"},
+		{name="pad-7", pattern="<100y>0 2a xx"},
+		{name="pad-8", pattern="<100y>0 2b xx"},
+		{name="pad-9", pattern="<100y>0 2c xx"},
+		{name="pad-10", pattern="<100y>0 2d xx"},
+		{name="pad-11", pattern="<100y>0 2e xx"},
+		{name="pad-12", pattern="<100y>0 2f xx"},
+		{name="pad-13", pattern="<100y>0 00 xx"},
+		{name="pad-14", pattern="<100y>0 31 xx"},
+		{name="pad-15", pattern="<100y>0 32 xx"},
+		{name="pad-16", pattern="<100y>0 33 xx"},
+		]]
+
 	}
 	remote.define_auto_outputs(outputs)
 
