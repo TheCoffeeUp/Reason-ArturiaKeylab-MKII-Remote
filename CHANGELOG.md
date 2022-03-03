@@ -17,6 +17,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 **changed**
 
+* (WC) fixed serveral instances of uppercase "Multi" typo in .remotemap file
 * (WC) various documentation updates/cleanup.
 * (WC) changed mapping for Note Echo player. Step length for synced and free modes, and tempo sync button. Added variation groups to enable/disable steps.
 * (WC) changed mapping for Bassline. Jog Dial is now used for patch selection instead of pattern selection. Pattern selection is moved to the Master Pan encoder for continuity with other devices already mapped.
@@ -54,7 +55,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 -----
 ##### MKII DAW mode:
 * (WC) added MIDI output scope for DAW mode faders (Pickup mode).
-* (WC) added track solo and mute select mode for MKII DAW mode (Keylab DAW mode should be set to Multitrack mode)
+* (WC) added track solo and mute select mode for MKII DAW mode (Keylab DAW mode should be set to multitrack mode)
 * (WC) remapped DAW mode global controls. (monitor, auto quant, precount, click, reset automation override, write automation enable
 + (WC) re-ordered DAW mode MIDI indexing to match physical layout of hardware
 * (WC) mapped chorus dial DAW mode to "CTRL room level"
