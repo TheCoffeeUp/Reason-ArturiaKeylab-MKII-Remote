@@ -2697,3 +2697,82 @@ Map	pan-1		Channel 1 Pan
 Map	pan-2		Channel 2 Pan
 Map	pan-3		Channel 3 Pan
 Map	pan-4		Channel 4 Pan
+
+Scope	Propellerhead Software	se.propellerheads.Objekt
+Define Group	Keyboard Shortcut Variations	Exciter	Modal	Obj1	Obj2
+//	Control Surface Item	Key	Remotable Item	Scale	Mode	Group
+Map	master-pan		Pattern Select
+Map	preset-jog-wheel		Select Patch Delta
+Map	lcd-1		"Objekt (Excr)"			Exciter
+Map	lcd-1		"Objekt (Modl)"			Modal
+Map	lcd-1		"Objekt (Obj1)"			Obj1
+Map	lcd-1		"Objekt (Obj2)"			Obj2
+Map	lcd-2		patch name
+
+Map	pan-1		Exciter EQ Freq			Exciter
+Map	pan-2		Exciter EQ Reso			Exciter
+Map	pan-3		Exciter EQ Gain			Exciter
+Map	pan-4		Env Delay			Exciter
+Map	pan-5		Env Attack			Exciter
+Map	pan-6		Env Decay			Exciter
+Map	pan-7		Env Release			Exciter
+Map	pan-8		Env Sustain			Exciter
+Map	fader-1		Impact Level		Exciter
+Map	fader-2		Impact Freq			Exciter
+Map	fader-3		Impact Click		Exciter
+Map	fader-4		Impact Diffuse Shape			Exciter
+Map	fader-5		Impact Diffuse Time			Exciter
+Map	fader-6		Impact Hardness			Exciter
+Map	fader-7		Noise Level			Exciter
+Map	fader-8		Noise Rate			Exciter
+
+Map	pan-1		Modal Freq 1			Modal
+Map	pan-2		Modal Freq 2			Modal
+Map	pan-3		Modal Freq 3			Modal
+Map	pan-4		Modal Freq 4			Modal
+Map	pan-5		Modal Freq 5			Modal
+Map	pan-6		Modal Freq 6			Modal
+Map	pan-7		Modal Freq 7			Modal
+Map	pan-8		Modal Freq 8			Modal
+Map	fader-1		Modal Gain 1			Modal
+Map	fader-2		Modal Gain 2			Modal
+Map	fader-3		Modal Gain 3			Modal
+Map	fader-4		Modal Gain 4			Modal
+Map	fader-5		Modal Gain 5			Modal
+Map	fader-6		Modal Gain 6			Modal
+Map	fader-7		Modal Gain 7			Modal
+Map	fader-8		Modal Gain 8			Modal
+
+Map	pan-1		Obj 1 Freq 1			Obj1
+Map	pan-2		Obj 1 Freq 2			Obj1
+Map	pan-3		Obj 1 Freq 3			Obj1
+Map	pan-4		Obj 1 Freq 4			Obj1
+Map	pan-5		Obj 1 Freq 5			Obj1
+Map	pan-6		Obj 1 Freq 6			Obj1
+Map	pan-7		Obj 1 Freq 7			Obj1
+Map	pan-8		Obj 1 Freq 8			Obj1
+Map	fader-1		Obj 1 Gain 1			Obj1
+Map	fader-2		Obj 1 Gain 2			Obj1
+Map	fader-3		Obj 1 Gain 3			Obj1
+Map	fader-4		Obj 1 Gain 4			Obj1
+Map	fader-5		Obj 1 Gain 5			Obj1
+Map	fader-6		Obj 1 Gain 6			Obj1
+Map	fader-7		Obj 1 Gain 7			Obj1
+Map	fader-8		Obj 1 Gain 8			Obj1
+
+Map	pan-1		Obj 2 Freq 1			Obj2
+Map	pan-2		Obj 2 Freq 2			Obj2
+Map	pan-3		Obj 2 Freq 3			Obj2
+Map	pan-4		Obj 2 Freq 4			Obj2
+Map	pan-5		Obj 2 Freq 5			Obj2
+Map	pan-6		Obj 2 Freq 6			Obj2
+Map	pan-7		Obj 2 Freq 7			Obj2
+Map	pan-8		Obj 2 Freq 8			Obj2
+Map	fader-1		Obj 2 Gain 1			Obj2
+Map	fader-2		Obj 2 Gain 2			Obj2
+Map	fader-3		Obj 2 Gain 3			Obj2
+Map	fader-4		Obj 2 Gain 4			Obj2
+Map	fader-5		Obj 2 Gain 5			Obj2
+Map	fader-6		Obj 2 Gain 6			Obj2
+Map	fader-7		Obj 2 Gain 7			Obj2
+Map	fader-8		Obj 2 Gain 8			Obj2
