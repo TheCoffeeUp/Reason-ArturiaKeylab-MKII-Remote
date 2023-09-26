@@ -2717,9 +2717,9 @@ Map	pan-5		Env Attack			Exciter
 Map	pan-6		Env Decay			Exciter
 Map	pan-7		Env Release			Exciter
 Map	pan-8		Env Sustain			Exciter
-Map	fader-1		Impact Level		Exciter
+Map	fader-1		Impact Level			Exciter
 Map	fader-2		Impact Freq			Exciter
-Map	fader-3		Impact Click		Exciter
+Map	fader-3		Impact Click			Exciter
 Map	fader-4		Impact Diffuse Shape			Exciter
 Map	fader-5		Impact Diffuse Time			Exciter
 Map	fader-6		Impact Hardness			Exciter
