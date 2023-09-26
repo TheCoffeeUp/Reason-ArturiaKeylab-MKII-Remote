@@ -414,7 +414,7 @@ end
 function remote_prepare_for_use()
 	local retEvents={
 		-- set to Mackie control mode
-		remote.make_midi("f0 00 20 6b 7f 42 02 00  40 51 00 F7"),
+		remote.make_midi("f0 00 20 6b 7f 42 02 00 40 51 00 F7"),
 
 		-- switch off all the button's leds
 		remote.make_midi("f0 00 20 6b 7f 42 02 00 10 xx yy f7", { x=tonumber('56',16), y=0, port=1} ),
