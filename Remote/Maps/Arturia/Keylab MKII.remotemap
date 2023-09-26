@@ -2339,6 +2339,41 @@ Map	fader-8		P1 Pitch Env Amt
 Map	master-volume		P1 Param19
 Map	Multi		Proxy Open Plugin Window
 
+Scope	Arturia	vst3.4172747541564953416C617650726F63.Analog Lab V
+//	Control Surface Item	Key	Remotable Item	Scale	Mode
+Define Group	Keyboard Shortcut Variations	Part1	Part2	Live
+Map	lcd-1		"AnalogLabV-Part1"			Part1
+Map	lcd-1		"AnalogLabV-Part2"			Part2
+Map	lcd-1		"AnalogLabV-Live"			Live
+Map	lcd-2		Device Name
+Map	pan-1		P1 Brightness			Part1
+Map	pan-2		P1 Timbre			Part1
+Map	pan-3		P1 Time			Part1
+Map	pan-4		P1 Movement			Part1
+Map	pan-1		P2 Brightness			Part2
+Map	pan-2		P2 Timbre			Part2
+Map	pan-3		P2 Time			Part2
+Map	pan-4		P2 Movement			Part2
+Map	pan-1		Macro 1			Live
+Map	pan-2		Macro 2			Live
+Map	pan-3		Macro 3			Live
+Map	pan-4		Macro 4			Live
+Map	pan-5		FXA Dry/Wet
+Map	pan-6		FXB Dry/Wet
+Map	pan-7		Delay Volume
+Map	pan-8		Reverb Volume
+Map	master-pan		Master
+Map	fader-1		P1 Operator 1 Level
+Map	fader-2		P1 Operator 2 Level
+Map	fader-3		P1 Operator 3 Level
+Map	fader-4		P1 Operator 4 Level
+Map	fader-5		P1 Operator 5 Level
+Map	fader-6		P1 Operator 6 Level
+Map	fader-7		P1 Algorithm
+Map	fader-8		P1 Pitch Env Amt
+Map	master-volume		P1 Param19
+Map	Multi		Proxy Open Plugin Window
+
 scope	Arturia	vst.ARP3
 Map	lcd-1		"ARP 2600 V3"
 Map	lcd-2		Device Name
@@ -2628,3 +2663,37 @@ Map	Multi		Proxy Open Plugin Window
 Map	pan-1		F1 Cutoff
 Map	pan-2		F1 Resonance
 Map	master-volume		C3:-
+
+scope	Decidedly	vst.Dsmp
+Map	lcd-1		"Decent Sampler"
+Map	lcd-2		Device Name
+Map	Multi		Proxy Open Plugin Window
+
+scope	kiloHearts	com.kilohearts.khsONE
+Map	preset-jog-wheel		Select Patch Delta
+Map	lcd-1		"kHs ONE"
+Map	lcd-2		Patch Name
+Map	Multi		Proxy Open Plugin Window
+Map	fader-1		Amp Env - Attack
+Map	fader-2		Amp Env - Decay
+Map	fader-3		Amp Env - Sustain
+Map	fader-4		Amp Env - Release
+Map	fader-5		Filter Env - Attack
+Map	fader-6		Filter Env - Decay
+Map	fader-7		Filter Env - Sustain
+Map	fader-8		Filter Env - Release
+Map	master-volume		Master - Gain
+
+Scope	Robotic Bean	vst3.ABCDEF019182FAEB526F626F7470736E.Portatron
+Map	preset-jog-wheel		Select Patch Delta
+Map	lcd-1		"Portatron"
+Map	lcd-2		Patch Name
+Map	Multi		Proxy Open Plugin Window
+Map	fader-1		Channel 1 Level
+Map	fader-2		Channel 2 Level
+Map	fader-3		Channel 3 Level
+Map	fader-4		Channel 4 Level
+Map	pan-1		Channel 1 Pan
+Map	pan-2		Channel 2 Pan
+Map	pan-3		Channel 3 Pan
+Map	pan-4		Channel 4 Pan
